@@ -6,11 +6,11 @@
 Alerts can be fed directly into IRIS using the [Alerts API](https://docs.dfir-iris.org/_static/iris_api_reference_v2.0.1.html#tag/Alerts).   
 Any source can inject alerts into IRIS, as long as it can send HTTP requests and respects the alert format.    
 
-A service account with the `alert_read` and `alert_write` permission can be used to send alerts to IRIS.  
+A service account with the `alert_read` and `alert_write` permission can be used to send alerts to IRIS.
 
 
 !!! warning
-    This section is only available for users with the `alert_read` and `alert_write` permissions.  
+    This section is only available for users with the `alert_read` and `alert_write` permissions. Only alerts for customers that are linked to the respective user will be visible.
 
 
 ## Viewing alerts
