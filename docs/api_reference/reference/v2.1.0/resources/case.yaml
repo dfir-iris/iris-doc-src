@@ -1,0 +1,30 @@
+parameters:
+  - $ref: "./v2.10/parameters/path/Identifier.yaml"
+get:
+  operationId: get-api-v2-cases
+  tags:
+    - Cases
+  summary: Get a case
+  description: 'Get a case by its identifier'
+  responses:
+    '201':
+      description: Case successfully found
+      content:
+        application/json:
+          schema:
+            $ref: "./v2.1.0/schemas/Case.yaml"
+    '404':
+      $ref: "./v2.1.0/responses/NotFound.yaml"
+delete:
+  operationId: delete-api-v2-cases
+  tags:
+    - Cases
+  summary: Delete a case
+  description: This implies the deletion of everything linked to the case.
+  responses:
+    '204':
+      $ref: "./v2.1.0/responses/Deleted.yaml"
+    '404':
+      $ref: "./v2.1.0/responses/NotFound.yaml"
+    '400':
+      $ref: "./v2.1.0/responses/GenericError.yaml"
