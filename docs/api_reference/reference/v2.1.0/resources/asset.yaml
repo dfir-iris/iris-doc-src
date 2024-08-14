@@ -1,0 +1,29 @@
+parameters:
+  - $ref: "./v2.10/parameters/path/Identifier.yaml"
+get:
+  operationId: get-api-v2-assets
+  tags:
+    - Assets
+  summary: Get an asset
+  description: 'Get an asset by its identifier'
+  responses:
+    '201':
+      description: Asset successfully found
+      content:
+        application/json:
+          schema:
+            $ref: "./v2.1.0/schemas/Asset.yaml"
+    '404':
+      $ref: "./v2.1.0/responses/NotFound.yaml"
+delete:
+  operationId: delete-api-v2-assets
+  tags:
+    - Assets
+  summary: Delete an asset
+  responses:
+    '204':
+      $ref: "./v2.1.0/responses/Deleted.yaml"
+    '404':
+      $ref: "./v2.1.0/responses/NotFound.yaml"
+    '400':
+      $ref: "./v2.1.0/responses/GenericError.yaml"

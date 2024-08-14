@@ -1,0 +1,29 @@
+parameters:
+  - $ref: "./v2.10/parameters/path/Identifier.yaml"
+get:
+  operationId: get-api-v2-tasks
+  tags:
+    - Tasks
+  summary: Get an task
+  description: 'Get an task by its identifier'
+  responses:
+    '201':
+      description: tasks successfully found
+      content:
+        application/json:
+          schema:
+            $ref: "./v2.1.0/schemas/Task.yaml"
+    '404':
+      $ref: "./v2.1.0/responses/NotFound.yaml"
+delete:
+  operationId: delete-api-v2-tasks
+  tags:
+    - Tasks
+  summary: Delete an task
+  responses:
+    '204':
+      $ref: "./v2.1.0/responses/Deleted.yaml"
+    '404':
+      $ref: "./v2.1.0/responses/NotFound.yaml"
+    '400':
+      $ref: "./v2.1.0/responses/GenericError.yaml"
