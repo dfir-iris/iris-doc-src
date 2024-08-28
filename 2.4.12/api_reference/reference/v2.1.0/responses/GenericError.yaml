@@ -1,0 +1,8 @@
+description: Error
+content:
+  application/json:
+    schema:
+      description: 'Error message'
+      type: string
+      examples:
+        - 'Error processing request - check server logs'

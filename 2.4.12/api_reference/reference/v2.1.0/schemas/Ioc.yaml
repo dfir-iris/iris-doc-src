@@ -1,0 +1,35 @@
+type: object
+properties:
+   ioc_description:
+      type: string
+      minLength: 1
+   ioc_id:
+      type: number
+   ioc_misp: {}
+   ioc_tags:
+      type: string
+   ioc_tlp_id:
+      type: number
+   ioc_type:
+      type: number
+   ioc_type_id:
+      type: number
+   ioc_value:
+      type: string
+      minLength: 1
+   user_id:
+      type: number
+   required:
+      - ioc_type_id
+      - ioc_tlp_id
+      - ioc_value
+      - ioc_description
+      - ioc_tags
+      - cid
+   examples:
+      ioc_type_id: 1
+      ioc_tlp_id: 2
+      ioc_value: 8.8.8.8
+      ioc_description: rewrw
+      ioc_tags: ''
+      cid: 2
