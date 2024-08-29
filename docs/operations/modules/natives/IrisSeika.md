@@ -7,7 +7,7 @@
 
     
 This module offers an interface with Seika and IRIS to automatically enrich IOCs with Seika.io insight.   
-The source code is available [here](https://github.com/dfir-iris/iris-seika-module). It is installed by default but needs to be configured to be enabled.  
+The source code is available [here](https://github.com/dfir-iris/iris-seika-module). It is installed by default but not registered and needs to be configured to be enabled.  
 
 ## Features
 Two types of enrichment mechanism are proposed : 

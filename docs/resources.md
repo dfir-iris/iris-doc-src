@@ -11,6 +11,8 @@ If you want to add your own resources, please open a pull request or [contact us
 - [IRIS and a bit of MISP](https://www.vanimpe.eu/2022/01/05/incident-response-case-management-dfir-iris-and-misp/) by [vanimpe](https://www.vanimpe.eu/)
 - [IRIS and Wazuh](https://wazuh.com/blog/enhancing-incident-response-with-wazuh-and-dfir-iris-integration/) 
 - [Enhancing incident response with Wazuh and DFIR-IRIS integration](https://wazuh.com/blog/enhancing-incident-response-with-wazuh-and-dfir-iris-integration/)
+- [Open Source SOC](https://tguard.org/)
+
 
 ## IRIS Modules 
 
