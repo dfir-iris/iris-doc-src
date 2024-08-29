@@ -9,6 +9,8 @@ If you want to add your own resources, please open a pull request or [contact us
 - [Building a FOSS SOC](https://nateuribe.tech/blog/foss-soc/) by [nateuribe](https://nateuribe.tech/)
 - [Integrating Wazuh with IRIS](https://stasis.dev/integrating-wazuh-with-dfir-iris-559bc9b057f1) by [stasis](https://stasis.dev/) - *Please note that Wazuh needs to send alerts on port 443 by default, not 8000 as specified in the article*
 - [IRIS and a bit of MISP](https://www.vanimpe.eu/2022/01/05/incident-response-case-management-dfir-iris-and-misp/) by [vanimpe](https://www.vanimpe.eu/)
+- [IRIS and Wazuh](https://wazuh.com/blog/enhancing-incident-response-with-wazuh-and-dfir-iris-integration/) 
+- [Enhancing incident response with Wazuh and DFIR-IRIS integration](https://wazuh.com/blog/enhancing-incident-response-with-wazuh-and-dfir-iris-integration/)
 
 ## IRIS Modules 
 
