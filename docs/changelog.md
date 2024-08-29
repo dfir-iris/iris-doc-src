@@ -2,13 +2,16 @@
 
 For upgrades instructions, please see the [Upgrades page](/operations/upgrades). 
 
-## [v2.4.11](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.11) <small>_ July 31, 2024 _</small>
+
+
+## [v2.4.12](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.12) <small>_ August 28, 2024 _</small>
 ### What's changed
 
-**Fixed**    
-* Issue with change of user password
+* Added module to support Seika.io
+* Improved IRIS Webhook module
+* Fixed spelling in editors 
 
-[Full Changelog](https://github.com/dfir-iris/iris-web/compare/v2.4.10...v2.4.11)
+[Full Changelog](https://github.com/dfir-iris/iris-web/compare/v2.4.11...v2.4.12)
 
 ## [v2.4.10](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.10) <small>_ July 29, 2024 _</small>
 ### What's changed
