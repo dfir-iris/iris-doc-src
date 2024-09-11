@@ -2,6 +2,7 @@ post:
   summary: Create a new case
   tags:
     - Cases
+    - Beta
   operationId: post-api-v2-cases
   requestBody:
     content:

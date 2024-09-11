@@ -4,6 +4,7 @@ get:
   operationId: get-api-v2-tasks
   tags:
     - Tasks
+    - Beta
   summary: Get an task
   description: 'Get an task by its identifier'
   responses:

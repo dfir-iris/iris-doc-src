@@ -4,6 +4,7 @@ get:
   operationId: get-api-v2-cases
   tags:
     - Cases
+    - Beta
   summary: Get a case
   description: 'Get a case by its identifier'
   responses:

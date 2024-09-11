@@ -4,6 +4,7 @@ get:
   operationId: get-api-v2-assets
   tags:
     - Assets
+    - Beta
   summary: Get an asset
   description: 'Get an asset by its identifier'
   responses:

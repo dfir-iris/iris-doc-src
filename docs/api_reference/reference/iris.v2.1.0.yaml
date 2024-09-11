@@ -38138,3 +38138,11 @@ components:
       description: ''
 security:
   - Bearer <bearer>: []
+tags:
+  - name: Cases
+  - name: Iocs
+  - name: Tasks
+  - name: Assets
+  - name: API
+  - name: Beta
+    description: These are all the endpoints which are still in beta. Their signature may evolve. Any feedback is welcome!

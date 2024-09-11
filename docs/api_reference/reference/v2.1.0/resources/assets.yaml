@@ -2,6 +2,7 @@ post:
   summary: Create a new asset
   tags:
     - Assets
+    - Beta
   operationId: post-api-v2-assets
   requestBody:
     content:
