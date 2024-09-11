@@ -38115,21 +38115,21 @@ paths:
   /manage/cases/filter:
     $ref: './v2.1.0/resources/manage/cases/filter.yaml'
   /api/v2/cases:
-    $ref: './v2.1.0/resources/cases.yaml'
+    $ref: './v2.1.0/resources/api/v2/cases.yaml'
   /api/v2/cases/{identifier}:
-    $ref: './v2.1.0/resources/case.yaml'
+    $ref: './v2.1.0/resources/api/v2/case.yaml'
   /api/v2/iocs:
-    $ref: './v2.1.0/resources/iocs.yaml'
+    $ref: './v2.1.0/resources/api/v2/iocs.yaml'
   /api/v2/iocs/{identifier}:
-    $ref: './v2.1.0/resources/ioc.yaml'
+    $ref: './v2.1.0/resources/api/v2/ioc.yaml'
   /api/v2/tasks:
-    $ref: './v2.1.0/resources/tasks.yaml'
+    $ref: './v2.1.0/resources/api/v2/tasks.yaml'
   /api/v2/tasks/{identifier}:
-    $ref: './v2.1.0/resources/task.yaml'
+    $ref: './v2.1.0/resources/api/v2/task.yaml'
   /api/v2/assets:
-    $ref: './v2.1.0/resources/assets.yaml'
+    $ref: './v2.1.0/resources/api/v2/assets.yaml'
   /api/v2/assets/{identifier}:
-    $ref: './v2.1.0/resources/asset.yaml'
+    $ref: './v2.1.0/resources/api/v2/asset.yaml'
 components:
   securitySchemes:
     Bearer <bearer>:
