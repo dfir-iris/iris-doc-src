@@ -3810,7 +3810,8 @@ paths:
                     message: Invalid asset ID for this case
                     status: error
       operationId: get-case-delete-asset
-      description: 'This endpoint is deprecated. Use the DELETE /api/v2/assets/{identifier} equivalent.'
+      description: 'This endpoint is deprecated. Use DELETE /api/v2/assets/{identifier} instead.'
+      deprecated: true
       security:
         - Bearer <bearer>: []
       parameters:
@@ -3822,7 +3823,6 @@ paths:
           required: true
       tags:
         - Case assets
-      deprecated: true
     parameters:
       - schema:
           type: string
@@ -4756,7 +4756,8 @@ paths:
                         object_state: 215
                         object_last_update: '2024-01-04T15:50:13.728362'
       operationId: get-case-notes-group
-      description: 'This endpoint is deprecated. Use `/case/notes/directories/filter`.'
+      description: 'This endpoint is deprecated. Use `/case/notes/directories/filter` instead.'
+      deprecated: true
       security:
         - Bearer <bearer>: []
       parameters:
@@ -4768,7 +4769,6 @@ paths:
           required: true
       tags:
         - Case notes
-      deprecated: true
     parameters: []
   '/case/notes/groups/{group_id}':
     get:
@@ -4921,6 +4921,7 @@ paths:
                     status: error
       operationId: get-case-groups-fetch
       description: 'This endpoint is deprecated and not replaced yet.'
+      deprecated: true
       security:
         - Bearer <bearer>: []
       parameters:
@@ -4932,7 +4933,6 @@ paths:
           required: true
       tags:
         - Case notes
-      deprecated: true
     parameters:
       - schema:
           type: string
@@ -5611,7 +5611,8 @@ paths:
                       group_title: Test
                       group_creationdate: '2024-01-09T15:16:19.352384'
                       group_id: 1692
-      description: 'This endpoint is deprecated. Use `/cases/notes/directories/add`. '
+      description: 'This endpoint is deprecated. Use `/cases/notes/directories/add` instead.'
+      deprecated: true
       parameters:
         - schema:
             type: string
@@ -5638,10 +5639,9 @@ paths:
               Add test group:
                 value:
                   group_title: Test
-        description: 'If the group title isn''t set, a default group name is set by the server.  '
+        description: 'If the group title isn''t set, a default group name is set by the server.'
       tags:
         - Case notes
-      deprecated: true
   /case/notes/directories/add:
     parameters: []
     post:
@@ -5864,7 +5864,8 @@ paths:
                     data: []
                     message: Group ID 3 not found
                     status: error
-      description: 'This endpoint is deprecated. Use `/case/notes/directories/update/{directory_id}`.'
+      description: 'This endpoint is deprecated. Use `/case/notes/directories/update/{directory_id}` instead.'
+      deprecated: true
       parameters:
         - schema:
             type: string
@@ -5896,7 +5897,6 @@ paths:
         description: ''
       tags:
         - Case notes
-      deprecated: true
   '/case/notes/directories/update/{directory_id}':
     parameters:
       - schema:
@@ -5995,7 +5995,8 @@ paths:
                     status: error
         '':
           description: ''
-      description: 'Update the parent and name of a notes directory. '
+      description: 'This endpoint is deprecated.'
+      deprecated: true
       parameters:
         - schema:
             type: string
@@ -6034,12 +6035,12 @@ paths:
         description: ''
       tags:
         - Case notes
-      deprecated: true
   '/case/notes/groups/delete/{group_id}':
     get:
       summary: Delete a group note
       operationId: delete-case-notes-group
-      description: 'This endpoint is deprecated. Use the POST `/case/notes/directories/delete/{directory_id}` equivalent.  '
+      description: 'This endpoint is deprecated. Use POST `/case/notes/directories/delete/{directory_id}` instead.'
+      deprecated: true
       security:
         - Bearer <bearer>: []
       parameters:
@@ -6051,7 +6052,6 @@ paths:
           required: true
       tags:
         - Case notes
-      deprecated: true
     parameters:
       - schema:
           type: string
@@ -6116,7 +6116,8 @@ paths:
                     data: []
                     message: Invalid group ID
                     status: error
-      description: 'This endpoint is deprecated. Use the POST `/case/notes/directories/delete/{directory_id}` equivalent.  '
+      description: 'This endpoint is deprecated. Use POST `/case/notes/directories/delete/{directory_id}` instead.'
+      deprecated: true
       parameters:
         - schema:
             type: integer
@@ -6126,7 +6127,6 @@ paths:
           required: true
       tags:
         - Case notes
-      deprecated: true
   '/case/notes/directories/delete/{directory_id}':
     parameters:
       - schema:
@@ -6192,7 +6192,8 @@ paths:
                     data: []
                     message: Invalid directory ID
                     status: error
-      description: 'Delete a directory and its content including the associated subdirectories and notes. '
+      description: 'This endpoint is deprecated.'
+      deprecated: true
       parameters:
         - schema:
             type: integer
@@ -6202,7 +6203,6 @@ paths:
           required: true
       tags:
         - Case notes
-      deprecated: true
   /case/notes/add:
     parameters: []
     post:
@@ -6949,8 +6949,8 @@ paths:
       responses:
         '200':
           description: OK
+      description: 'This endpoint is deprecated. Use the POST `/case/notes/delete/{note_id}` instead.'
       deprecated: true
-      description: 'This endpoint is deprecated. Use the POST equivalent. '
       tags:
         - Case notes
   /case/notes/search:
@@ -7002,7 +7002,8 @@ paths:
                         note_title: Testing note siho
                       - note_id: 88
                         note_title: Example note with code
-      description: 'This endpoint is deprecated. Use the `GET` equivalent.'
+      description: 'This endpoint is deprecated. Use the `GET /case/notes/search` instead.'
+      deprecated: true
       parameters:
         - schema:
             type: string
@@ -7036,7 +7037,6 @@ paths:
         description: ''
       tags:
         - Case notes
-      deprecated: true
     get:
       summary: Search in notes
       operationId: get-case-notes-search
@@ -8526,8 +8526,8 @@ paths:
       responses:
         '200':
           description: OK
+      description: 'This endpoint is deprecated. Use the `POST /case/ioc/delete/{ioc_id}` instead.'
       deprecated: true
-      description: 'This endpoint is deprecated. Use the POST equivalent.'
       tags:
         - Case IOC
   '/case/ioc/update/{ioc_id}':
@@ -9004,7 +9004,8 @@ paths:
                     message: string
                     status: string
       operationId: get-case-timeline-get
-      description: 'The endpoint is deprecated. Use `case/timeline/advanced-filter`.'
+      description: 'The endpoint is deprecated. Use `case/timeline/advanced-filter` instead.'
+      deprecated: true
       parameters:
         - schema:
             type: integer
@@ -9014,7 +9015,6 @@ paths:
           required: true
       security:
         - Bearer <bearer>: []
-      deprecated: true
     parameters:
       - schema:
           type: integer
@@ -9884,7 +9884,8 @@ paths:
                     message: ''
                     status: success
       operationId: get-case-timeline-get-filter
-      description: 'The endpoint is deprecated. Use `case/timeline/advanced-filter`.'
+      description: 'The endpoint is deprecated. Use `/case/timeline/advanced-filter` instead.'
+      deprecated: true
       parameters:
         - schema:
             type: integer
@@ -9894,7 +9895,6 @@ paths:
           required: true
       security:
         - Bearer <bearer>: []
-      deprecated: true
     parameters: []
   /case/timeline/state:
     get:
@@ -10847,8 +10847,8 @@ paths:
       responses:
         '200':
           description: OK
+      description: 'This endpoint is deprecated. Use `POST /case/timeline/events/delete/{event_id}` instead.'
       deprecated: true
-      description: 'This endpoint is deprecated. Use the POST equivalent.  '
       tags:
         - Case timeline
   /case/tasks/list:
@@ -11549,7 +11549,7 @@ paths:
           description: OK
       tags:
         - Case tasks
-      description: 'This endpoint is deprecated. Use the DELETE /api/v2/tasks/{identifier}. '
+      description: 'This endpoint is deprecated. Use the DELETE /api/v2/tasks/{identifier} instead.'
       deprecated: true
   /case/tasks/add:
     parameters: []
@@ -11908,7 +11908,7 @@ paths:
                     data: []
                     message: Invalid task ID for this case
                     status: error
-      description: 'Update an existing task of the case. '
+      description: 'Update an existing task of the case.'
       requestBody:
         content:
           application/json:
@@ -27998,9 +27998,9 @@ paths:
                     message: ''
                     status: success
       operationId: get-dim-tasks-list-limited
-      description: This endpoint is depreacted. Use `/dim/tasks/list/`
-      parameters: []
+      description: 'This endpoint is depreacted. Use `/dim/tasks/list/` instead.'
       deprecated: true
+      parameters: []
     parameters: []
   '/dim/hooks/options/{object_type}/list':
     get:
@@ -28835,6 +28835,7 @@ paths:
     parameters: []
     post:
       summary: Add a new case
+      description: 'This endpoint is deprecated. Use POST /api/v2/cases instead.'
       deprecated: true
       operationId: post-manage-cases-add
       responses:
@@ -28990,7 +28991,6 @@ paths:
                         - Missing data for required field.
                     message: Data error
                     status: error
-      description: 'This endpoint is deprecated. Use POST /api/v2/cases instead.'
       parameters: []
       requestBody:
         content:
@@ -29408,13 +29408,13 @@ paths:
                     data: []
                     message: Tried to close an non-existing case
                     status: error
-      description: 'This endpoint is deprecated - use the POST equivalent. '
+      description: 'This endpoint is deprecated. Use the `POST /manage/cases/close/{case_id}` instead.'
+      deprecated: true
       security:
         - Bearer <bearer>: []
       tags:
         - Manage Cases
       parameters: []
-      deprecated: true
     parameters:
       - schema:
           type: integer
@@ -29673,13 +29673,13 @@ paths:
                     data: []
                     message: Resource not found
                     status: error
-      description: 'This endpoint is deprecated. Use the POST equivalent.  '
+      description: 'This endpoint is deprecated. Use `POST /manage/cases/reopen/{case_id}` instead.'
+      deprecated: true
       security:
         - Bearer <bearer>: []
       tags:
         - Manage Cases
       parameters: []
-      deprecated: true
     parameters:
       - schema:
           type: integer
@@ -29842,7 +29842,7 @@ paths:
                     message: Tried to delete a non-existing case
                     status: error
       operationId: get-manage-cases-delete
-      description: 'This endpoint is deprecated. Use DELETE /api/v2/cases/{identifier} instead.'
+      description: 'This endpoint is deprecated. Use `DELETE /api/v2/cases/{identifier}` instead.'
       deprecated: true
       security:
         - Bearer <bearer>: []
@@ -29860,10 +29860,10 @@ paths:
       responses:
         '200':
           description: OK
-      description: 'This endpoint is deprecated. Use the POST equivalent. '
+      description: 'This endpoint is deprecated. Use `POST /manage/cases/delete/{case_id}` instead.'
+      deprecated: true
       tags:
         - Manage Cases
-      deprecated: true
   '/manage/cases/update/{case_id}':
     post:
       summary: Update a case
@@ -30967,7 +30967,7 @@ paths:
           description: OK
       tags:
         - Manage users
-      description: 'This endpoint is deprecated. Please use the POST equivalent. '
+      description: 'This endpoint is deprecated. Use the `POST /manage/users/delete/{user_id}` instead.'
       deprecated: true
       parameters:
         - schema:
@@ -33678,7 +33678,7 @@ paths:
           description: OK
       tags:
         - Manage Assets Types
-      description: 'This endpoint is deprecated. Use the POSt equivalent.  '
+      description: 'This endpoint is deprecated. Use `POST /manage/asset-type/delete/{asset_type_id}` instead.'
       deprecated: true
   /manage/asset-type/add:
     parameters: []
@@ -35170,7 +35170,7 @@ paths:
       responses:
         '200':
           description: OK
-      description: 'This endpoint is deprecated. Use the POST equivalent. '
+      description: 'This endpoint is deprecated. Use `POST /manage/ioc-types/delete/{ioc_type_id}` instead.'
       deprecated: true
       tags:
         - Manage IOC Types
