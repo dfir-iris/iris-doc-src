@@ -5,7 +5,7 @@ delete:
   tags:
     - Iocs
     - Beta
-  summary: Delete an ioc
+  summary: Delete an IOC
   description: 'Delete an IOC from the case. If the IOC is still reference in other cases than it''s only unlinked from the current case.'
   responses:
     '204':

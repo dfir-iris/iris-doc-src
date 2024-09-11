@@ -5,7 +5,7 @@ get:
   tags:
     - Tasks
     - Beta
-  summary: Get an task
+  summary: Get a task
   description: 'Get an task by its identifier'
   responses:
     '201':
