@@ -272,4 +272,4 @@ get:
   security:
     - Bearer <bearer>: []
   tags:
-    - Manage Cases
+    - Cases

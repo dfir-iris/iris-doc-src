@@ -206,4 +206,4 @@ post:
               case_name: My Case API
               case_description: A super nice description
   tags:
-    - Manage Cases
+    - Cases

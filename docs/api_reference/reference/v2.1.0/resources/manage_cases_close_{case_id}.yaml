@@ -119,7 +119,7 @@ get:
   security:
     - Bearer <bearer>: []
   tags:
-    - Manage Cases
+    - Cases
   parameters: []
 parameters:
   - schema:
@@ -230,7 +230,7 @@ post:
                   state_id: 9
                   classification_id: null
   tags:
-    - Manage Cases
+    - Cases
   description: >-
     The case will be listed under closed case. That's the only difference with
     an open case. It will stay editable and searchable. 
