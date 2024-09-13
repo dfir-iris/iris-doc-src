@@ -1,0 +1,49 @@
+post:
+  summary: Create a task
+  tags:
+    - Tasks
+    - Beta
+  operationId: post-api-v2-tasks
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            task_assignees_id:
+              type: array
+              required: true 
+              items:
+                type: integer
+            task_description:
+              type: string
+            task_status_id:
+              type: integer
+              required: true 
+            task_tags:
+              type: string
+            task_title:
+              type: string
+              required: true 
+            custom_attributes:
+              type: object
+        examples:
+          Valid request:
+            value:
+              task_assignees_id:
+                - 1
+              task_description: ''
+              task_status_id: 1
+              task_tags: ''
+              task_title: dummy title
+              custom_attributes: { }
+  responses:
+    '201':
+      description: Task successfully created
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Task.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+  description: 'Add a new task.'
