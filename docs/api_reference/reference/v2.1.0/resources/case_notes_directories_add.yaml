@@ -1,0 +1,131 @@
+parameters: []
+post:
+  summary: Add a new notes directory
+  operationId: post-case-notes-add-directory
+  responses:
+    '200':
+      description: Upon success, returns the new added group information
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              message:
+                type: string
+              data:
+                type: object
+                properties:
+                  group_lastupdate:
+                    type: string
+                  group_uuid:
+                    type: string
+                  group_title:
+                    type: string
+                  group_creationdate:
+                    type: string
+                  group_id:
+                    type: integer
+            x-examples:
+              Example 1:
+                status: success
+                message: Notes group added
+                data:
+                  group_lastupdate: '2024-01-09T15:16:19.352384'
+                  group_uuid: f337d1cb-216b-4d21-8051-cbcead9bcb4c
+                  group_title: Test
+                  group_creationdate: '2024-01-09T15:16:19.352384'
+                  group_id: 1692
+          examples:
+            Example:
+              value:
+                status: success
+                message: Notes group added
+                data:
+                  group_lastupdate: '2024-01-09T15:16:19.352384'
+                  group_uuid: f337d1cb-216b-4d21-8051-cbcead9bcb4c
+                  group_title: Test
+                  group_creationdate: '2024-01-09T15:16:19.352384'
+                  group_id: 1692
+    '':
+      content:
+        application/json:
+          schema:
+            type: object
+            x-examples:
+              Example 1:
+                status: success
+                message: Directory added
+                data:
+                  id: 34
+                  name: Test
+                  parent_id: null
+                  case_id: 1
+            properties:
+              status:
+                type: string
+              message:
+                type: string
+              data:
+                type: object
+                required:
+                  - id
+                  - name
+                  - parent_id
+                  - case_id
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  parent_id:
+                    type: 'null'
+                  case_id:
+                    type: integer
+            required:
+              - status
+              - message
+              - data
+  description: 'Create a new empty directory. '
+  parameters:
+    - schema:
+        type: string
+      in: query
+      name: cid
+      description: Case ID
+      required: true
+  security:
+    - Bearer <bearer>: []
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          x-examples:
+            example-1:
+              group_title: Test
+              cid: 5
+          properties:
+            name:
+              type: string
+              minLength: 1
+              x-stoplight:
+                id: dx798bvpo9pnc
+            parent_id:
+              type: number
+              x-stoplight:
+                id: 4jz5qdrpoepow
+              description: >-
+                An existing parent directory ID. To add at the root, do not set
+                the field or set it to null. 
+          required:
+            - name
+        examples:
+          Add test group:
+            value:
+              name: Test
+              parent_id: null
+    description: ''
+  tags:
+    - Case notes

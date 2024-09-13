@@ -1,0 +1,79 @@
+parameters:
+  - schema:
+      type: integer
+    name: user_id
+    in: path
+    required: true
+    description: User ID
+post:
+  summary: Delete a user
+  tags:
+    - Manage users
+  responses:
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  properties: {}
+              message:
+                type: string
+                minLength: 1
+              status:
+                type: string
+                minLength: 1
+            required:
+              - data
+              - message
+              - status
+            x-examples:
+              example-1:
+                data: []
+                message: Cannot delete active user
+                status: error
+          examples:
+            example-1:
+              value:
+                data: []
+                message: Cannot delete active user
+                status: error
+  operationId: post-manage-users-delete-user_id
+  description: >-
+    Only users that never done any activities can be deleted. This is to prevent
+    any internal logic errors and keep tracks of every past activities.   
+
+
+    Requires administrator role.
+  parameters:
+    - schema:
+        type: integer
+      in: query
+      name: cid
+      description: Case ID
+      required: true
+  security:
+    - Bearer <bearer>: []
+get:
+  summary: ''
+  operationId: get-manage-users-delete-user_id
+  responses:
+    '200':
+      description: OK
+  tags:
+    - Manage users
+  description: >-
+    This endpoint is deprecated. Use the `POST /manage/users/delete/{user_id}`
+    instead.
+  deprecated: true
+  parameters:
+    - schema:
+        type: integer
+      in: query
+      name: cid
+      description: Case ID

@@ -1,0 +1,50 @@
+post:
+  summary: Delete a customer
+  tags:
+    - Manage customers
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            x-examples:
+              example-1:
+                data: []
+                message: Task deleted
+                status: success
+            properties:
+              data:
+                type: array
+                items:
+                  type: object
+              message:
+                type: string
+                minLength: 1
+              status:
+                type: string
+                minLength: 1
+            required:
+              - message
+              - status
+          examples:
+            'Customer deleted ':
+              value:
+                data: []
+                message: Deleted successfully
+                status: success
+  operationId: get-customer-delete
+  description: |-
+    A customer can be deleted only if it is not referenced in a case.
+    To delete a referenced, every referencing cases musth be deleted before. 
+  security:
+    - Bearer <bearer>: []
+parameters:
+  - schema:
+      type: integer
+    name: customer_id
+    in: path
+    required: true
+    description: ID of the customer to delete
