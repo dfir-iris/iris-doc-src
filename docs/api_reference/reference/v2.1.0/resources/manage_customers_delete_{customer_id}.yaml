@@ -1,7 +1,7 @@
 post:
   summary: Delete a customer
   tags:
-    - Manage customers
+    - Customers
   responses:
     '200':
       description: OK

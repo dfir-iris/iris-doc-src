@@ -1,7 +1,7 @@
 post:
   summary: Add a customer contact
   tags:
-    - Manage customers
+    - Customers
   responses:
     '200':
       description: OK
