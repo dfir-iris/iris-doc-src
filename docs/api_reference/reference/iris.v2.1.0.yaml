@@ -38111,25 +38111,25 @@ paths:
       operationId: get-api-versions
       description: 'Returns information on API versions supported by the server. '
   /api/ping:
-    $ref: './v2.1.0/resources/api/ping.yaml'
+    $ref: ./v2.1.0/resources/api_ping.yaml
   /manage/cases/filter:
-    $ref: './v2.1.0/resources/manage/cases/filter.yaml'
+    $ref: ./v2.1.0/resources/manage_cases_filter.yaml
   /api/v2/cases:
-    $ref: './v2.1.0/resources/api/v2/cases.yaml'
+    $ref: ./v2.1.0/resources/api_v2_cases.yaml
   /api/v2/cases/{identifier}:
-    $ref: './v2.1.0/resources/api/v2/case.yaml'
+    $ref: ./v2.1.0/resources/api_v2_cases_{identifier}.yaml
   /api/v2/iocs:
-    $ref: './v2.1.0/resources/api/v2/iocs.yaml'
+    $ref: ./v2.1.0/resources/api_v2_iocs.yaml
   /api/v2/iocs/{identifier}:
-    $ref: './v2.1.0/resources/api/v2/ioc.yaml'
+    $ref: ./v2.1.0/resources/api_v2_iocs_{identifier}.yaml
   /api/v2/tasks:
-    $ref: './v2.1.0/resources/api/v2/tasks.yaml'
+    $ref: ./v2.1.0/resources/api_v2_tasks.yaml
   /api/v2/tasks/{identifier}:
-    $ref: './v2.1.0/resources/api/v2/task.yaml'
+    $ref: ./v2.1.0/resources/api_v2_tasks_{identifier}.yaml
   /api/v2/assets:
-    $ref: './v2.1.0/resources/api/v2/assets.yaml'
+    $ref: ./v2.1.0/resources/api_v2_assets.yaml
   /api/v2/assets/{identifier}:
-    $ref: './v2.1.0/resources/api/v2/asset.yaml'
+    $ref: ./v2.1.0/resources/api_v2_assets_{identifier}.yaml
 components:
   securitySchemes:
     Bearer <bearer>:

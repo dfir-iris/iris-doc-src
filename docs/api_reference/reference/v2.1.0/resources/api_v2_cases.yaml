@@ -49,8 +49,8 @@ post:
       content:
         application/json:
           schema:
-            $ref: "./v2.1.0/schemas/Case.yaml"
+            $ref: ../schemas/Case.yaml
     '400':
-      $ref: "./v2.1.0/responses/GenericError.yaml"
+      $ref: ../responses/GenericError.yaml
   description: 'Creates a new case.'
 

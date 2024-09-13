@@ -43,7 +43,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: "./v2.1.0/schemas/Task.yaml"
+            $ref: ../schemas/Task.yaml
     '400':
-      $ref: "./v2.1.0/responses/GenericError.yaml"
+      $ref: ../responses/GenericError.yaml
   description: 'Add a new task.'

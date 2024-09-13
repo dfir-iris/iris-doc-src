@@ -62,7 +62,7 @@ post:
         content:
           application/json:
             schema:
-              $ref: "./v2.1.0/schemas/Ioc.yaml"
+              $ref: ../schemas/Ioc.yaml
       '400':
-          $ref: "./v2.1.0/responses/GenericError.yaml"
+          $ref: ../responses/GenericError.yaml
     description: 'Creates a new ioc.'

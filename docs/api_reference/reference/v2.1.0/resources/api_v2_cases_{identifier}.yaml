@@ -1,5 +1,5 @@
 parameters:
-  - $ref: "./v2.10/parameters/path/Identifier.yaml"
+  - $ref: ../parameters/path/Identifier.yaml
 get:
   operationId: get-api-v2-cases
   tags:
@@ -13,9 +13,9 @@ get:
       content:
         application/json:
           schema:
-            $ref: "./v2.1.0/schemas/Case.yaml"
+            $ref: ../schemas/Case.yaml
     '404':
-      $ref: "./v2.1.0/responses/NotFound.yaml"
+      $ref: ../responses/NotFound.yaml
 delete:
   operationId: delete-api-v2-cases
   tags:
@@ -24,8 +24,8 @@ delete:
   description: This implies the deletion of everything linked to the case.
   responses:
     '204':
-      $ref: "./v2.1.0/responses/Deleted.yaml"
+      $ref: ../responses/Deleted.yaml
     '404':
-      $ref: "./v2.1.0/responses/NotFound.yaml"
+      $ref: ../responses/NotFound.yaml
     '400':
-      $ref: "./v2.1.0/responses/GenericError.yaml"
+      $ref: ../responses/GenericError.yaml

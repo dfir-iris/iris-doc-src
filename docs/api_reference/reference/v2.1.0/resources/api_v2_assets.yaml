@@ -64,7 +64,7 @@ post:
       content:
         application/json:
           schema:
-            $ref: "./v2.1.0/schemas/Asset.yaml"
+            $ref: ../schemas/Asset.yaml
     '400':
-      $ref: "./v2.1.0/responses/GenericError.yaml"
+      $ref: ../responses/GenericError.yaml
   description: 'Add a new asset.'
