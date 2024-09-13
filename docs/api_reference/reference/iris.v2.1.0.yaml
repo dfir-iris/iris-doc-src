@@ -38052,84 +38052,27 @@ paths:
       requestBody:
         content: {}
   /api/versions:
-    get:
-      summary: Get API versions
-      tags:
-        - API
-      responses:
-        '200':
-          description: OK
-          headers: {}
-          content:
-            application/json:
-              schema:
-                description: ''
-                type: object
-                properties:
-                  data:
-                    type: object
-                    properties:
-                      api_current:
-                        type: string
-                        minLength: 1
-                      api_min:
-                        type: string
-                        minLength: 1
-                      iris_current:
-                        type: string
-                        minLength: 1
-                    required:
-                      - api_current
-                      - api_min
-                      - iris_current
-                  message:
-                    type: string
-                  status:
-                    type: string
-                    minLength: 1
-                required:
-                  - data
-                  - message
-                  - status
-                x-examples:
-                  example-1:
-                    data:
-                      api_current: 1.0.2
-                      api_min: 1.0.1
-                      iris_current: v1.2.1
-                    message: ''
-                    status: success
-              examples:
-                example-1:
-                  value:
-                    data:
-                      api_current: 2.0.0
-                      api_min: 2.0.0
-                      iris_current: v2.0.0-beta-3
-                    message: ''
-                    status: success
-      operationId: get-api-versions
-      description: 'Returns information on API versions supported by the server. '
+    $ref: v2.1.0/resources/api_versions.yaml
   /api/ping:
-    $ref: ./v2.1.0/resources/api_ping.yaml
+    $ref: v2.1.0/resources/api_ping.yaml
   /manage/cases/filter:
-    $ref: ./v2.1.0/resources/manage_cases_filter.yaml
+    $ref: v2.1.0/resources/manage_cases_filter.yaml
   /api/v2/cases:
-    $ref: ./v2.1.0/resources/api_v2_cases.yaml
+    $ref: v2.1.0/resources/api_v2_cases.yaml
   /api/v2/cases/{identifier}:
-    $ref: ./v2.1.0/resources/api_v2_cases_{identifier}.yaml
+    $ref: v2.1.0/resources/api_v2_cases_{identifier}.yaml
   /api/v2/iocs:
-    $ref: ./v2.1.0/resources/api_v2_iocs.yaml
+    $ref: v2.1.0/resources/api_v2_iocs.yaml
   /api/v2/iocs/{identifier}:
-    $ref: ./v2.1.0/resources/api_v2_iocs_{identifier}.yaml
+    $ref: v2.1.0/resources/api_v2_iocs_{identifier}.yaml
   /api/v2/tasks:
-    $ref: ./v2.1.0/resources/api_v2_tasks.yaml
+    $ref: v2.1.0/resources/api_v2_tasks.yaml
   /api/v2/tasks/{identifier}:
-    $ref: ./v2.1.0/resources/api_v2_tasks_{identifier}.yaml
+    $ref: v2.1.0/resources/api_v2_tasks_{identifier}.yaml
   /api/v2/assets:
-    $ref: ./v2.1.0/resources/api_v2_assets.yaml
+    $ref: v2.1.0/resources/api_v2_assets.yaml
   /api/v2/assets/{identifier}:
-    $ref: ./v2.1.0/resources/api_v2_assets_{identifier}.yaml
+    $ref: v2.1.0/resources/api_v2_assets_{identifier}.yaml
 components:
   securitySchemes:
     Bearer <bearer>:
