@@ -1,7 +1,7 @@
 get:
   summary: Fetch an event
   tags:
-    - Case timeline
+    - Timeline
   responses:
     '200':
       description: OK

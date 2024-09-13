@@ -243,4 +243,4 @@ post:
   security:
     - Bearer <bearer>: []
   tags:
-    - Case timeline
+    - Timeline

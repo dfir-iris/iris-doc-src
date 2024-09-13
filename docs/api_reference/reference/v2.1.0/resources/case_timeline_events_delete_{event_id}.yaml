@@ -1,7 +1,7 @@
 post:
   summary: Delete an event
   tags:
-    - Case timeline
+    - Timeline
   responses:
     '200':
       description: OK
@@ -97,4 +97,4 @@ get:
     /case/timeline/events/delete/{event_id}` instead.
   deprecated: true
   tags:
-    - Case timeline
+    - Timeline
