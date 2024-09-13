@@ -1,7 +1,7 @@
 post:
   summary: Delete a case task
   tags:
-    - Case tasks
+    - Tasks
   responses:
     '200':
       description: OK
@@ -93,7 +93,7 @@ get:
     '200':
       description: OK
   tags:
-    - Case tasks
+    - Tasks
   description: >-
     This endpoint is deprecated. Use the DELETE /api/v2/tasks/{identifier}
     instead.

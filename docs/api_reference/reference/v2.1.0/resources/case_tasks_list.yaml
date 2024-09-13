@@ -1,7 +1,7 @@
 get:
   summary: Get case tasks
   tags:
-    - Case tasks
+    - Tasks
   responses:
     '200':
       description: OK

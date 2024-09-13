@@ -214,4 +214,4 @@ post:
   security:
     - Bearer <bearer>: []
   tags:
-    - Case tasks
+    - Tasks
