@@ -8,7 +8,7 @@ parameters:
 post:
   summary: Delete a user
   tags:
-    - Manage users
+    - Users
   responses:
     '400':
       description: Bad Request
@@ -66,7 +66,7 @@ get:
     '200':
       description: OK
   tags:
-    - Manage users
+    - Users
   description: >-
     This endpoint is deprecated. Use the `POST /manage/users/delete/{user_id}`
     instead.

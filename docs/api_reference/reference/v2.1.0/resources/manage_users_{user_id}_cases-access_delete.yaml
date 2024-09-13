@@ -198,4 +198,4 @@ post:
       description: Case ID
       required: true
   tags:
-    - Manage users
+    - Users
