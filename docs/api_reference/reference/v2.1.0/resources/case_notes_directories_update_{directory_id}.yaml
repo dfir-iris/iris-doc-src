@@ -7,6 +7,8 @@ parameters:
 post:
   summary: Update a notes directory
   operationId: post-case-notes-update-directory
+  tags:
+    - Notes
   responses:
     '200':
       description: Upon success, returns the new added directory information
@@ -135,5 +137,3 @@ post:
             value:
               name: Test 1
     description: ''
-  tags:
-    - Case notes

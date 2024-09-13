@@ -365,9 +365,16 @@ security:
   - Bearer <bearer>: []
 tags:
   - name: Cases
-  - name: Iocs
-  - name: Tasks
+  - name: Notes
   - name: Assets
+  - name: IOCs
+  - name: Timeline
+  - name: Tasks
+  - name: Evidences
+  - name: Alerts
+  - name: Users
+  - name: Groups
+  - name: Modules
   - name: API
   - name: Beta
     description: These are all the endpoints which are still in beta. Their signature may evolve. Any feedback is welcome!

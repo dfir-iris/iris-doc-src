@@ -1,5 +1,7 @@
 post:
   summary: Delete a note
+  tags:
+    - Notes
   responses:
     '200':
       description: OK
@@ -104,8 +106,6 @@ post:
       name: cid
       description: Case ID
       required: true
-  tags:
-    - Case notes
 parameters:
   - schema:
       type: string
@@ -116,6 +116,8 @@ parameters:
 get:
   summary: Delete note
   operationId: get-case-notes-delete-note_id
+  tags:
+    - Notes
   responses:
     '200':
       description: OK
@@ -123,5 +125,3 @@ get:
     This endpoint is deprecated. Use the POST `/case/notes/delete/{note_id}`
     instead.
   deprecated: true
-  tags:
-    - Case notes

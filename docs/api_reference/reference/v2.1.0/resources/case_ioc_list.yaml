@@ -1,5 +1,7 @@
 get:
   summary: Get list of IOCs
+  tags:
+    - IOCs
   responses:
     '200':
       description: OK
@@ -881,6 +883,4 @@ get:
       name: cid
       description: Case ID
       required: true
-  tags:
-    - Case IOC
 parameters: []

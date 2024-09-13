@@ -2,6 +2,8 @@ parameters: []
 post:
   summary: Add a new note
   operationId: post-case-notes-add
+  tags:
+    - Notes
   responses:
     '200':
       description: Upon success, returns the new added note information
@@ -205,5 +207,3 @@ post:
               note_content: Content of the note
               directory_id: 36
     description: ''
-  tags:
-    - Case notes

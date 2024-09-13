@@ -8,6 +8,8 @@ parameters:
 post:
   summary: Save a note
   operationId: post-case-notes-save
+  tags:
+    - Notes
   responses:
     '200':
       description: Upon success, returns the new added note
@@ -203,5 +205,3 @@ post:
               custom_attributes: {}
               directory_id: 4
     description: ''
-  tags:
-    - Case notes

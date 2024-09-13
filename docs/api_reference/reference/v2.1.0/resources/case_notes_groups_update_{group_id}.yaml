@@ -8,6 +8,8 @@ parameters:
 post:
   summary: Update a notes group
   operationId: post-case-notes-update-group
+  tags:
+    - Notes
   responses:
     '200':
       description: Upon success, returns the new added group information
@@ -122,5 +124,3 @@ post:
             value:
               group_title: Test
     description: ''
-  tags:
-    - Case notes

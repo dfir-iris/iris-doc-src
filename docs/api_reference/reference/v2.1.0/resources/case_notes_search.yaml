@@ -2,6 +2,8 @@ parameters: []
 post:
   summary: Search in notes
   operationId: post-case-notes-search
+  tags:
+    - Notes
   responses:
     '200':
       description: Returns a seet of notes matching the terms
@@ -80,11 +82,11 @@ post:
             value:
               search_term: term
     description: ''
-  tags:
-    - Case notes
 get:
   summary: Search in notes
   operationId: get-case-notes-search
+  tags:
+    - Notes
   responses:
     '200':
       description: OK
@@ -255,5 +257,3 @@ get:
       name: search_input
       description: Search term. Use % as wildcard
       required: true
-  tags:
-    - Case notes

@@ -3,7 +3,7 @@ parameters:
 delete:
   operationId: delete-api-v2-ioc
   tags:
-    - Iocs
+    - IOCs
     - Beta
   summary: Delete an IOC
   description: 'Delete an IOC from the case. If the IOC is still reference in other cases than it''s only unlinked from the current case.'
@@ -17,7 +17,7 @@ delete:
 get:
   operationId: get-api-v2-ioc
   tags:
-    - Iocs
+    - IOCs
   summary: Get an ioc
   description: ''
   responses:

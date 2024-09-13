@@ -1,5 +1,7 @@
 get:
   summary: Get list of groups and notes
+  tags:
+    - Notes
   responses:
     '200':
       description: OK
@@ -859,6 +861,4 @@ get:
       name: cid
       description: Case ID
       required: true
-  tags:
-    - Case notes
 parameters: []

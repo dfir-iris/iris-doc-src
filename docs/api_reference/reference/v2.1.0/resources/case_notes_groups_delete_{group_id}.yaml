@@ -1,6 +1,8 @@
 get:
   summary: Delete a group note
   operationId: delete-case-notes-group
+  tags:
+    - Notes
   description: >-
     This endpoint is deprecated. Use POST
     `/case/notes/directories/delete/{directory_id}` instead.
@@ -14,8 +16,6 @@ get:
       name: cid
       description: ID Of the case
       required: true
-  tags:
-    - Case notes
 parameters:
   - schema:
       type: string
@@ -25,6 +25,8 @@ parameters:
 post:
   summary: Delete notes group
   operationId: delete-case-notes-groups-delete
+  tags:
+    - Notes
   responses:
     '200':
       description: OK
@@ -91,5 +93,3 @@ post:
       name: cid
       description: Case ID
       required: true
-  tags:
-    - Case notes

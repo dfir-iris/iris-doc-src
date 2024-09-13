@@ -1,5 +1,7 @@
 get:
   summary: Fetch a notes group
+  tags:
+    - Notes
   responses:
     '200':
       description: OK
@@ -158,8 +160,6 @@ get:
       name: cid
       description: ID Of the case
       required: true
-  tags:
-    - Case notes
 parameters:
   - schema:
       type: string

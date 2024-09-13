@@ -2,6 +2,8 @@ parameters: []
 post:
   summary: Add a new notes group
   operationId: post-case-notes-addgroup
+  tags:
+    - Notes
   responses:
     '200':
       description: Upon success, returns the new added group information
@@ -77,5 +79,3 @@ post:
             value:
               group_title: Test
     description: If the group title isn't set, a default group name is set by the server.
-  tags:
-    - Case notes

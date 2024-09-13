@@ -1,6 +1,8 @@
 parameters: []
 post:
   summary: Add a new notes directory
+  tags:
+    - Notes
   operationId: post-case-notes-add-directory
   responses:
     '200':
@@ -127,5 +129,3 @@ post:
               name: Test
               parent_id: null
     description: ''
-  tags:
-    - Case notes
