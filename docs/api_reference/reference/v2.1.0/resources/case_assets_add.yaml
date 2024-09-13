@@ -2,6 +2,8 @@ parameters: []
 post:
   summary: Add a new asset
   operationId: post-case-asset-add
+  tags:
+    - Assets
   responses:
     '200':
       description: Upon success, returns the new added asset information
@@ -263,5 +265,3 @@ post:
               asset_description: A host description
               custom_attributes: {}
     description: ''
-  tags:
-    - Case assets

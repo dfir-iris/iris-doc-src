@@ -1,5 +1,7 @@
 get:
   summary: Delete an asset
+  tags:
+    - Assets
   responses:
     '200':
       description: OK
@@ -163,5 +165,3 @@ post:
       name: cid
       description: Case ID
       required: true
-  tags:
-    - Case assets

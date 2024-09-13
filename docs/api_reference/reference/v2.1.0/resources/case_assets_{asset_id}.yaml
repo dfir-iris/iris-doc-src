@@ -1,5 +1,7 @@
 get:
   summary: Fetch an asset
+  tags:
+    - Assets
   responses:
     '200':
       description: OK
@@ -277,8 +279,6 @@ get:
       name: cid
       description: Case ID
       required: true
-  tags:
-    - Case assets
 parameters:
   - schema:
       type: integer

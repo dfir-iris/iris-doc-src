@@ -8,6 +8,8 @@ parameters:
 post:
   summary: Update an asset
   operationId: post-case-asset-update
+  tags:
+    - Assets
   responses:
     '200':
       description: Upon success, returns the updated asset
@@ -279,5 +281,3 @@ post:
               asset_description: A host description
               custom_attributes: {}
     description: ''
-  tags:
-    - Case assets
