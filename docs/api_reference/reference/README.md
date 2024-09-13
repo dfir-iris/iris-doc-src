@@ -14,3 +14,14 @@ To ease maintenance, the openapi file is split in several files:
 
 When a new version is introduced, only the new fragments are updated and put in the new `${VERSION}` directory.
 
+# Other operations
+Lint:
+```
+npx @redocly/cli lint iris.v2.1.0.yaml
+```
+
+Bundle:
+```
+npx @redocly/cli bundle iris.v2.1.0.yaml --output <specification.yaml>
+```
+
