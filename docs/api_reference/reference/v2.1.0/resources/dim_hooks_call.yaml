@@ -72,7 +72,7 @@ post:
               targets:
                 - 10
   tags:
-    - Iris Modules
+    - Modules
   parameters:
     - schema:
         type: integer

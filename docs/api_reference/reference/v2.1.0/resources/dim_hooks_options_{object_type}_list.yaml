@@ -1,7 +1,7 @@
 get:
   summary: Iris module task list
   tags:
-    - Iris Modules
+    - Modules
   responses:
     '200':
       description: OK
