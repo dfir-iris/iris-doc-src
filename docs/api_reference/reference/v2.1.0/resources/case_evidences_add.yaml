@@ -203,5 +203,5 @@ post:
               file_description: Dummy description
     description: ''
   tags:
-    - Case evidences
+    - Evidences
 parameters: []

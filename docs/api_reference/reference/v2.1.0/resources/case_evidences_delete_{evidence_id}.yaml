@@ -1,7 +1,7 @@
 post:
   summary: Delete a case evidence
   tags:
-    - Case evidences
+    - Evidences
   responses:
     '200':
       description: OK
@@ -55,5 +55,5 @@ get:
     '200':
       description: OK
   tags:
-    - Case evidences
+    - Evidences
   description: This endpoint is depreacted. Please use the POST equivalent.

@@ -1,7 +1,7 @@
 get:
   summary: Get case evidences
   tags:
-    - Case evidences
+    - Evidences
   responses:
     '200':
       description: OK
