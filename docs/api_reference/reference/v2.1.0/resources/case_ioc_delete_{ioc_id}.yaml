@@ -79,7 +79,7 @@ post:
       description: Case ID
       required: true
   tags:
-    - Case IOC
+    - IOCs
 parameters:
   - schema:
       type: integer
@@ -97,4 +97,4 @@ get:
     instead.
   deprecated: true
   tags:
-    - Case IOC
+    - IOCs

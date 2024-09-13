@@ -146,7 +146,7 @@ get:
       description: Case ID
       required: true
   tags:
-    - Case IOC
+    - IOCs
 parameters:
   - schema:
       type: integer
