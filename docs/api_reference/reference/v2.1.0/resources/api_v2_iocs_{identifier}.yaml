@@ -1,19 +1,5 @@
 parameters:
   - $ref: ../parameters/path/Identifier.yaml
-delete:
-  operationId: delete-api-v2-ioc
-  tags:
-    - IOCs
-    - Beta
-  summary: Delete an IOC
-  description: 'Delete an IOC from the case. If the IOC is still reference in other cases than it''s only unlinked from the current case.'
-  responses:
-    '204':
-      $ref: ../responses/Deleted.yaml
-    '404':
-      $ref: ../responses/NotFound.yaml
-    '400':
-      $ref: ../responses/GenericError.yaml
 get:
   operationId: get-api-v2-ioc
   tags:
@@ -29,3 +15,17 @@ get:
             $ref: ../schemas/Ioc.yaml
       '404':
         $ref: ../responses/NotFound.yaml
+delete:
+  operationId: delete-api-v2-ioc
+  tags:
+    - IOCs
+    - Beta
+  summary: Delete an IOC
+  description: 'Delete an IOC from the case. If the IOC is still reference in other cases than it''s only unlinked from the current case.'
+  responses:
+    '204':
+      $ref: ../responses/Deleted.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
