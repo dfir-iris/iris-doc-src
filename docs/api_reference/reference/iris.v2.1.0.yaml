@@ -255,6 +255,8 @@ paths:
     $ref: v2.1.0/resources/manage_access-control_recompute-effective-user-ac_{user_id}.yaml
   /manage/users/{user_id}:
     $ref: v2.1.0/resources/manage_users_{user_id}.yaml
+  /manage/groups/add:
+    $ref: v2.1.0/resources/manage_groups_add.yaml
   /manage/groups/update/{group_id}:
     $ref: v2.1.0/resources/manage_groups_update_{group_id}.yaml
   /manage/groups/{group_id}/members/update:
@@ -372,6 +374,7 @@ tags:
   - name: Tasks
   - name: Evidences
   - name: Alerts
+  - name: Customers
   - name: Users
   - name: Groups
   - name: Modules

@@ -1,7 +1,7 @@
 post:
   summary: Update group members
   tags:
-    - Manage Groups
+    - Groups
   responses:
     '200':
       description: OK

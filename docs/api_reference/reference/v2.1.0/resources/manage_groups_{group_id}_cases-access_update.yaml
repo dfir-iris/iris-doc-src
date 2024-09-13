@@ -1,7 +1,7 @@
 post:
   summary: Set case access of a group
   tags:
-    - Manage Groups
+    - Groups
   responses:
     '200':
       description: OK
