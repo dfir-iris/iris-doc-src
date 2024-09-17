@@ -7,4 +7,5 @@ nav:
   - Hooks: hooks.md
   - Modules: modules
   - Debugging: db_debug.md
+  - UI: ui.md
 
