@@ -1121,11 +1121,7 @@ get:
                 data: []
   operationId: get-manage-cases-filter
   parameters:
-    - schema:
-        type: integer
-      in: query
-      name: page
-      description: Page number
+    - $ref: ../parameters/query/page.yaml
     - schema:
         type: integer
       in: query

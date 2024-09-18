@@ -1,9 +1,10 @@
 post:
+  operationId: post-api-v2-cases
   summary: Create a case
+  description: 'Creates a new case.'
   tags:
     - Cases
     - Beta
-  operationId: post-api-v2-cases
   requestBody:
     content:
       application/json:
@@ -52,5 +53,13 @@ post:
             $ref: ../schemas/Case.yaml
     '400':
       $ref: ../responses/GenericError.yaml
-  description: 'Creates a new case.'
+get:
+  operationId: get-api-v2-cases
+  summary: Get cases
+  description: returns a paginated list of cases
+  parameters:
+    - $ref: ../parameters/query/page.yaml
+  tags:
+    - Cases
+    - Beta
 
