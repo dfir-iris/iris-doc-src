@@ -56,6 +56,28 @@ servers:
   - url: 'http://127.0.0.1:8000'
     description: Local debug
 paths:
+  /api/v2/cases:
+    $ref: v2.1.0/resources/api_v2_cases.yaml
+  /api/v2/cases/{identifier}:
+    $ref: v2.1.0/resources/api_v2_cases_{identifier}.yaml
+  /api/v2/cases/{identifier}/iocs:
+    $ref: v2.1.0/resources/api_v2_cases_{identifier}_iocs.yaml
+  /api/v2/cases/{identifier}/assets:
+    $ref: v2.1.0/resources/api_v2_cases_{identifier}_assets.yaml
+  /api/v2/cases/{identifier}/tasks:
+    $ref: v2.1.0/resources/api_v2_cases_{identifier}_tasks.yaml
+  /api/v2/iocs:
+    $ref: v2.1.0/resources/api_v2_iocs.yaml
+  /api/v2/iocs/{identifier}:
+    $ref: v2.1.0/resources/api_v2_iocs_{identifier}.yaml
+  /api/v2/tasks:
+    $ref: v2.1.0/resources/api_v2_tasks.yaml
+  /api/v2/tasks/{identifier}:
+    $ref: v2.1.0/resources/api_v2_tasks_{identifier}.yaml
+  /api/v2/assets:
+    $ref: v2.1.0/resources/api_v2_assets.yaml
+  /api/v2/assets/{identifier}:
+    $ref: v2.1.0/resources/api_v2_assets_{identifier}.yaml
   /case/summary/update:
     $ref: v2.1.0/resources/case_summary_update.yaml
   /case/tasklog/add:
@@ -342,28 +364,6 @@ paths:
     $ref: v2.1.0/resources/api_ping.yaml
   /manage/cases/filter:
     $ref: v2.1.0/resources/manage_cases_filter.yaml
-  /api/v2/cases:
-    $ref: v2.1.0/resources/api_v2_cases.yaml
-  /api/v2/cases/{identifier}:
-    $ref: v2.1.0/resources/api_v2_cases_{identifier}.yaml
-  /api/v2/cases/{identifier}/iocs:
-    $ref: v2.1.0/resources/api_v2_cases_{identifier}_iocs.yaml
-  /api/v2/cases/{identifier}/assets:
-    $ref: v2.1.0/resources/api_v2_cases_{identifier}_assets.yaml
-  /api/v2/cases/{identifier}/tasks:
-    $ref: v2.1.0/resources/api_v2_cases_{identifier}_tasks.yaml
-  /api/v2/iocs:
-    $ref: v2.1.0/resources/api_v2_iocs.yaml
-  /api/v2/iocs/{identifier}:
-    $ref: v2.1.0/resources/api_v2_iocs_{identifier}.yaml
-  /api/v2/tasks:
-    $ref: v2.1.0/resources/api_v2_tasks.yaml
-  /api/v2/tasks/{identifier}:
-    $ref: v2.1.0/resources/api_v2_tasks_{identifier}.yaml
-  /api/v2/assets:
-    $ref: v2.1.0/resources/api_v2_assets.yaml
-  /api/v2/assets/{identifier}:
-    $ref: v2.1.0/resources/api_v2_assets_{identifier}.yaml
 components:
   securitySchemes:
     Bearer <bearer>:
