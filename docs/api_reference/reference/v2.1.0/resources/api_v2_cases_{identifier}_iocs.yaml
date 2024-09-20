@@ -62,7 +62,32 @@ post:
         content:
           application/json:
             schema:
-              $ref: ../schemas/Ioc.yaml
+              $ref: ../schemas/IOC.yaml
       '400':
           $ref: ../responses/GenericError.yaml
     description: 'Creates a new ioc.'
+get:
+  operationId: api_v2_cases_{identifier}_iocs_get
+  summary: Get a paginated list of IOCs
+  description: Returns a paginated list of IOCS. Accepts filters and sort query parameters.
+  parameters:
+    - $ref: ../parameters/query/page.yaml
+    - $ref: ../parameters/query/perPage.yaml
+    - $ref: ../parameters/query/orderBy.yaml
+    - $ref: ../parameters/query/sortDirection.yaml
+    - $ref: ../parameters/query/IOCTypeIdentifier.yaml
+    - $ref: ../parameters/query/IOCType.yaml
+    - $ref: ../parameters/query/IocTlpIdentifier.yaml
+    - $ref: ../parameters/query/IocValue.yaml
+    - $ref: ../parameters/query/IocDescription.yaml
+    - $ref: ../parameters/query/IocTags.yaml
+  responses:
+    '200':
+      description: Paginated list of IOCS
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/IOCs.yaml
+  tags:
+    - IOCs
+    - Beta

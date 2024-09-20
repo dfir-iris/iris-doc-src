@@ -13,7 +13,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../schemas/Ioc.yaml
+            $ref: ../schemas/IOC.yaml
       '404':
         $ref: ../responses/NotFound.yaml
 delete:
