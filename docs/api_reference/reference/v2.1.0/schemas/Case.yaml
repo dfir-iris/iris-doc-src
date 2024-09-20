@@ -61,36 +61,36 @@ properties:
     type: 'null'
   modification_history:
     type: object
-examples:
-  - case_name: '#1065 - My Case API'
-    case_description: A super nice description
-    case_customer: 1
-    case_soc_id: SOC_154
-    case_uuid: 435e3f47-479e-4a3c-98df-8e28b01fd2bc
-    case_id: 1065
-    severity_id: 4
-    status_id: 0
-    state:
-      state_name: 'Open'
-      state_description: 'Case is open'
-      state_id: 3
-      protected: true
-    classification_id: null
-    review_status_id: null
-    reviewer_id: null
-    owner:
-      id: 2
-      user_name: User Std 1
-      user_login: user_std_1
-      user_email: user_std_1@iris.local
-    user_id: 1
-    open_date: '2024-01-10'
-    close_date: null
-    closing_note: null
-    custom_attributes: null
-    modification_history:
-      '1704888196.578914':
-        user: administrator
-        user_id: 1
-        action: created
+example:
+  case_name: '#1065 - My Case API'
+  case_description: A super nice description
+  case_customer: 1
+  case_soc_id: SOC_154
+  case_uuid: 435e3f47-479e-4a3c-98df-8e28b01fd2bc
+  case_id: 1065
+  severity_id: 4
+  status_id: 0
+  state:
+    state_name: 'Open'
+    state_description: 'Case is open'
+    state_id: 3
+    protected: true
+  classification_id: null
+  review_status_id: null
+  reviewer_id: null
+  owner:
+    id: 2
+    user_name: User Std 1
+    user_login: user_std_1
+    user_email: user_std_1@iris.local
+  user_id: 1
+  open_date: '2024-01-10'
+  close_date: null
+  closing_note: null
+  custom_attributes: null
+  modification_history:
+    '1704888196.578914':
+      user: administrator
+      user_id: 1
+      action: created
 

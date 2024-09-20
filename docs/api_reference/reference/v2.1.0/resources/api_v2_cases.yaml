@@ -75,6 +75,13 @@ get:
     - $ref: ../parameters/query/openDateStart.yaml
     - $ref: ../parameters/query/openDateEnd.yaml
     - $ref: ../parameters/query/caseIsOpen.yaml
+  responses:
+    '200':
+      description: Paginated list of cases
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Cases.yaml
   tags:
     - Cases
     - Beta
