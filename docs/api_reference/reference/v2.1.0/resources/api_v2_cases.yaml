@@ -55,8 +55,8 @@ post:
       $ref: ../responses/GenericError.yaml
 get:
   operationId: api_v2_cases_get
-  summary: Get cases
-  description: returns a paginated list of cases
+  summary: Get a paginated list of cases
+  description: Returns a paginated list of cases. Accepts filters and sort query parameters.
   parameters:
     - $ref: ../parameters/query/page.yaml
     - $ref: ../parameters/query/perPage.yaml
