@@ -91,6 +91,8 @@ parameters:
 post:
   summary: Delete an asset
   operationId: post-case-assets-delete
+  tags:
+    - Assets
   responses:
     '200':
       description: OK
