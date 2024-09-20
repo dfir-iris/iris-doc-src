@@ -10,6 +10,7 @@ info:
      
     ## Changes
     ### Changes in v2.1.0
+    * Added GET /api/v2/cases
     * Added POST /api/v2/cases
     * Added GET /api/v2/cases/{identifier}
     * Added DELETE /api/v2/cases/{identifier}
