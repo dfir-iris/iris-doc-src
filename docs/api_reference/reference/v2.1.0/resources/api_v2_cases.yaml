@@ -1,5 +1,5 @@
 post:
-  operationId: post-api-v2-cases
+  operationId: api_v2_cases_post
   summary: Create a case
   description: 'Creates a new case.'
   tags:
@@ -54,7 +54,7 @@ post:
     '400':
       $ref: ../responses/GenericError.yaml
 get:
-  operationId: get-api-v2-cases
+  operationId: api_v2_cases_get
   summary: Get cases
   description: returns a paginated list of cases
   parameters:

@@ -1,9 +1,9 @@
 post:
+  operationId: api_v2_cases_{identifier}_assets_post
   summary: Create an asset
   tags:
     - Assets
     - Beta
-  operationId: post-api-v2-assets
   description: Add a new asset to a case.
   requestBody:
     content:

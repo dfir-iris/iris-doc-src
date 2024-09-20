@@ -1,9 +1,9 @@
 post:
+  operationId: api_v2_cases_{identifier}_iocs_post
   summary: Create an IOC
   tags:
     - IOCs
     - Beta
-  operationId: post-api-v2-ioc
   requestBody:
     content:
       application/json:

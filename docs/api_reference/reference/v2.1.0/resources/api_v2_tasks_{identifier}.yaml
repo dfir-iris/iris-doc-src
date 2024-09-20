@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/identifier.yaml
 get:
-  operationId: get-api-v2-tasks
+  operationId: api_v2_tasks_{identifier}_get
   tags:
     - Tasks
     - Beta
@@ -17,7 +17,7 @@ get:
     '404':
       $ref: ../responses/NotFound.yaml
 delete:
-  operationId: delete-api-v2-tasks
+  operationId: api_v2_tasks_{identifier}_delete
   tags:
     - Tasks
   summary: Delete an task

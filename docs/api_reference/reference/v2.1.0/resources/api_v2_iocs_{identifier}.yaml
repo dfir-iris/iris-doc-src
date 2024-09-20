@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/identifier.yaml
 get:
-  operationId: get-api-v2-ioc
+  operationId: api_v2_iocs_{identifier}_get
   tags:
     - IOCs
   summary: Get an ioc
@@ -16,7 +16,7 @@ get:
       '404':
         $ref: ../responses/NotFound.yaml
 delete:
-  operationId: delete-api-v2-ioc
+  operationId: api_v2_iocs_{identifier}_delete
   tags:
     - IOCs
     - Beta

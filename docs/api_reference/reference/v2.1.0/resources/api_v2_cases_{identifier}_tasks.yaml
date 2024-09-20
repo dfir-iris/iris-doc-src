@@ -1,9 +1,9 @@
 post:
+  operationId: api_v2_cases_{identifier}_tasks_post
   summary: Create a task
   tags:
     - Tasks
     - Beta
-  operationId: post-api-v2-tasks
   requestBody:
     content:
       application/json:
