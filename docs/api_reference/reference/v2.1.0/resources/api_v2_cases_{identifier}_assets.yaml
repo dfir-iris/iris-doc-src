@@ -1,3 +1,5 @@
+parameters:
+  - $ref: ../parameters/path/cases/identifier.yaml
 post:
   operationId: api_v2_cases_{identifier}_assets_post
   summary: Create an asset
