@@ -20,6 +20,7 @@ delete:
   operationId: api_v2_cases_{identifier}_delete
   tags:
     - Cases
+    - Beta
   summary: Delete a case
   description: This implies the deletion of everything linked to the case.
   responses:
