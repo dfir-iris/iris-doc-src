@@ -67,16 +67,10 @@ paths:
     $ref: v2.1.0/resources/api_v2_cases_{identifier}_assets.yaml
   /api/v2/cases/{identifier}/tasks:
     $ref: v2.1.0/resources/api_v2_cases_{identifier}_tasks.yaml
-  /api/v2/iocs:
-    $ref: v2.1.0/resources/api_v2_iocs.yaml
   /api/v2/iocs/{identifier}:
     $ref: v2.1.0/resources/api_v2_iocs_{identifier}.yaml
-  /api/v2/tasks:
-    $ref: v2.1.0/resources/api_v2_tasks.yaml
   /api/v2/tasks/{identifier}:
     $ref: v2.1.0/resources/api_v2_tasks_{identifier}.yaml
-  /api/v2/assets:
-    $ref: v2.1.0/resources/api_v2_assets.yaml
   /api/v2/assets/{identifier}:
     $ref: v2.1.0/resources/api_v2_assets_{identifier}.yaml
   /case/summary/update:

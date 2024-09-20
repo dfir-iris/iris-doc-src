@@ -5,7 +5,7 @@ properties:
   iocs:
     type: array
     items:
-      $ref: ../schemas/IOC.yaml
+      $ref: ../schemas/Ioc.yaml
   last_page:
     type: integer
   current_page:

@@ -62,7 +62,7 @@ post:
         content:
           application/json:
             schema:
-              $ref: ../schemas/IOC.yaml
+              $ref: ../schemas/Ioc.yaml
       '400':
           $ref: ../responses/GenericError.yaml
     description: 'Creates a new ioc.'
@@ -72,22 +72,22 @@ get:
   description: Returns a paginated list of IOCS. Accepts filters and sort query parameters.
   parameters:
     - $ref: ../parameters/query/page.yaml
-    - $ref: ../parameters/query/perPage.yaml
-    - $ref: ../parameters/query/orderBy.yaml
-    - $ref: ../parameters/query/sortDirection.yaml
-    - $ref: ../parameters/query/IOCTypeIdentifier.yaml
-    - $ref: ../parameters/query/IOCType.yaml
-    - $ref: ../parameters/query/IocTlpIdentifier.yaml
-    - $ref: ../parameters/query/IocValue.yaml
-    - $ref: ../parameters/query/IocDescription.yaml
-    - $ref: ../parameters/query/IocTags.yaml
+    - $ref: ../parameters/query/per_page.yaml
+    - $ref: ../parameters/query/order_by.yaml
+    - $ref: ../parameters/query/sort_dir.yaml
+    - $ref: ../parameters/query/ioc_type_id.yaml
+    - $ref: ../parameters/query/ioc_type.yaml
+    - $ref: ../parameters/query/ioc_tlp_id.yaml
+    - $ref: ../parameters/query/ioc_value.yaml
+    - $ref: ../parameters/query/ioc_description.yaml
+    - $ref: ../parameters/query/ioc_tags.yaml
   responses:
     '200':
       description: Paginated list of IOCS
       content:
         application/json:
           schema:
-            $ref: ../schemas/IOCs.yaml
+            $ref: ../schemas/Iocs.yaml
   tags:
     - IOCs
     - Beta

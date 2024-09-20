@@ -81,8 +81,6 @@ get:
       name: cid
       description: Case ID
       required: true
-  tags:
-    - Case assets
 parameters:
   - schema:
       type: string
