@@ -4,11 +4,12 @@ get:
   operationId: api_v2_iocs_{identifier}_get
   tags:
     - IOCs
-  summary: Get an ioc
+    - Beta
+  summary: Get an IOC
   description: ''
   responses:
     '201':
-      description: Ioc successfully found
+      description: IOC successfully found
       content:
         application/json:
           schema:
