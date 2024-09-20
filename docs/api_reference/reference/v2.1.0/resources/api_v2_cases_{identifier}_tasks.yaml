@@ -1,5 +1,5 @@
 parameters:
-  - $ref: ../parameters/path/cases/identifier.yaml
+  - $ref: ../parameters/path/cases_identifier.yaml
 post:
   operationId: api_v2_cases_{identifier}_tasks_post
   summary: Create a task

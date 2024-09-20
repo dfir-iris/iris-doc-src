@@ -1,9 +1,9 @@
 # File organization and naming conventions
 
 For a given version, the following directories may be present
-* parameters: the name of the parameter is used as file name.
-  * path
-  * query
+* parameters
+  * path: the name of the parameter is used as file name. To differentiate parameters with the same name but used in different context, the file name can be prefixed a portion of the path.
+  * query: the name of the parameter is used as file name.
 * resources: the name of the resource files follows the resource path (slashes are converted to underscores). The operationId should correspond to the name of the file to which with the http verb is added.
 * responses: in camel cases
 * schemas: in camel cases
