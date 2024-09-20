@@ -1,5 +1,5 @@
 parameters:
-  - $ref: ../parameters/path/Identifier.yaml
+  - $ref: ../parameters/path/identifier.yaml
 get:
   operationId: get-api-v2-assets
   tags:

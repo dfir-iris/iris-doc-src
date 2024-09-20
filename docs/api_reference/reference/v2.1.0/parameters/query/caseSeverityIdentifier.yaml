@@ -1,0 +1,6 @@
+in: query
+name: case_severity_id
+description: Severity identifier of the case
+schema:
+  type: string
+

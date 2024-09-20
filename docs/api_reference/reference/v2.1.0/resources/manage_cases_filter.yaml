@@ -1122,75 +1122,19 @@ get:
   operationId: get-manage-cases-filter
   parameters:
     - $ref: ../parameters/query/page.yaml
-    - schema:
-        type: integer
-      in: query
-      name: per_page
-      description: Number of results per page
-    - schema:
-        type: string
-      in: query
-      name: case_ids
-      description: 'List of cases ID, comma separated'
-    - schema:
-        type: integer
-      in: query
-      name: case_customer_id
-      description: Customer ID
-    - schema:
-        type: string
-      in: query
-      name: case_name
-      description: Name of the case
-    - schema:
-        type: string
-      in: query
-      name: case_description
-      description: Description of the case
-    - schema:
-        type: integer
-      in: query
-      name: case_classification_id
-      description: Classification of the case
-    - schema:
-        type: integer
-      in: query
-      name: case_owner_id
-      description: Owner of the case
-    - schema:
-        type: integer
-      in: query
-      name: case_opening_user_id
-      description: User opening the case
-    - schema:
-        type: string
-      in: query
-      name: case_severity_id
-      description: Severity ID of the case
-    - schema:
-        type: integer
-      in: query
-      name: case_state_id
-      description: State ID of the case
-    - schema:
-        type: string
-      in: query
-      name: case_soc_id
-      description: SOC ID
-    - schema:
-        type: string
-      in: query
-      name: sort
-      description: asc or desc
-    - schema:
-        type: string
-      in: query
-      name: start_open_date
-      description: Case opening date - lower boundary
-    - schema:
-        type: string
-      in: query
-      name: end_open_date
-      description: 'Case opening date - higher boundary '
+    - $ref: ../parameters/query/perPage.yaml
+    - $ref: ../parameters/query/caseIdentifiers.yaml
+    - $ref: ../parameters/query/sortDirection.yaml
+    - $ref: ../parameters/query/caseCustomerIdentifier.yaml
+    - $ref: ../parameters/query/caseName.yaml
+    - $ref: ../parameters/query/caseDescription.yaml
+    - $ref: ../parameters/query/caseClassificationIdentifier.yaml
+    - $ref: ../parameters/query/caseOwnerIdentifier.yaml
+    - $ref: ../parameters/query/caseCreatorIdentifier.yaml
+    - $ref: ../parameters/query/caseSeverityIdentifier.yaml
+    - $ref: ../parameters/query/caseStateIdentifier.yaml
+    - $ref: ../parameters/query/caseSOCIdentifier.yaml
+    - $ref: ../parameters/query/openDateStart.yaml
+    - $ref: ../parameters/query/openDateEnd.yaml
 parameters: []
 

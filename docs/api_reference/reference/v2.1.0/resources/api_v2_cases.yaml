@@ -59,6 +59,22 @@ get:
   description: returns a paginated list of cases
   parameters:
     - $ref: ../parameters/query/page.yaml
+    - $ref: ../parameters/query/perPage.yaml
+    - $ref: ../parameters/query/caseIdentifiers.yaml
+    - $ref: ../parameters/query/orderBy.yaml
+    - $ref: ../parameters/query/sortDirection.yaml
+    - $ref: ../parameters/query/caseCustomerIdentifier.yaml
+    - $ref: ../parameters/query/caseName.yaml
+    - $ref: ../parameters/query/caseDescription.yaml
+    - $ref: ../parameters/query/caseClassificationIdentifier.yaml
+    - $ref: ../parameters/query/caseOwnerIdentifier.yaml
+    - $ref: ../parameters/query/caseCreatorIdentifier.yaml
+    - $ref: ../parameters/query/caseSeverityIdentifier.yaml
+    - $ref: ../parameters/query/caseStateIdentifier.yaml
+    - $ref: ../parameters/query/caseSOCIdentifier.yaml
+    - $ref: ../parameters/query/openDateStart.yaml
+    - $ref: ../parameters/query/openDateEnd.yaml
+    - $ref: ../parameters/query/caseIsOpen.yaml
   tags:
     - Cases
     - Beta
