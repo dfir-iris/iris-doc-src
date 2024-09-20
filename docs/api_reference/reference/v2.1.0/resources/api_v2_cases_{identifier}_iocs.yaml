@@ -58,16 +58,16 @@ post:
                  ioc_type_id: 1
                  ioc_value: 8.8.8.8
                  user_id: 1
-    responses:
-      '201':
-        description: Ioc successfully created
-        content:
-          application/json:
-            schema:
-              $ref: ../schemas/Ioc.yaml
-      '400':
-          $ref: ../responses/GenericError.yaml
-    description: 'Creates a new ioc.'
+  responses:
+    '201':
+      description: Ioc successfully created
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Ioc.yaml
+    '400':
+        $ref: ../responses/GenericError.yaml
+  description: 'Creates a new ioc.'
 get:
   operationId: api_v2_cases_{identifier}_iocs_get
   summary: Get a paginated list of IOCs
