@@ -30,6 +30,15 @@ properties:
           type: string
         client_name:
           type: string
+  tlp:
+    type: object
+    properties:
+      tlp_id:
+        type: integer
+      tlp_name:
+        type: string
+      tlp_bscolor:
+        type: string
 example:
   ioc_type_id: 1
   ioc_tlp_id: 2
@@ -41,3 +50,7 @@ example:
     - case_id: 2
       case_name: '#2 - case name'
       client_name: IrisInitialClient
+  tlp:
+    tlp_id: 2
+    tlp_name: 'amber'
+    tlp_bscolor: 'warning'
