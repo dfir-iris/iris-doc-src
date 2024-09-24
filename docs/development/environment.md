@@ -9,12 +9,7 @@ It recommends the use of a hybrid development environment, as most of the time o
 
 ## Web-app
 
-For the webapp configuration, a specific `.ini` need to be created.  
-
-- Create `config.priv.ini` in source/app by copying the `config.docker.ini`present in the same directory. 
-- Change `PG_SERVER = db` to  `PG_SERVER = 127.0.0.1` or whatever IP is the Postgresql/docker running with
-
-That's the only configuration change needed for the app to run outside docker. The `docker.priv.ini` is already excluded in gitignore. 
+For the webapp configuration, you need to set the environment variable `POSTGRES_SERVER=127.0.0.1`
 
 Then Pycharm need to be setup with a dedicated environment, by adding a new configuration:
 
@@ -28,7 +23,7 @@ Otherwise they can be installed with the following command (issued in the virtua
 `pip3 install -r source\requirements.txt`
 
 ## Run 
-1. Spin up the docker db `docker-compose up db`
+1. Spin up the docker db `docker compose -f docker-compose.dev.yml up db`
 2. Run the Pycharm configuration you created 
 3. The interface should be accessible on [http://127.0.0.1:8000](http://127.0.0.1:8000) (and [https://127.0.0.1:4433](https://127.0.0.1:4433) if you started the nginx docker) 
 

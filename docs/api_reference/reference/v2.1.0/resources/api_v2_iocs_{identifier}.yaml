@@ -1,0 +1,32 @@
+parameters:
+  - $ref: ../parameters/path/identifier.yaml
+get:
+  operationId: api_v2_iocs_{identifier}_get
+  tags:
+    - IOCs
+    - Beta
+  summary: Get an IOC
+  description: ''
+  responses:
+    '201':
+      description: IOC successfully found
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Ioc.yaml
+      '404':
+        $ref: ../responses/NotFound.yaml
+delete:
+  operationId: api_v2_iocs_{identifier}_delete
+  tags:
+    - IOCs
+    - Beta
+  summary: Delete an IOC
+  description: 'Delete an IOC from the case. If the IOC is still reference in other cases than it''s only unlinked from the current case.'
+  responses:
+    '204':
+      $ref: ../responses/Deleted.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
