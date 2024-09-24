@@ -1,6 +1,0 @@
-schema:
-  type: integer
-name: identifier
-in: path
-required: true
-description: Identifier of the resource to retrieve
