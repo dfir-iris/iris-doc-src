@@ -17,54 +17,106 @@ The source code is available [here](https://github.com/dfir-iris/iris-webhooks-m
 
 
 ## Configuration 
-The expected configuration is a JSON file, following the structure : 
+The expected configuration is a JSON file, following the structure.  
+
+!!! info 
+    Do not copy as-is the configuration below. The comments are not valid in JSON and the configuration will be rejected. 
 
 ``` json
 {   
+    // Base URL of IRIS. This is used to set the links in the messages
     "instance_url": "<IRIS_INSTANCE_URL>",
+
+    // A list descrbing each webhook as a dict
     "webhooks": [
         {
+            // An internal name - it's never used outside of this configuration file 
             "name": "Name of the webhook for internal reference only",
-            "active": false,
-            "trigger_on": [<LIST OF HOOKS TO LISTEN TO>],
+
+            // Set true or false to disable the webhook
+            "active": true,
+
+            // A list of the webhooks to listen to. See below for the list of hooks. 
+            "trigger_on": ['on_postload_alert_create'],
+
+            // The URL of the webhook. This is the URL the module will do a POST request to. 
             "request_url": "<URL OF THE WEBHOOK>",
+
+            // Use a predefined rendering. The rendering cannot be changed. For more flexibility, set this value to false. 
+            // If set to true, `request_rendering` should be set with one of the values described after.  
             "use_rendering": true,
-            "request_rendering": "<RENDERING TYPE OF THE MESSAGE>", 
-            "request_body": {<BODY OF THE REQUET TO SEND>}
+
+            // Set to 'none' if use_rendering is disabled. 
+            // Otherwise set to one of the following value            
+            // - markdown 
+            // - markdown_slack
+            // - html
+            "request_rendering": "none", 
+
+            // The body to be POST-ed by the webhook request URL 
+            // See below for more information on the formatting.
+            "request_body": {
+                "alert_title": "[ALERT] ${{alerts.alert_title}}",
+                "alert_description": "${{alerts.alert_description}}"
+            }
         },
         {
             "name": "Another hook",
-            "active": false,
+            "active": true,
             "use_rendering": false,
-            "trigger_on": [<LIST OF HOOKS TO LISTEN TO>],
+            "trigger_on": ["on_postload_ioc_update"],
             "request_url": "<URL OF THE WEBHOOK 2>",
-            "request_rendering": "<RENDERING TYPE OF THE MESSAGE>", 
-            "request_body": {<BODY OF THE REQUEST TO SEND 2>}
+            "request_rendering": "none", 
+            "request_body": {
+                "iocs": "iocs"
+            }
         }
     ]
 }
 ```
 
-- `instance_url`: Base URL of IRIS. This is used to set the links in the messages
-- `webhooks`: A list of JSON describing the webhooks 
-For each webhook:
-    - `name`: Internal name of the webhook, this can be anything 
-    - `active`: Optional - Set to false to disable the webhook 
-    - `trigger_on`: List of [IRIS hooks](https://docs.dfir-iris.org/development/hooks/#available-hooks) for which the webhook should be triggered. Only the `on_postload_XX` hooks are supported. To enable a set of hooks without writing them all, the following keywords can be used : 
-        - `all`: Includes all `on_postload` hooks 
-        - `all_create`: Includes all `on_postload_XX_create` hooks
-        - `all_update`: Includes all `on_postload_XX_update` hooks
-    - `request_url`: The URL provided by the webhook receiver. For instance for Slack : [see how to get one](https://api.slack.com/messaging/webhooks#getting_started)
-    - `request_rendering`: URLs rendering may be specific from one receiver to another. The modules supports the following : 
-        - `markdown`: Format the message as markdown. This can be used with Discord for instance 
-        - `markdown_slack`: Format the message as markdown, with some specificities of Slack. 
-        - `html`: Format the message as HTML. 
-    - `request_body`: The request body to be sent to the webhook receiver. If `use_rendering` is true, then two markups can be used to set the content of the webhook. The request has to be in JSON format and is sent as-is after replacements of the markups. 
-        - `%TITLE%`: Is replaced with name of the case and event title, e.g "[#54 - Ransomware] IOC created"
-        - `%DESCRIPTION%`: Description of the event, e.g "UserX created IOC mimi.exe in case #54"
-    If `use_rendering` is false, then a raw json representation of the object related to the hook is available. See examples for more details.  
-    - `manual_trigger_name`: The name of the manual trigger in the UI. This should be set if the registered hook is of type `on_manual_trigger`. This name is displayed as a new menu option in the UI for the target object.  
-    - `use_rendering`: Whether the data should be formated in Markdown or not. If set to false, then the request body field can use the raw data such as `assets`. This will result in a request with the body containing the assets JSON representation related to the call of the hook. See examples for more details. 
+The `trigger_on` expects one or more of the following [IRIS hooks](https://docs.dfir-iris.org/development/hooks/#available-hooks). To enable a set of hooks without writing them all, the following keywords can be used : 
+
+- `all`: Includes all `on_postload` hooks 
+- `all_create`: Includes all `on_postload_XX_create` hooks
+- `all_update`: Includes all `on_postload_XX_update` hooks
+
+### Body configuration 
+The body contains the data to be sent in a POST request. **It has to be a valid JSON.**   
+
+#### Rendering
+If `use_rendering` is enabled, then only two markups can be used to set the content of the webhook.
+
+- `%TITLE%`: replaced with name of the case and event title, e.g "[#54 - Ransomware] IOC created". The title cannot be changed.  
+- `%DESCRIPTION%`: Description of the event, e.g "UserX created IOC mimi.exe in case #54". The description message is internal and cannot be changed. The message varies depending on the object which triggered the hook.  
+
+These markups can be placed in any values of the JSON body. As a webhook is triggered, they will be replaced by the module before the request is sent.  
+
+#### Raw body
+For more flexibility, one can use raw rendering by setting `use_rendering` to false. In such case, a raw JSON representation of the object related to the hook is available.   
+Each JSON depends on the hook. For instance for hooks related to `IOCs`, the available JSON is an object representing the IOC. For cases, a JSON object representing the case.  In most of the cases, these JOSN object matches what is documented in the API.    
+
+Either the whole object, specific fields, or both can be selected. If a field is selected, it needs to be wrapped  `${{ object }}`. For examples, the following body is a valid one:  
+
+```
+{
+    "alert_title": "[New alert] ${{alerts.alert_title}}",
+    "alert_description": "${{alerts.alert_description}}",
+    "alert_meta": "A unrelated field wit static data",
+    "alert_dates": {
+        "creation_date": "${{ alerts.alert_creation_date }}",
+        "update_date": "${{ alerts.alert_update }}"
+    }, 
+    "alert_raw": "alerts"
+}
+```
+
+The value of the field `alert_raw`, will be automatically replaced by the raw value of the alerts.   
+
+
+!!! note 
+    When using `${{}}` the value is treated as a string. Thus objects will be flatened. 
+
 
 ### Checking IRIS hooks registration
 Each time a webhook is added, the module subscribes to the specified hooks. After saving the configuration, one can check the registration was successful by filtering the `Registered hooks table` (don't forget to refresh the table).  
