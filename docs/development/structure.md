@@ -16,7 +16,7 @@ Each route offering a page (i.e non-API endpoints) thus relies on a template. Th
 For instance, for the dashboard template : `source > app > blueprints > dashboard > templates > index.html`.  
 
 ### Static contents 
-Static content is served from a common folder under `source > app > static > assets`.  It contains CSS, JS and images. These can be accessed by pages using `"/static/assets/<the-resource>"`.  
+Static content is served from a common folder under `ui`.  It contains CSS, JS and images. These can be accessed by pages using `"/static/assets/<the-resource>"`.
 
 ## SQLAlchemy 
 For the database management, the application uses [SQLAlchemy](https://www.sqlalchemy.org/) with a PostgreSQL backend. There is - normally - no need to directly deal with PostgreSQL, everything goes through SQLAlchemy.   
