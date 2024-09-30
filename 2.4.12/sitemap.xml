@@ -2,237 +2,242 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dfir-iris.org/2.4.12/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/changelog/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/contact/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/credits/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/getting_started/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/resources/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/roadmap/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/security-advisories/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/support/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/support_us/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/zqa/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/api_reference/reference/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/development/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/development/code-tips/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/development/db-migration/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/development/db_debug/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/development/environment/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/development/hooks/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/development/structure/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dfir-iris.org/2.4.12/development/ui/</loc>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/development/modules/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/development/modules/quick_start/processor/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/alerts/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/api/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/case_templates/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/configuration/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/custom_attributes/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/datastore/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/logging/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/reports/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/server_settings/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/tutorials/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/upgrades/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/access_control/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/access_control/authentication/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/access_control/groups/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/access_control/users/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/cases/case_operations/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/cases/iocs/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/cases/notes/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/cases/tasks/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/modules/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/modules/mod_management/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/modules/natives/IrisMISP/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/modules/natives/IrisSeika/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/modules/natives/IrisVT/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/operations/modules/natives/IrisWebHooks/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dfir-iris.org/2.4.12/python_client/</loc>
-         <lastmod>2024-08-29</lastmod>
+         <lastmod>2024-09-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
