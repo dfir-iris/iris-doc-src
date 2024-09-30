@@ -123,87 +123,6 @@ Each time a webhook is added, the module subscribes to the specified hooks. Afte
 
 ![Hooks registration](../../../_static/iwbh_hooks_registration.png)
 
-### Examples without rendering
-The following example is a combination of webhooks that can be used to further automate IRIS. It uses Tines as an example, but this is reproductible with any automation tool that can sent HTTP requests. A Tines story is created and is set up to receive a webhook, such as `https://anothertest.tines.io/webhook/xxxx/xxxxx`.   
-In this scenario, two IRIS webhooks are added: 
-
-- One to add an option to publish an IOC on MISP from the UI. This is an `on_manual_trigger_ioc_update` hook. 
-- Another one to send a message on Mattermost each time a new case is created. This is an `on_postload_case_create` hook. 
-
-We use the same Tines story and thus Tines webhook for both and dispatch the incoming request depending on its parameters. 
-
-# TODO 
-
-
-### Examples using rendering
-
-The following is an example of combined webhooks configuration. It can be directly imported in the module with the import feature. 
-**Please note that after import, the configuration should be opened and change to match your URL webhook receiver.**
-
-[Download webhooks combined configuration example](examples_config/IrisWebHooks_configuration_export.json) 
-
-#### Discord
-```json title="Discord webhook example - selection of events"
-{   
-    "instance_url": "https://iris.local",
-    "webhooks": [
-        {
-            "name": "Discord",
-            "trigger_on": [
-                    "on_postload_ioc_create",
-                    "on_postload_ioc_update",
-                    "on_postload_note_create",
-                    "on_postload_note_update"
-                ],
-            "request_url": "https://discord.com/api/webhooks/XXXX/XXXX",
-            "request_rendering": "markdown", 
-            "request_body": {
-                "embeds": [{
-                    "description" : "%DESCRIPTION%",
-                    "title" : "%TITLE%"
-                }]
-            }
-        }
-    ]
-}
-```
-
-#### Slack 
-```json title="Slack webhook example - all events"
-{   
-    "instance_url": "https://iris.local",
-    "webhooks": [
-        {
-            "name": "Slack",
-            "trigger_on": [
-                    "all"
-                ],
-            "request_url": "https://hooks.slack.com/services/<XXX>/<XXX>/<XXX>",
-            "request_rendering": "markdown_slack",
-            "request_body": {
-                "text": "%TITLE%",
-                "blocks": [
-                	{
-                		"type": "section",
-                		"text": {
-                			"type": "mrkdwn",
-                			"text": "*%TITLE%*"
-                		}
-                	},
-                	{
-                		"type": "section",
-                		"block_id": "section567",
-                		"text": {
-                			"type": "mrkdwn",
-                			"text": "%DESCRIPTION%"
-                		}
-                	}
-                ]
-            }
-        }
-    ]
-}
-```
 
 ## Troubleshooting 
 
@@ -217,5 +136,4 @@ As any IRIS module, IrisWebhooks is logged into DIM Tasks. You can check the sta
 
 ## Important Notes and know issues
 
-- The module is in beta and will improve over time. More customization should be brought on the messages. 
-- For a complete experience, some features are missing on the server side - such as case info and user info passed to modules. They will be added in the next release and this module will be updated. For instance, IOC events do not hold case info, assets update events do not hold the user info who made the change.  
+- For a complete experience, some features are missing on the server side - such as case info and user info passed to modules. For instance, IOC events do not hold case info, assets update events do not hold the user info who made the change.  
