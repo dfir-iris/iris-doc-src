@@ -67,6 +67,8 @@ paths:
     $ref: v2.1.0/resources/api_v2_cases_{identifier}_assets.yaml
   /api/v2/cases/{identifier}/tasks:
     $ref: v2.1.0/resources/api_v2_cases_{identifier}_tasks.yaml
+  /manage/cases/update/{case_id}:
+    $ref: v2.1.0/resources/manage_cases_update_{case_id}.yaml
   /api/v2/iocs/{identifier}:
     $ref: v2.1.0/resources/api_v2_iocs_{identifier}.yaml
   /api/v2/tasks/{identifier}:
@@ -239,8 +241,6 @@ paths:
     $ref: v2.1.0/resources/manage_cases_reopen_{case_id}.yaml
   /manage/cases/delete/{case_id}:
     $ref: v2.1.0/resources/manage_cases_delete_{case_id}.yaml
-  /manage/cases/update/{case_id}:
-    $ref: v2.1.0/resources/manage_cases_update_{case_id}.yaml
   /manage/customers/list:
     $ref: v2.1.0/resources/manage_customers_list.yaml
   /manage/customers/{customer_id}:
