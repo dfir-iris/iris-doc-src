@@ -17,6 +17,7 @@ info:
     * Added POST /api/v2/cases/{identifier}/iocs
     * Added GET /api/v2/cases/{identifier}/iocs
     * Added GET /api/v2/iocs/{identifier}
+    * Added PUT /api/v2/iocs/{identifier}
     * Added DELETE /api/v2/iocs/{identifier}
     * Added POST /api/v2/cases/{identifier}/tasks
     * Added GET /api/v2/tasks/{identifier}

@@ -12,52 +12,39 @@ post:
         schema:
           type: object
           properties:
-            data:
-              type: object
-              properties:
-                ioc_description:
-                  type: string
-                  minLength: 1
-                  description: 'A short description of the ioc. This will be the summary of the ioc.'
-                  required: true 
-                ioc_id:
-                  type: number
-                  description: 'A ioc reference'
-                  required: true 
-                ioc_misp:
-                  description: 'Misp of ioc'
-                ioc_tags:
-                  type: string
-                  description : 'Ioc tags'
-                  required: true 
-                ioc_tlp_id:
-                  type: number
-                  required: true 
-                ioc_type:
-                  type: number
-                  required: true 
-                ioc_type_id:
-                  type: number
-                  required: true 
-                ioc_value:
-                  type: string
-                  minLength: 1
-                  required: true 
-                user_id:
-                  type: number
-                  required: true 
+            ioc_value:
+              type: string
+              minLength: 1
+              required: true
+            ioc_type_id:
+              type: number
+              required: true
+            ioc_tlp_id:
+              type: number
+              required: true
+            ioc_description:
+              type: string
+              minLength: 1
+              description: 'A short description of the ioc. This will be the summary of the ioc.'
+              required: true
+            ioc_misp:
+              type:
+                - string
+                - 'null'
+              description: 'Misp of ioc'
+            ioc_tags:
+              type: string
+              description : 'Ioc tags'
+              required: true
         examples:
            Valid request:
              value:
-                 ioc_description: rewrw
-                 ioc_id: 34
-                 ioc_misp: null
-                 ioc_tags: ''
-                 ioc_tlp_id: 2
-                 ioc_type: 1
-                 ioc_type_id: 1
-                 ioc_value: 8.8.8.8
-                 user_id: 1
+               ioc_value: 8.8.8.8
+               ioc_type_id: 1
+               ioc_tlp_id: 2
+               ioc_description: rewrw
+               ioc_misp: null
+               ioc_tags: ''
   responses:
     '201':
       description: Ioc successfully created
