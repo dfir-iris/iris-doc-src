@@ -2,6 +2,34 @@
 
 For upgrades instructions, please see the [Upgrades page](/operations/upgrades). 
 
+## [v2.4.16](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.16) <small>_ November 9, 2024 _</small>
+### What's changed
+
+* Fixes an issue preventing to use hybrid mode with OIDC / Local when MFA is enabled
+
+## [v2.4.15](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.15) <small>_ November 9, 2024 _</small>
+### What's changed
+
+* Fixes memory issues in alerts leading to memory exhaustion
+* Adds filter fir alert source ref 
+* Adds new relations in alerts for future use 
+* Better UI for comments indicators 
+
+
+## [v2.4.14](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.14) <small>_ October 1st, 2024 _</small>
+### What's changed
+
+* Fixes error when deleting a case with notes revisions
+* Fixes alerts similarities associated with alternate customers 
+* Improves alerts graph by adding more info at a glance 
+* Adds additional filters on alerts 
+
+## [v2.4.13](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.13) <small>_ September 14, 2024 _</small>
+### What's changed
+
+* Add OIDC in beta 
+* Fix broken merge of alerts in assets 
+* Fix alerts and customers checks
 
 
 ## [v2.4.12](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.12) <small>_ August 28, 2024 _</small>

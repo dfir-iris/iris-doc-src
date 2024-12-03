@@ -1,5 +1,8 @@
 # Authentication 
-IRIS supports local and LDAP authentication. In both cases, users need to be declared in IRIS.   
+IRIS supports local, LDAP and OIDC authentication. 
+
+!!! note 
+    In all the cases, users need to be declared in IRIS.   
 
 ## Local authentication 
 Local authentication is the default setting. The password is validated against the local IRIS database.  
@@ -152,3 +155,36 @@ If the LDAP server requires a client certificate, it is possible to add it to th
 4. Set the `LDAP_PRIVATE_KEY` environment to the file name of the key in the `.env` file 
 5. Set the `LDAP_PRIVATE_KEY_PASSWORD` environment variable to the password of the key in the `.env` file - if needed 
 
+
+## OIDC authentication
+
+The following needs to be set in the `.env`.  
+
+```
+IRIS_AUTHENTICATION_TYPE=oidc
+OIDC_ISSUER_URL = 
+OIDC_CLIENT_ID = 
+OIDC_CLIENT_SECRET = 
+OIDC_AUTH_ENDPOINT = {optional}
+OIDC_TOKEN_ENDPOINT = {optional}
+OIDC_END_SESSION_ENDPOINT = {optional}
+OIDC_SCOPES = {optional , fallback="openid email profile"}
+OIDC_MAPPING_USERNAME = {optional ,  fallback='preferred_username'}
+OIDC_MAPPING_EMAIL = {optional , fallback='email'}
+```
+
+On the OIDC provider, the URI to set is `/oidc_authorize`.   
+
+## Advanced 
+
+### MFA 
+
+MFA can be enforced for all users by heading to the `Advanced` > `Server Settings` > `Multi-Factor Authentication` section and enabling `Enforce MFA for all users`.   
+During the next login, the user will be prompted to set up MFA.  
+
+## Hybrid setups
+
+IRIS can be use in hybrid setup as follow: 
+
+- `LDAP` and `Local` : If the user is not found in LDAP, the local database is checked. In that case, `AUTHENTICATION_LOCAL_FALLBACK` needs to be set to `True` in the `.env`. 
+- `OIDC` and `Local` : If the user is not found in OIDC, the local database is checked. In that case, `AUTHENTICATION_LOCAL_FALLBACK` needs to be set to `True` in the `.env`. 

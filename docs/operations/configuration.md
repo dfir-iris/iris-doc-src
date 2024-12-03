@@ -1,5 +1,5 @@
 # Configuration 
-Since v2.0.0 the entire configuration is done through the `.env` file at the root of the IRIS directory.  
+The entire configuration is done through the `.env` file at the root of the IRIS directory.  
 
 ## Default configuration 
 The default configuration is provided through a `.env.model` file at the root of the IRIS directory. One need to copy this file to `.env` and modify it if needed.  
@@ -17,6 +17,8 @@ We recommend using OpenSSL to generate different values from each secret:
 - `POSTGRES_ADMIN_PASSWORD`: Password of the db admin user 
 - `IRIS_SECRET_KEY`: Key used by Flask to secure the session cookies
 - `IRIS_SECURITY_PASSWORD_SALT`: A salt used for password encryption in the DB 
+
+Make sure the DB password does not contain symbols that could be interpreted as an DB url (i.e `#` and `@`). 
 
 !!! danger "Critical configuration"
     These settings are critical and need to be set properly otherwise authentication bypass may occur. 
@@ -102,4 +104,12 @@ These environment variables are availabled to be set.
 | `LDAP_PRIVATE_KEY_PASSWORD`| Auth | Yes | Password of the private key | 
 | `LDAP_AUTHENTICATION_TYPE`| Auth | Yes | Simple, SASL or NTLM | 
 | `LDAP_CUSTOM_TLS_CONFIG`| Auth | Yes | If set to true, the TLS configuration is not set by IRIS and taken from the defined environment. Default to False |
- 
+| `OIDC_ISSUER_URL`      | Auth         | Yes | The URL of the OIDC issuers                           |
+| `OIDC_CLIENT_ID`       | Auth         | Yes | The unique identifier for your client in the OIDC system  |
+| `OIDC_CLIENT_SECRET`   | Auth         | Yes | Your client's secret key for OAuth 2.0 authentication    |
+| `OIDC_AUTH_ENDPOINT`   | Auth         | Yes  | The endpoint for initiating the OIDC authentication flow  |
+| `OIDC_TOKEN_ENDPOINT`  | Auth         | Yes  | The endpoint to exchange an authorization grant for a token |
+| `OIDC_END_SESSION_ENDPOINT` |Auth    |Yes  |The endpoint that tells the OpenID Provider to end the session|
+| `OIDC_SCOPES`         | Auth         | Yes| Comma-separated list of scopes for your OIDC application       |
+| `OIDC_MAPPING_USERNAME` | Auth         | Yes | The attribute name or mapping for the username in IRIS         |
+| `OIDC_MAPPING_EMAIL`   | Auth         | Yes | The attribute name or mapping for email in IRIS              |

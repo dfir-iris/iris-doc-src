@@ -1,9 +1,7 @@
 # API
-IRIS is meant to be plug-able and be integrated with the existing environments.   
+IRIS is designed to be flexible and can easily integrate with existing environments through its extensive REST API. With the REST API, you can perform almost all tasks that are possible using the web interface. In fact, the web interface itself communicates with the API for various operations. 
 
-Through the REST API, one can do almost as much as it is possible to do through the web interface. Under the hood, the web interface is actually talking to the API. 
-
-The API endpoints are reachable on the same port as the web interface, i.e 443/HTTPS by default.
+The API endpoints are accessible via the same port as the web interface by default, which is 443 using HTTPS protocol. This means you can seamlessly interact with IRIS through APIs and web interfaces based on your requirements.  
 
 !!! hint
     A Python client is available [here](https://github.com/dfir-iris/iris-client) to ease the automation.  

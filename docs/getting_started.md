@@ -1,37 +1,31 @@
 # Quick Start
 
-The most straightforward and recommended way to use IRIS is with Docker. This is presented here. 
-
-!!! warning "Disclaimer"
-
-    IRIS is in its early stage. It can already be used in production, but please [set backups of the database](/operations/upgrades/#backing-up-db) and DO NOT expose the interface on the Internet.
-    We highly recommended the use of a private dedicated and secured network. 
-    
+Dive into the most straightforward and recommended way to use IRIS with Docker, detailed below. 
 
 ## Pre-requisites
 
-### Hardware
+### Hardware 💻
 
-IRIS does not require a lot of resources, and it can be run on a small laptop (4 cores, 8Gb of RAM). However, for large a organization and heavy usage, 
-it will need to be significantly scaled up.  
-We don't have benchmarks yet, but keep in mind that the database can grow rapidly and modules can require more resources depending on their purposes.  
+IRIS is designed to be lightweight yet scalable, running smoothly on small laptops or powering large organizations. For a typical instance of 10 users, daily usage of ~200 alerts, and a few ongoing cases: 
 
-### Docker
-Docker and docker compose are needed to build and run the project. Depending on the OS you will find all the information to install them on 
-the official website of [Docker](https://docs.docker.com/get-docker/).  
+- CPU : 8 cores
+- RAM : 32 GB
+- Storage : 1 TB fast SSD
+     
+Keep in mind that the database can grow rapidly, and modules may require more resources depending on their specific purposes. 
 
-The platform is officially supported on most Linux and MacOS. While it should work on Windows, some path needed by the containers to store permanent files might need to be changed in the dockerfiles. 
+### Docker 🐳
+IRIS requires Docker and Docker Compose for building and running the project. For installation instructions visit the official [Docker](https://docs.docker.com/get-docker/) website.   
 
-## Versioning
-Starting from version 2.0.0, Iris is following the [Semantic Versioning 2.0](https://semver.org/) guidelines.   
-The code ready for production is always tagged with a version number. 
-``alpha`` and ``beta`` versions are **not** production-ready.  
+The platform is officially supported on most Linux and MacOS systems. While it should work on Windows, some changes may be necessary to the dockerfiles for file storage paths. 
 
-**Do not use the ``master`` branch in production.** 
+## Versioning 📈
+Production-ready code is always tagged with a specific version number. Alpha and beta versions are not production-ready, so please avoid using the master branch for live environments.  
 
-## Build and Run
 
-To build and run IRIS, follow these steps:
+## Run IRIS 🏗️
+
+To run IRIS, follow these steps:
 
 1. Clone the `iris-web` repository:
 
@@ -43,7 +37,7 @@ To build and run IRIS, follow these steps:
 2. Check out the latest **non-beta** tagged version: 
 
     ```bash
-    git checkout v2.4.12
+    git checkout v2.4.13
     ```
 
 3. Copy the environment file 
@@ -68,13 +62,28 @@ To build and run IRIS, follow these steps:
     docker compose up
     ```
 
+IRIS should now be accessible on your host interface via HTTPS protocol, port 443 by default. You can access it through your web browser using `https://hostip`. 
+
+Upon first start, an administrator account will be created. The password is printed in the console output and can be found by searching for `WARNING :: post_init :: create_safe_admin` in the logs. Alternatively, you can define an admin password at the first start using the `IRIS_ADM_PASSWORD` environment variable in the `.env`. **Please note that this setting has no effect once the administrator account is created.**
+
+!!! info   
+    If you don't find the password in the logs, try running `docker compose logs app | grep "WARNING :: post_init :: create_safe_admin"`. If the logs indicate that user administrator is already created, it means the instance already started once and the password has already been set. Check the [recovery options](/docs/operations/access_control/authentication.md). 
+
 IRIS should now be available on the host interface, port 443, using HTTPS protocol by default. You can access it by navigating to https://hostip in your web browser.   
 
-By default, an administrator account is created when IRIS is started for the first time. The password is printed in the console output. You can search for ```WARNING :: post_init :: create_safe_admin :: >>>``` in the logs to find the password.   
-Running `docker compose logs app | grep 'admin'` should help to find it.   
+## Additional configuration 🛠️
 
-If you want to define an admin password at the first start, you can create and define the environment variable `IRIS_ADM_PASSWORD` in the `.env`. **This has no effect once the administrator account is created.**   
+Please see [configuration](operations/configuration.md) for more details.
 
+### Kubernetes
+
+Enterprises wishing to run their IRIS instance on their preferred managed Kubernetes platform can utilize the official Helm charts and/or Kustomize manifests for enhanced deployment and management, ensuring high availability and seamless scaling as demand fluctuates. 
+
+The deploy directory in the iris-web GitHub repository provides a starting point for deploying IRIS using EKS or GKE. Customize each variant with your values for a smooth deployment experience. 
+
+For more details, please visit the [deploy directory on GitHub](https://github.com/dfir-iris/iris-web/tree/master/deploy).  
+
+## Components 📦
 Note that IRIS is split into five Docker services, each with a different role:
 
 - `app` - iris_webapp: The core, including web server, database management, module management, etc.
@@ -84,17 +93,6 @@ Note that IRIS is split into five Docker services, each with a different role:
 - `nginx`: A NGINX reverse proxy
 
 Each service can be built independently, which is useful when developing. In this QuickStart, all services are built at once.  
-
 ![IRIS Structure](/_static/iris_structure.png){ align=center }
 
-## Additional configuration
 
-Please see [configuration](operations/configuration.md) for more details.
-
-### Kubernetes
-
-For enterprises wishing to run their instance of IRIS, utilizing the projects official Helm charts and/or Kustomize manifests, allows them to significantly enhance their deployment and management, presenting a powerful solution to streamline their IRIS deployment and management processes, efficiently running across a cluster of machines, ensuring high availability and seamless scaling as demand fluctuates.
-
-The deploy directory in the iris-web GitHub repository provides a practical starting point for deploying IRIS on their preferred managed k8s platform. We've created two variants: eks and gke, feel free to customize each with your own values.
-
-For more details, please visit the deploy directory on GitHub: [deploy](https://github.com/dfir-iris/iris-web/tree/master/deploy)
