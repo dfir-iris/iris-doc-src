@@ -1,0 +1,59 @@
+post:
+  summary: Delete a case evidence
+  tags:
+    - Evidences
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            description: ''
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  properties: {}
+              message:
+                type: string
+                minLength: 1
+              status:
+                type: string
+                minLength: 1
+            required:
+              - data
+              - message
+              - status
+            x-examples:
+              example-1:
+                data: []
+                message: Evidence deleted
+                status: success
+  operationId: post-case-evidences-delete
+  description: 'Remove an evidence from the case. '
+  parameters:
+    - schema:
+        type: integer
+      in: query
+      name: cid
+      description: Case ID
+      required: true
+  security:
+    - Bearer <bearer>: []
+parameters:
+  - schema:
+      type: integer
+    name: evidence_id
+    in: path
+    required: true
+    description: Evidence ID
+get:
+  summary: Delete an evidence
+  operationId: get-case-evidences-delete-evidence_id
+  responses:
+    '200':
+      description: OK
+  tags:
+    - Evidences
+  description: This endpoint is depreacted. Please use the POST equivalent.
