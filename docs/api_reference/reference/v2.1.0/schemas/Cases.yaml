@@ -2,7 +2,7 @@ type: object
 properties:
   total:
     type: integer
-  cases:
+  data:
     type: array
     items:
       $ref: ../schemas/Case.yaml
