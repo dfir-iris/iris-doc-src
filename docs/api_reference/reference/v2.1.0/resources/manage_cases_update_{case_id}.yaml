@@ -1,5 +1,7 @@
 post:
   summary: Update a case
+  description: This endpoint is deprecated. Use PUT /api/v2/cases/{identifier} instead.
+  deprecated: true
   tags:
     - Cases
   responses:
@@ -174,7 +176,6 @@ post:
                 message: Tried to delete a non-existing case
                 status: error
   operationId: get-manage-cases-update
-  description: 'Update informations of a case. '
   security:
     - Bearer <bearer>: []
   parameters: []

@@ -16,6 +16,73 @@ get:
             $ref: ../schemas/Case.yaml
     '404':
       $ref: ../responses/NotFound.yaml
+put:
+  operationId: api_v2_cases_{identifier}_put
+  tags:
+    - Cases
+    - Beta
+  summary: Update a case
+  description: 'Update informations of a case'
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            case_name:
+              type: string
+            case_soc_id:
+              type: string
+            classification_id:
+              type: integer
+            owner_id:
+              type: integer
+            state_id:
+              type: integer
+            severity_id:
+              type: integer
+            status_id:
+              $ref: ../schemas/status_id.yaml
+            protagonists:
+              type: array
+              items:
+                type: object
+                properties:
+                  role:
+                    type: string
+                  name:
+                    type: string
+                  contact:
+                    type: string
+            custom_attributes:
+              type: object
+        examples:
+          Example 1:
+            value:
+              case_name: 'A new case name'
+              case_soc_id: soc_id_demo
+              classification_id: 2
+              owner_id: 2
+              state_id: 3
+              severity_id: 4
+              status_id: 1
+              protagonists:
+                - role: Lead
+                  name: administrator
+                  contact: administrator@iris.local
+              case_tags: tag1,tag2
+              custom_attributes: {}
+  responses:
+    '200':
+      description: Case successfully updated
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Case.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
 delete:
   operationId: api_v2_cases_{identifier}_delete
   tags:
