@@ -1,5 +1,5 @@
 parameters:
-  - $ref: ../parameters/path/cases_identifier.yaml
+  - $ref: ../parameters/path/case_identifier.yaml
   - $ref: ../parameters/path/identifier.yaml
 get:
   operationId: api_v2_cases_{case_identifier}_iocs_{identifier}_get

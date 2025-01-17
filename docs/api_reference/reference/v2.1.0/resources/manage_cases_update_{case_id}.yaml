@@ -1,6 +1,6 @@
 post:
   summary: Update a case
-  description: This endpoint is deprecated. Use PUT /api/v2/cases/{identifier} instead.
+  description: This endpoint is deprecated. Use PUT /api/v2/cases/{case_identifier} instead.
   deprecated: true
   tags:
     - Cases

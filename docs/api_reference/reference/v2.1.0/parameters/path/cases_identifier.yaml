@@ -1,7 +1,0 @@
-in: path
-name: identifier
-required: true
-description: Case identifier
-schema:
-  type: integer
-

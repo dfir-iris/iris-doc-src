@@ -71,7 +71,7 @@ post:
                 status: error
   operationId: get-manage-cases-delete
   description: >-
-    This endpoint is deprecated. Use `DELETE /api/v2/cases/{identifier}`
+    This endpoint is deprecated. Use `DELETE /api/v2/cases/{case_identifier}`
     instead.
   deprecated: true
   security:
