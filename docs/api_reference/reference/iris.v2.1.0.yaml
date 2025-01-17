@@ -38,7 +38,9 @@ info:
     * Deprecated POST /case/assets/add in favor of POST /api/v2/cases/{identifier}/assets
     * Deprecated GET /case/assets/{asset_id} in favor of GET /api/v2/assets/{identifier}
     * Deprecated DELETE /case/assets/delete/{asset_id} in favor of DELETE /api/v2/assets/{identifier}
-    
+    * Added documentation of missing GET /manage/severities/list
+    * Added documentation of missing GET /manage/tlp/list
+    * Added documentation of missing GET /manage/event-categories/list
 
     ### Changes in v2.0.0
     This version introduces access control. Every request now needs to have the `cid=x` parameter in the URI.  
@@ -360,6 +362,8 @@ paths:
     $ref: v2.1.0/resources/manage_evidence-types_update_{type_id}.yaml
   /manage/evidence-types/delete/{state_id}:
     $ref: v2.1.0/resources/manage_evidence-types_delete_{state_id}.yaml
+  /manage/event-categories/list:
+    $ref: v2.1.0/resources/manage_event-categories_list.yaml
   /api/versions:
     $ref: v2.1.0/resources/api_versions.yaml
   /api/ping:
