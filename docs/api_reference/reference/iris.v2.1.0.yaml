@@ -346,6 +346,8 @@ paths:
     $ref: v2.1.0/resources/manage_case-states_update_{state_id}.yaml
   /manage/case-states/delete/{state_id}:
     $ref: v2.1.0/resources/manage_case-states_delete_{state_id}.yaml
+  /manage/severities/list:
+    $ref: v2.1.0/resources/manage_severities_list.yaml
   /manage/evidence-types/list:
     $ref: v2.1.0/resources/manage_evidence-types_list.yaml
   /manage/evidence-types/{type_id}:
