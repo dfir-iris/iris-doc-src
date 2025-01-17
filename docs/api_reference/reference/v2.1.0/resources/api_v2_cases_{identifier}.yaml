@@ -58,6 +58,8 @@ put:
                     type: string
                   contact:
                     type: string
+            case_tags:
+              type: string
             custom_attributes:
               type: object
         examples:
