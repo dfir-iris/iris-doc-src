@@ -320,6 +320,8 @@ paths:
     $ref: v2.1.0/resources/manage_ioc-types_add.yaml
   /manage/ioc-types/update/{ioc_type_id}:
     $ref: v2.1.0/resources/manage_ioc-types_update_{ioc_type_id}.yaml
+  /manage/tlp/list:
+    $ref: v2.1.0/resources/manage_tlp_list.yaml
   /manage/case-templates/add:
     $ref: v2.1.0/resources/manage_case-templates_add.yaml
   /manage/case-templates/update/{template_id}:
