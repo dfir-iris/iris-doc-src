@@ -4,7 +4,7 @@ properties:
     type: string
   case_description:
     type: string
-  case_customer:
+  case_customer_id:
     type: integer
   case_soc_id:
     type: string
@@ -61,7 +61,7 @@ properties:
 example:
   case_name: '#1065 - My Case API'
   case_description: A super nice description
-  case_customer: 1
+  case_customer_id: 1
   case_soc_id: SOC_154
   case_uuid: 435e3f47-479e-4a3c-98df-8e28b01fd2bc
   case_id: 1065
