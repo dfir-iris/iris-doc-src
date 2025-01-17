@@ -13,9 +13,9 @@ properties:
   case_id:
     type: integer
   severity_id:
-    $ref: ../schemas/severity_id.yaml
+    $ref: ../schemas/case_severity_id.yaml
   status_id:
-    $ref: ../schemas/status_id.yaml
+    $ref: ../schemas/case_status_id.yaml
   state:
     type: object
     properties:

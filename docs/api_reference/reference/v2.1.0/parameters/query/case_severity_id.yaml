@@ -2,5 +2,5 @@ in: query
 name: case_severity_id
 description: Severity identifier of the case
 schema:
-  $ref: ../../schemas/severity_id.yaml
+  $ref: ../../schemas/case_severity_id.yaml
 
