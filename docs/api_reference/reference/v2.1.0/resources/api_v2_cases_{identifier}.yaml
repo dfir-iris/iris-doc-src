@@ -45,6 +45,8 @@ put:
               $ref: ../schemas/status_id.yaml
             case_customer:
               type: integer
+            reviewer_id:
+              type: integer
             protagonists:
               type: array
               items:
@@ -69,6 +71,7 @@ put:
               severity_id: 4
               status_id: 1
               case_customer: 1
+              reviewer_id: 2
               protagonists:
                 - role: Lead
                   name: administrator
