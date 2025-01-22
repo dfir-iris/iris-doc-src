@@ -41,6 +41,7 @@ info:
     * Deprecated GET /case/ioc/{ioc_id}  in favor of GET /api/v2/iocs/{identifier}
     * Deprecated DELETE /case/ioc/delete/{ioc_id} in favor of DELETE /api/v2/iocs/{identifier}
     * Deprecated POST /case/tasks/add in favor of POST /api/v2/cases/{case_identifier}/tasks
+    * Deprecated POST /case/tasks/update/{task_id} in favor of PUT /api/v2/cases/{case_identifier}/tasks/{identifier}
     * Deprecated GET /case/tasks/{task_id} in favor of GET /api/v2/tasks/{identifier}
     * Deprecated DELETE /case/tasks/delete/{task_id} in favor of DELETE /api/v2/tasks/{identifier}
     * Deprecated POST /case/assets/add in favor of POST /api/v2/cases/{case_identifier}/assets
