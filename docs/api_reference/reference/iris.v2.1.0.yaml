@@ -23,6 +23,7 @@ info:
     * Added GET /api/v2/cases/{case_identifier}/assets/{identifier}
     * Added DELETE /api/v2/cases/{case_identifier}/assets/{identifier}
     * Added GET /api/v2/cases/{case_identifier}/tasks/{identifier}
+    * Added PUT /api/v2/cases/{case_identifier}/tasks/{identifier}
     * Added DELETE /api/v2/cases/{case_identifier}/tasks/{identifier}
     * Added GET /api/v2/iocs/{identifier}
     * Added PUT /api/v2/iocs/{identifier}
