@@ -1,0 +1,31 @@
+parameters:
+  - $ref: ../parameters/path/case_identifier.yaml
+  - $ref: ../parameters/path/identifier.yaml
+get:
+  operationId: api_v2_cases_{case_identifier}_tasks_{identifier}_get
+  tags:
+    - Tasks
+    - Beta
+  summary: Get a task
+  description: 'Get an task by its identifier'
+  responses:
+    '201':
+      description: tasks successfully found
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Task.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+delete:
+  operationId: api_v2_cases_{case_identifier}_tasks_{identifier}_delete
+  tags:
+    - Tasks
+  summary: Delete an task
+  responses:
+    '204':
+      $ref: ../responses/Deleted.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml

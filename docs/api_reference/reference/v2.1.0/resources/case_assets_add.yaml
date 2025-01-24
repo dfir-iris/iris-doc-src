@@ -188,7 +188,7 @@ post:
                 message: Data error
                 status: error
   description: >-
-    This endpoint is deprecated. Use POST /api/v2/cases/{identifier}/assets
+    This endpoint is deprecated. Use POST /api/v2/cases/{case_identifier}/assets
     instead.
   deprecated: true
   parameters:

@@ -12,31 +12,42 @@ info:
     ### Changes in v2.1.0
     * Added POST /api/v2/cases
     * Added GET /api/v2/cases
-    * Added GET /api/v2/cases/{identifier}
-    * Added DELETE /api/v2/cases/{identifier}
-    * Added POST /api/v2/cases/{identifier}/iocs
-    * Added GET /api/v2/cases/{identifier}/iocs
+    * Added GET /api/v2/cases/{case_identifier}
+    * Added PUT /api/v2/cases/{case_identifier}
+    * Added DELETE /api/v2/cases/{case_identifier}
+    * Added POST /api/v2/cases/{case_identifier}/iocs
+    * Added GET /api/v2/cases/{case_identifier}/iocs
+    * Added GET /api/v2/cases/{case_identifier}/iocs/{identifier}
+    * Added PUT /api/v2/cases/{case_identifier}/iocs/{identifier}
+    * Added DELETE /api/v2/cases/{case_identifier}/iocs/{identifier}
+    * Added GET /api/v2/cases/{case_identifier}/assets/{identifier}
+    * Added DELETE /api/v2/cases/{case_identifier}/assets/{identifier}
+    * Added GET /api/v2/cases/{case_identifier}/tasks/{identifier}
+    * Added DELETE /api/v2/cases/{case_identifier}/tasks/{identifier}
     * Added GET /api/v2/iocs/{identifier}
     * Added PUT /api/v2/iocs/{identifier}
     * Added DELETE /api/v2/iocs/{identifier}
-    * Added POST /api/v2/cases/{identifier}/tasks
+    * Added POST /api/v2/cases/{case_identifier}/tasks
     * Added GET /api/v2/tasks/{identifier}
     * Added DELETE /api/v2/tasks/{identifier}
-    * Added POST /api/v2/cases/{identifier}/assets
+    * Added POST /api/v2/cases/{case_identifier}/assets
     * Added GET /api/v2/assets/{identifier}
     * Added DELETE /api/v2/assets/{identifier}
     * Deprecated POST /manage/cases/add in favor of POST /api/v2/cases
-    * Deprecated POST /manage/cases/delete/{case_id} in favor of DELETE /api/v2/cases/{identifier}
-    * Deprecated POST /case/ioc/add in favor of POST /api/v2/cases/{identifier}/iocs
+    * Deprecated POST /manage/cases/update in favor of PUT /api/v2/cases/{case_identifier}
+    * Deprecated POST /manage/cases/delete/{case_id} in favor of DELETE /api/v2/cases/{case_identifier}
+    * Deprecated POST /case/ioc/add in favor of POST /api/v2/cases/{case_identifier}/iocs
     * Deprecated GET /case/ioc/{ioc_id}  in favor of GET /api/v2/iocs/{identifier}
     * Deprecated DELETE /case/ioc/delete/{ioc_id} in favor of DELETE /api/v2/iocs/{identifier}
-    * Deprecated POST /case/tasks/add in favor of POST /api/v2/cases/{identifier}/tasks
+    * Deprecated POST /case/tasks/add in favor of POST /api/v2/cases/{case_identifier}/tasks
     * Deprecated GET /case/tasks/{task_id} in favor of GET /api/v2/tasks/{identifier}
     * Deprecated DELETE /case/tasks/delete/{task_id} in favor of DELETE /api/v2/tasks/{identifier}
-    * Deprecated POST /case/assets/add in favor of POST /api/v2/cases/{identifier}/assets
+    * Deprecated POST /case/assets/add in favor of POST /api/v2/cases/{case_identifier}/assets
     * Deprecated GET /case/assets/{asset_id} in favor of GET /api/v2/assets/{identifier}
     * Deprecated DELETE /case/assets/delete/{asset_id} in favor of DELETE /api/v2/assets/{identifier}
-    
+    * Added documentation of missing GET /manage/severities/list
+    * Added documentation of missing GET /manage/tlp/list
+    * Added documentation of missing GET /manage/event-categories/list
 
     ### Changes in v2.0.0
     This version introduces access control. Every request now needs to have the `cid=x` parameter in the URI.  
@@ -60,14 +71,20 @@ servers:
 paths:
   /api/v2/cases:
     $ref: v2.1.0/resources/api_v2_cases.yaml
-  /api/v2/cases/{identifier}:
-    $ref: v2.1.0/resources/api_v2_cases_{identifier}.yaml
-  /api/v2/cases/{identifier}/iocs:
-    $ref: v2.1.0/resources/api_v2_cases_{identifier}_iocs.yaml
-  /api/v2/cases/{identifier}/assets:
-    $ref: v2.1.0/resources/api_v2_cases_{identifier}_assets.yaml
-  /api/v2/cases/{identifier}/tasks:
-    $ref: v2.1.0/resources/api_v2_cases_{identifier}_tasks.yaml
+  /api/v2/cases/{case_identifier}:
+    $ref: v2.1.0/resources/api_v2_cases_{case_identifier}.yaml
+  /api/v2/cases/{case_identifier}/iocs:
+    $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_iocs.yaml
+  /api/v2/cases/{case_identifier}/iocs/{identifier}:
+    $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_iocs_{identifier}.yaml
+  /api/v2/cases/{case_identifier}/assets:
+    $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_assets.yaml
+  /api/v2/cases/{case_identifier}/assets/{identifier}:
+    $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_assets_{identifier}.yaml
+  /api/v2/cases/{case_identifier}/tasks:
+    $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_tasks.yaml
+  /api/v2/cases/{case_identifier}/tasks/{identifier}:
+    $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_tasks_{identifier}.yaml
   /manage/cases/update/{case_id}:
     $ref: v2.1.0/resources/manage_cases_update_{case_id}.yaml
   /api/v2/iocs/{identifier}:
@@ -318,6 +335,8 @@ paths:
     $ref: v2.1.0/resources/manage_ioc-types_add.yaml
   /manage/ioc-types/update/{ioc_type_id}:
     $ref: v2.1.0/resources/manage_ioc-types_update_{ioc_type_id}.yaml
+  /manage/tlp/list:
+    $ref: v2.1.0/resources/manage_tlp_list.yaml
   /manage/case-templates/add:
     $ref: v2.1.0/resources/manage_case-templates_add.yaml
   /manage/case-templates/update/{template_id}:
@@ -344,6 +363,8 @@ paths:
     $ref: v2.1.0/resources/manage_case-states_update_{state_id}.yaml
   /manage/case-states/delete/{state_id}:
     $ref: v2.1.0/resources/manage_case-states_delete_{state_id}.yaml
+  /manage/severities/list:
+    $ref: v2.1.0/resources/manage_severities_list.yaml
   /manage/evidence-types/list:
     $ref: v2.1.0/resources/manage_evidence-types_list.yaml
   /manage/evidence-types/{type_id}:
@@ -354,6 +375,8 @@ paths:
     $ref: v2.1.0/resources/manage_evidence-types_update_{type_id}.yaml
   /manage/evidence-types/delete/{state_id}:
     $ref: v2.1.0/resources/manage_evidence-types_delete_{state_id}.yaml
+  /manage/event-categories/list:
+    $ref: v2.1.0/resources/manage_event-categories_list.yaml
   /api/versions:
     $ref: v2.1.0/resources/api_versions.yaml
   /api/ping:

@@ -1,5 +1,5 @@
 in: path
-name: identifier
+name: case_identifier
 required: true
 description: Case identifier
 schema:
