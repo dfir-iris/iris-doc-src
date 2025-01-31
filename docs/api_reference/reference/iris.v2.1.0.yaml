@@ -32,6 +32,7 @@ info:
     * Added DELETE /api/v2/tasks/{identifier}
     * Added POST /api/v2/cases/{case_identifier}/assets
     * Added GET /api/v2/cases/{case_identifier}/assets/{identifier}
+    * Added PUT /api/v2/cases/{case_identifier}/assets/{identifier}
     * Added DELETE /api/v2/cases/{case_identifier}/assets/{identifier}
     * Added GET /api/v2/assets/{identifier}
     * Added DELETE /api/v2/assets/{identifier}
