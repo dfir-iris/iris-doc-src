@@ -23,7 +23,7 @@ post:
             asset_id:
               type: integer
             analysis_status_id:
-              type: integer
+              $ref: ../schemas/analysis_status_id.yaml
             custom_attributes:
               type: object
             asset_info:
