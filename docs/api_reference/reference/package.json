@@ -1,0 +1,10 @@
+{
+  "name": "api-doc",
+  "description": "OpenAPI documentation",
+  "config": {
+    "latest": "v2.1.0"
+  },
+  "dependencies": {
+    "@redocly/cli": "^1.28.1"
+  }
+}
