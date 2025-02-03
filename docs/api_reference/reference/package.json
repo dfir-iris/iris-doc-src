@@ -4,6 +4,18 @@
   "config": {
     "latest": "v2.1.0"
   },
+  "scripts": {
+    "build:v1.0.0": "npx @redocly/cli build-docs iris.v1.0.0.yaml -o _static/iris_api_reference_v1.0.0.html",
+    "build:v1.0.1": "npx @redocly/cli build-docs iris.v1.0.1.yaml -o _static/iris_api_reference_v1.0.1.html",
+    "build:v1.0.2": "npx @redocly/cli build-docs iris.v1.0.2.yaml -o _static/iris_api_reference_v1.0.2.html",
+    "build:v1.0.3": "npx @redocly/cli build-docs iris.v1.0.3.yaml -o _static/iris_api_reference_v1.0.3.html",
+    "build:v2.0.0": "npx @redocly/cli build-docs iris.v2.0.0.yaml -o _static/iris_api_reference_v2.0.0.html",
+    "build:v2.0.1": "npx @redocly/cli build-docs iris.v2.0.1.yaml -o _static/iris_api_reference_v2.0.1.html",
+    "build:v2.0.2": "npx @redocly/cli build-docs iris.v2.0.2.yaml -o _static/iris_api_reference_v2.0.2.html",
+    "build:v2.0.4": "npx @redocly/cli build-docs iris.v2.0.4.yaml -o _static/iris_api_reference_v2.0.4.html",
+    "build:v2.1.0": "npx @redocly/cli build-docs iris.v2.1.0.yaml -o _static/iris_api_reference_v2.1.0.html",
+    "build": "npm run build:v1.0.0; npm run build:v1.0.1; npm run build:v1.0.2; npm run build:v1.0.3; npm run build:v2.0.0; npm run build:v2.0.1; npm run build:v2.0.2; npm run build:v2.0.4; npm run build:v2.1.0"
+  },
   "dependencies": {
     "@redocly/cli": "^1.28.1"
   }
