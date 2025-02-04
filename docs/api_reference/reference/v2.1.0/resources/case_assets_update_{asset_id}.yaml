@@ -7,6 +7,8 @@ parameters:
     description: ID of the asset to update
 post:
   summary: Update an asset
+  description: This endpoint is deprecated. Use PUT /api/v2/cases/{case_identifier}/assets/{identifier} instead.
+  deprecated: true
   operationId: post-case-asset-update
   tags:
     - Assets
@@ -206,7 +208,6 @@ post:
                     - Invalid analysis status ID
                 message: Data error
                 status: error
-  description: Update an asset
   parameters:
     - schema:
         type: integer
@@ -280,4 +281,3 @@ post:
               asset_tags: anewtag
               asset_description: A host description
               custom_attributes: {}
-    description: ''
