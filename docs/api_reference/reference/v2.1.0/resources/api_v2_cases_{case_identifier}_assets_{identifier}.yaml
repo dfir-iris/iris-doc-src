@@ -41,7 +41,7 @@ put:
             asset_info:
               type: string
             asset_compromise_status_id:
-              type: string
+              $ref: ../schemas/asset_compromise_status_id.yaml
             analysis_status_id:
               $ref: ../schemas/analysis_status_id.yaml
             ioc_links:
@@ -65,7 +65,7 @@ put:
               asset_domain: iris.local
               asset_ip: 127.0.0.1
               asset_info: ''
-              asset_compromise_status_id: '1'
+              asset_compromise_status_id: 1
               analysis_status_id: '3'
               ioc_links:
                 - '30'
