@@ -26,9 +26,9 @@ properties:
       - string
       - 'null'
   asset_compromise_status_id:
-    type:
-      - integer
-      - 'null'
+    anyOf:
+      - $ref: ../schemas/asset_compromise_status_id.yaml
+      - type: 'null'
   asset_ip:
     type:
       - string
