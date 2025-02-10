@@ -32,6 +32,7 @@ info:
     * Added DELETE /api/v2/tasks/{identifier}
     * Added POST /api/v2/cases/{case_identifier}/assets
     * Added GET /api/v2/cases/{case_identifier}/assets/{identifier}
+    * Added PUT /api/v2/cases/{case_identifier}/assets/{identifier}
     * Added DELETE /api/v2/cases/{case_identifier}/assets/{identifier}
     * Added GET /api/v2/assets/{identifier}
     * Added DELETE /api/v2/assets/{identifier}
@@ -47,6 +48,7 @@ info:
     * Deprecated GET /case/tasks/{task_id} in favor of GET /api/v2/tasks/{identifier}
     * Deprecated DELETE /case/tasks/delete/{task_id} in favor of DELETE /api/v2/tasks/{identifier}
     * Deprecated POST /case/assets/add in favor of POST /api/v2/cases/{case_identifier}/assets
+    * Deprecated POST /case/assets/update/{cur_id} in favor of PUT /api/v2/cases/{case_identifier}/assets/{identifier}
     * Deprecated GET /case/assets/{asset_id} in favor of GET /api/v2/assets/{identifier}
     * Deprecated DELETE /case/assets/delete/{asset_id} in favor of DELETE /api/v2/assets/{identifier}
     * Added documentation of missing GET /manage/severities/list
