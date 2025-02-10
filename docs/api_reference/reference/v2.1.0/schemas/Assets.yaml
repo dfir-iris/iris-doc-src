@@ -11,7 +11,7 @@ properties:
   current_page:
     type: integer
   next_page:
-    type: 
+    type:
       - integer
       - null
 
