@@ -26,9 +26,9 @@ properties:
       - string
       - 'null'
   asset_compromise_status_id:
-    type:
-      - integer
-      - 'null'
+    anyOf:
+      - $ref: ../schemas/asset_compromise_status_id.yaml
+      - type: 'null'
   asset_ip:
     type:
       - string
@@ -36,14 +36,18 @@ properties:
   asset_type_id:
     type: integer
   analysis_status:
-    type: object
+    type:
+      - object
+      - 'null'
     properties:
       id:
         type: integer
       name:
         type: string
   analysis_status_id:
-    $ref: ../schemas/analysis_status_id.yaml
+    anyOf:
+      - $ref: ../schemas/analysis_status_id.yaml
+      - type: 'null'
   asset_tags:
     type:
       - string
