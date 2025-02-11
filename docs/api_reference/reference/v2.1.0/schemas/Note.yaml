@@ -35,6 +35,8 @@ properties:
     type: string
   note_case_id:
     type: integer
+  modification_history:
+    $ref: ../schemas/modification_history.yaml
 example:
   note_id: 16
   note_uuid: ecbbd74e-85fd-4268-a9a4-c069677e6677
@@ -50,4 +52,8 @@ example:
   note_creationdate: '2024-03-27T18:14:21.245694'
   note_lastupdate: '2024-03-27T18:14:21.245724'
   note_case_id: 1
-  
+  modification_history:
+    user: 'administrator'
+    user_id: 1
+    action: 'created note'
+
