@@ -35,6 +35,7 @@ info:
     * Added GET /api/v2/cases/{case_identifier}/assets/{identifier}
     * Added PUT /api/v2/cases/{case_identifier}/assets/{identifier}
     * Added DELETE /api/v2/cases/{case_identifier}/assets/{identifier}
+    * Added POST /api/v2/cases/{case_identifier}/notes
     * Added GET /api/v2/assets/{identifier}
     * Added DELETE /api/v2/assets/{identifier}
     * Deprecated POST /manage/cases/add in favor of POST /api/v2/cases
@@ -88,6 +89,8 @@ paths:
     $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_assets.yaml
   /api/v2/cases/{case_identifier}/assets/{identifier}:
     $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_assets_{identifier}.yaml
+  /api/v2/cases/{case_identifier}/notes:
+    $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_notes.yaml
   /api/v2/cases/{case_identifier}/tasks:
     $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_tasks.yaml
   /api/v2/cases/{case_identifier}/tasks/{identifier}:
