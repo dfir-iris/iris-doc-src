@@ -1,11 +1,9 @@
 get:
   summary: Delete a group note
   operationId: delete-case-notes-group
+  description: This endpoint is deprecated. Use [POST /case/notes/directories/delete/{directory_id}](#tag/Notes/operation/delete-case-notes-directories-delete) instead.
   tags:
     - Notes
-  description: >-
-    This endpoint is deprecated. Use POST
-    `/case/notes/directories/delete/{directory_id}` instead.
   deprecated: true
   security:
     - Bearer <bearer>: []
