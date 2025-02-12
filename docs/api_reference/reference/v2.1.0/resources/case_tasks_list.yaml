@@ -1,6 +1,6 @@
 get:
   summary: Get case tasks
-  description: This endpoint is deprecated. Use GET /api/v2/cases/{case_identifier}/tasks
+  description: This endpoint is deprecated. Use [GET /api/v2/cases/{case_identifier}/tasks](#tag/Tasks/operation/api_v2_cases_{case_identifier}_tasks_get)
   deprecated: true
   tags:
     - Tasks
