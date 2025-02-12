@@ -55,6 +55,7 @@ info:
     * Deprecated GET /case/assets/{asset_id} in favor of GET /api/v2/assets/{identifier}
     * Deprecated DELETE /case/assets/delete/{asset_id} in favor of DELETE /api/v2/assets/{identifier}
     * Deprecated POST /case/notes/add in favor of POST /api/v2/cases/{case_identifier}/notes
+    * Deprecated GET /case/notes/{identifier} in favor of GET /api/v2/cases/{case_identifier}/notes/{identifier}
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list

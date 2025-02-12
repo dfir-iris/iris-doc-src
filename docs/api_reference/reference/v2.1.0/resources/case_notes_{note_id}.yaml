@@ -1,5 +1,7 @@
 get:
   summary: Fetch a note
+  description: This endpoint is deprecated. Use [GET /api/v2/cases/{case_identifier}/notes/{identifier}](#tag/Notes/operation/api_v2_cases_{case_identifier}_notes_{identifier}_get) instead.
+  deprecated: true
   tags:
     - Notes
   responses:
@@ -186,7 +188,6 @@ get:
                 message: Invalid note ID
                 status: error
   operationId: get-case-notes-fetch
-  description: 'Fetch the content and metadata of a note. '
   security:
     - Bearer <bearer>: []
   parameters:
