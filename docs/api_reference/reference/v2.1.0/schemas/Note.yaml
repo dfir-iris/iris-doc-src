@@ -30,9 +30,9 @@ properties:
   note_user:
     type: integer
   note_creationdate:
-    type: string
+    $ref: ../schemas/iso_date.yaml
   note_lastupdate:
-    type: string
+    $ref: ../schemas/iso_date.yaml
   note_case_id:
     type: integer
   modification_history:
