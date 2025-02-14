@@ -50,7 +50,7 @@ post:
                   group_title: Test
                   group_creationdate: '2024-01-09T15:16:19.352384'
                   group_id: 1692
-  description: This endpoint is deprecated. Use `/cases/notes/directories/add` instead.
+  description: This endpoint is deprecated. Use [POST /cases/notes/directories/add](#tag/Notes/operation/post-case-notes-add-directory) instead.
   deprecated: true
   parameters:
     - schema:

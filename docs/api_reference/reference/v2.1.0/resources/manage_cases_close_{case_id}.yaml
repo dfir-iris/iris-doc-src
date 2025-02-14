@@ -112,9 +112,7 @@ get:
                 data: []
                 message: Tried to close an non-existing case
                 status: error
-  description: >-
-    This endpoint is deprecated. Use the `POST /manage/cases/close/{case_id}`
-    instead.
+  description: This endpoint is deprecated. Use the [POST /manage/cases/close/{case_id}](#tag/Cases/operation/post-manage-cases-close-case_id) instead.
   deprecated: true
   security:
     - Bearer <bearer>: []

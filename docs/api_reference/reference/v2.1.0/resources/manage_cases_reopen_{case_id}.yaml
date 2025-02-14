@@ -144,9 +144,7 @@ get:
                 data: []
                 message: Resource not found
                 status: error
-  description: >-
-    This endpoint is deprecated. Use `POST /manage/cases/reopen/{case_id}`
-    instead.
+  description: This endpoint is deprecated. Use [POST /manage/cases/reopen/{case_id}](#tag/Cases/operation/post-manage-cases-reopen-case_id) instead.
   deprecated: true
   security:
     - Bearer <bearer>: []

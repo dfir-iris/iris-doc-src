@@ -121,7 +121,5 @@ get:
   responses:
     '200':
       description: OK
-  description: >-
-    This endpoint is deprecated. Use the POST `/case/notes/delete/{note_id}`
-    instead.
+  description: This endpoint is deprecated. Use the [POST /case/notes/delete/{note_id}](#tag/Notes/operation/post-case-delete-note) instead.
   deprecated: true

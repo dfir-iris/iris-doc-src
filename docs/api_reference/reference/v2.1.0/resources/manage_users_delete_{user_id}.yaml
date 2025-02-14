@@ -67,9 +67,7 @@ get:
       description: OK
   tags:
     - Users
-  description: >-
-    This endpoint is deprecated. Use the `POST /manage/users/delete/{user_id}`
-    instead.
+  description: This endpoint is deprecated. Use the [POST /manage/users/delete/{user_id}](#tag/Users/operation/post-manage-users-delete-user_id) instead.
   deprecated: true
   parameters:
     - schema:

@@ -92,9 +92,7 @@ get:
   responses:
     '200':
       description: OK
-  description: >-
-    This endpoint is deprecated. Use `POST
-    /case/timeline/events/delete/{event_id}` instead.
+  description: This endpoint is deprecated. Use [POST /case/timeline/events/delete/{event_id}](#tag/Timeline/operation/post-case-timeline-delete) instead.
   deprecated: true
   tags:
     - Timeline

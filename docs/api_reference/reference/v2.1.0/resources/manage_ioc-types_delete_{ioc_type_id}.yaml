@@ -83,9 +83,7 @@ get:
   responses:
     '200':
       description: OK
-  description: >-
-    This endpoint is deprecated. Use `POST
-    /manage/ioc-types/delete/{ioc_type_id}` instead.
+  description: This endpoint is deprecated. Use [POST /manage/ioc-types/delete/{ioc_type_id}](#tag/Manage-IOC-Types/operation/get-manage-ioc_type-delete) instead.
   deprecated: true
   tags:
     - Manage IOC Types

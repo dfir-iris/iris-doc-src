@@ -1,0 +1,20 @@
+parameters:
+  - $ref: ../parameters/path/case_identifier.yaml
+  - $ref: ../parameters/path/identifier.yaml
+get:
+  operationId: api_v2_cases_{case_identifier}_notes_{identifier}_get
+  tags:
+    - Notes
+    - Beta
+  summary: Get a Note
+  description: ''
+  responses:
+    '200':
+      description: Note successfully found
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Note.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+
