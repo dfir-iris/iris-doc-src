@@ -850,7 +850,7 @@ get:
                     object_state: 215
                     object_last_update: '2024-01-04T15:50:13.728362'
   operationId: get-case-notes-group
-  description: This endpoint is deprecated. Use `/case/notes/directories/filter` instead.
+  description: This endpoint is deprecated. Use [GET /case/notes/directories/filter](#tag/Notes/operation/get-case-notes-directories) instead.
   deprecated: true
   security:
     - Bearer <bearer>: []
