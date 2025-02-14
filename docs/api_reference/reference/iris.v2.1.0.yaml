@@ -59,6 +59,7 @@ info:
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list
+    * Added documentation of missing GET /manage/compromise-status/list
 
     ### Changes in v2.0.0
     This version introduces access control. Every request now needs to have the `cid=x` parameter in the URI.  
@@ -378,6 +379,8 @@ paths:
     $ref: v2.1.0/resources/manage_case-states_update_{state_id}.yaml
   /manage/case-states/delete/{state_id}:
     $ref: v2.1.0/resources/manage_case-states_delete_{state_id}.yaml
+  /manage/compromise-status/list:
+    $ref: v2.1.0/resources/manage_compromise-status_list.yaml
   /manage/severities/list:
     $ref: v2.1.0/resources/manage_severities_list.yaml
   /manage/evidence-types/list:
