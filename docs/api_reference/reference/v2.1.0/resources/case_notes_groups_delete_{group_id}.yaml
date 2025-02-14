@@ -80,9 +80,7 @@ post:
                 data: []
                 message: Invalid group ID
                 status: error
-  description: >-
-    This endpoint is deprecated. Use POST
-    `/case/notes/directories/delete/{directory_id}` instead.
+  description: This endpoint is deprecated. Use [POST /case/notes/directories/delete/{directory_id}](#tag/Notes/operation/delete-case-notes-directories-delete) instead.
   deprecated: true
   parameters:
     - schema:
