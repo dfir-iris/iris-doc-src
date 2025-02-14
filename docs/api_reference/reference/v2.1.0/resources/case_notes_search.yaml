@@ -48,7 +48,7 @@ post:
                     note_title: Testing note siho
                   - note_id: 88
                     note_title: Example note with code
-  description: This endpoint is deprecated. Use the `GET /case/notes/search` instead.
+  description: This endpoint is deprecated. Use the [GET /case/notes/search](#tag/Notes/operation/get-case-notes-search) instead.
   deprecated: true
   parameters:
     - schema:
