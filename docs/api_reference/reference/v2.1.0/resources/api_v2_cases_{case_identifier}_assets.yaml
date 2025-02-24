@@ -1,5 +1,5 @@
 parameters:
-  - $ref: ../parameters/path/cases_identifier.yaml
+  - $ref: ../parameters/path/case_identifier.yaml
 post:
   operationId: api_v2_cases_{identifier}_assets_post
   summary: Create an asset
@@ -23,7 +23,7 @@ post:
             asset_id:
               type: integer
             analysis_status_id:
-              type: integer
+              $ref: ../schemas/analysis_status_id.yaml
             custom_attributes:
               type: object
             asset_info:
@@ -42,7 +42,7 @@ post:
             asset_tags:
               type: string
             asset_compromise_status_id:
-              type: integer
+              $ref: ../schemas/asset_compromise_status_id.yaml
             asset_uuid:
               type: string
             asset_domain:
@@ -54,7 +54,7 @@ post:
               asset_domain: iris.local
               asset_ip: 127.0.0.1
               asset_info: ''
-              asset_compromise_status_id: '1'
+              asset_compromise_status_id: 1
               analysis_status_id: '3'
               ioc_links:
                 - '30'
@@ -70,3 +70,22 @@ post:
             $ref: ../schemas/Asset.yaml
     '400':
       $ref: ../responses/GenericError.yaml
+get:
+  operationId: api_v2_cases_{identifier}_assets_get
+  summary: Get a paginated list of assets
+  description: Returns a paginated list of assets.
+  parameters:
+    - $ref: ../parameters/query/page.yaml
+    - $ref: ../parameters/query/per_page.yaml
+    - $ref: ../parameters/query/order_by.yaml
+    - $ref: ../parameters/query/sort_dir.yaml
+  responses:
+    '200':
+      description: Paginated list of Assets
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Assets.yaml
+  tags:
+    - Assets
+    - Beta

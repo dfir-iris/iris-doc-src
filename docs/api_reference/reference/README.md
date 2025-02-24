@@ -13,6 +13,7 @@ For a given version, the following directories may be present
 
 To generate the documentation:
 ```
+npm ci
 npx @redocly/cli build-docs iris.v2.1.0.yaml
 ```
 

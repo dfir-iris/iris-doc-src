@@ -2,7 +2,7 @@ type: object
 properties:
   total:
     type: integer
-  iocs:
+  data:
     type: array
     items:
       $ref: ../schemas/Ioc.yaml

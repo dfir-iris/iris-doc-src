@@ -7,38 +7,51 @@ properties:
   asset_name:
     type: string
   asset_type:
-    type: string
-  asset_icon_compromised:
-    type: string
-  asset_icon_not_compromised:
-    type: string
+    type: object
+    properties:
+      asset_name:
+        type: string
+      asset_description:
+        type: string
+      asset_icon_compromised:
+        type: string
+      asset_icon_not_compromised:
+        type: string
   asset_description:
-    type: string
-  asset_domain:
-    type: string
-  asset_compromise_status_id:
     type:
-      - integer
+      - string
       - 'null'
-    asset_ip:
-        type: string
-    asset_type_id:
+  asset_domain:
+    type:
+      - string
+      - 'null'
+  asset_compromise_status_id:
+    anyOf:
+      - $ref: ../schemas/asset_compromise_status_id.yaml
+      - type: 'null'
+  asset_ip:
+    type:
+      - string
+      - 'null'
+  asset_type_id:
+    type: integer
+  analysis_status:
+    type:
+      - object
+      - 'null'
+    properties:
+      id:
         type: integer
-    analysis_status:
+      name:
         type: string
-    analysis_status_id:
-          type: integer
-    asset_tags:
-          type: string
-    link:
-      type: array
-      items:
-          type: object
-      state:
-          type: object
-          required:
-            - object_state
-            - object_last_update
+  analysis_status_id:
+    anyOf:
+      - $ref: ../schemas/analysis_status_id.yaml
+      - type: 'null'
+  asset_tags:
+    type:
+      - string
+      - 'null'
 examples:
   - asset_id: 57
     asset_uuid: c6598fd0-836a-4fc4-87c1-6f03348eadeb
@@ -54,5 +67,4 @@ examples:
     analysis_status: Unspecified
     analysis_status_id: 1
     asset_tags: ''
-    link: [ ]
-    ioc_links: null
+

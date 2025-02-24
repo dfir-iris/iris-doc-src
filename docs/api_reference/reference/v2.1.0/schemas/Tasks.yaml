@@ -5,7 +5,7 @@ properties:
   data:
     type: array
     items:
-      $ref: ../schemas/Case.yaml
+      $ref: ../schemas/Task.yaml
   last_page:
     type: integer
   current_page:

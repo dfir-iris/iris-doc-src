@@ -1,5 +1,7 @@
 get:
   summary: Get case tasks
+  description: This endpoint is deprecated. Use GET /api/v2/cases/{case_identifier}/tasks
+  deprecated: true
   tags:
     - Tasks
   responses:
@@ -405,7 +407,6 @@ get:
                     object_state: 120
                     object_last_update: '2024-01-07T13:57:05.599620'
   operationId: get-case-tasks-get
-  description: Get a list of all the tasks in the case
   security:
     - Bearer <bearer>: []
   parameters:
