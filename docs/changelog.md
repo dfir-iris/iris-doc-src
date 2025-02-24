@@ -2,6 +2,25 @@
 
 For upgrades instructions, please see the [Upgrades page](/operations/upgrades). 
 
+## [v2.4.20](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.20) <small>_ January 15, 2025 _</small>
+### What's changed
+
+* Fixes an issue with alerts correlation that increases creation delay as more and more alerts are added to the system.
+
+## [v2.4.19](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.19) <small>_ December 21, 2024 _</small>
+### What's changed
+
+* Issue with `and_` conditions in alerts [#656](https://github.com/dfir-iris/iris-web/pull/656)
+* Issue when logging out in local auth mode.
+
+## [v2.4.17](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.17) <small>_ December 9, 2024 _</small>
+### What's changed
+
+* Upgraded `psycopg2` to the latest version to avoid the issue "SCRAM authentication" by @rios0rios0 in [#637](https://github.com/dfir-iris/iris-web/pull/637)
+* Added `severity_id` for creating cases by @Vladimir-A in [#653](https://github.com/dfir-iris/iris-web/pull/653)
+* Fixed OIDC login issue.
+* Added filtering options in the timeline.
+
 ## [v2.4.16](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.16) <small>_ November 9, 2024 _</small>
 ### What's changed
 
