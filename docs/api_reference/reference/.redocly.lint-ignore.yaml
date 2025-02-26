@@ -404,8 +404,6 @@ v2.1.0/resources/alerts_update_{alert_id}.yaml:
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/alerts_batch_update.yaml:
-  operation-operationId-unique:
-    - '#/post/post-case-update-alert'
   no-invalid-media-type-examples:
     - >-
       #/post/requestBody/content/application~1json/examples/example-1/value/updates/alert_source_content/entities/2/id
@@ -758,8 +756,6 @@ v2.1.0/resources/manage_case-states_update_{state_id}.yaml:
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/manage_case-states_delete_{state_id}.yaml:
-  operation-operationId-unique:
-    - '#/post/post-manage-case-classifications-classification_id-update'
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/manage_compromise-status_list.yaml:

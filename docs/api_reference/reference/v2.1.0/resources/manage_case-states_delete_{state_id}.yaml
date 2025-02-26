@@ -7,7 +7,7 @@ parameters:
     description: State ID
 post:
   summary: Delete a case classification
-  operationId: post-manage-case-classifications-classification_id-update
+  operationId: manage_case-states_delete_(state_id)_post
   responses:
     '200':
       description: OK
