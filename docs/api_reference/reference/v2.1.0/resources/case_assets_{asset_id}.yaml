@@ -268,7 +268,7 @@ get:
                 message: Invalid asset ID for this case
                 status: error
   operationId: get-case-asset
-  description: This endpoint is deprecated. Use [GET /api/v2/assets/{identifier}](#tag/Assets/operation/api_v2_assets_{identifier}_get) instead.
+  description: This endpoint is deprecated. Use [GET /api/v2/assets/{identifier}](#tag/Assets/operation/api_v2_assets_(identifier)_get) instead.
   deprecated: true
   security:
     - Bearer <bearer>: []
