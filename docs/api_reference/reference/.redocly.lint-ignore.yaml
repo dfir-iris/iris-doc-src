@@ -22,17 +22,6 @@ iris.v2.1.0.yaml:
 v2.1.0/resources/api_v2_cases.yaml:
   operation-4xx-response:
     - '#/get/responses'
-  struct:
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/case_name/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/case_description/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/case_customer/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/case_soc_id/required
-  no-invalid-media-type-examples:
-    - '#/post/requestBody/content/application~1json/schema'
 v2.1.0/resources/api_v2_cases_{case_identifier}.yaml:
   operation-operationId-url-safe:
     - '#/get/operationId'
