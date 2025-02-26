@@ -5,6 +5,8 @@
     "latest": "v2.1.0"
   },
   "scripts": {
+    "check:v2.1.0": "npx @redocly/cli lint iris.v2.1.0.yaml",
+    "check": "npm run check:v2.1.0",
     "build:v1.0.0": "npx @redocly/cli build-docs iris.v1.0.0.yaml -o _static/iris_api_reference_v1.0.0.html",
     "build:v1.0.1": "npx @redocly/cli build-docs iris.v1.0.1.yaml -o _static/iris_api_reference_v1.0.1.html",
     "build:v1.0.2": "npx @redocly/cli build-docs iris.v1.0.2.yaml -o _static/iris_api_reference_v1.0.2.html",
