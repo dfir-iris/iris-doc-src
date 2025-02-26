@@ -799,8 +799,6 @@ v2.1.0/resources/manage_case-classifications_update_{classification_id}.yaml:
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/manage_case-classifications_delete_{classification_id}.yaml:
-  operation-operationId-unique:
-    - '#/post/post-manage-case-classifications-classification_id-update'
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/manage_case-states_list.yaml:
