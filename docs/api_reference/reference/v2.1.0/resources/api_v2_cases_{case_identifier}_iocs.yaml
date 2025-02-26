@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/case_identifier.yaml
 post:
-  operationId: api_v2_cases_{identifier}_iocs_post
+  operationId: api_v2_cases_(identifier)_iocs_post
   summary: Create an IOC
   tags:
     - IOCs
@@ -56,7 +56,7 @@ post:
         $ref: ../responses/GenericError.yaml
   description: 'Creates a new ioc.'
 get:
-  operationId: api_v2_cases_{identifier}_iocs_get
+  operationId: api_v2_cases_(identifier)_iocs_get
   summary: Get a paginated list of IOCs
   description: Returns a paginated list of IOCS. Accepts filters and sort query parameters.
   parameters:

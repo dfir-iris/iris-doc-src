@@ -187,7 +187,7 @@ post:
                     - Invalid analysis status ID
                 message: Data error
                 status: error
-  description: This endpoint is deprecated. Use [POST /api/v2/cases/{case_identifier}/assets](#tag/Assets/operation/api_v2_cases_{identifier}_assets_post) instead.
+  description: This endpoint is deprecated. Use [POST /api/v2/cases/{case_identifier}/assets](#tag/Assets/operation/api_v2_cases_(identifier)_assets_post) instead.
   deprecated: true
   parameters:
     - schema:

@@ -2,7 +2,7 @@ parameters:
   - $ref: ../parameters/path/case_identifier.yaml
   - $ref: ../parameters/path/identifier.yaml
 get:
-  operationId: api_v2_cases_{case_identifier}_tasks_{identifier}_get
+  operationId: api_v2_cases_(case_identifier)_tasks_(identifier)_get
   tags:
     - Tasks
     - Beta
@@ -18,7 +18,7 @@ get:
     '404':
       $ref: ../responses/NotFound.yaml
 put:
-  operationId: api_v2_cases_{case_identifier}_tasks_{identifier}_put
+  operationId: api_v2_cases_(case_identifier)_tasks_(identifier)_put
   tags:
     - Tasks
     - Beta
@@ -70,7 +70,7 @@ put:
     '400':
       $ref: ../responses/GenericError.yaml
 delete:
-  operationId: api_v2_cases_{case_identifier}_tasks_{identifier}_delete
+  operationId: api_v2_cases_(case_identifier)_tasks_(identifier)_delete
   tags:
     - Tasks
   summary: Delete an task

@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/case_identifier.yaml
 post:
-  operationId: api_v2_cases_{identifier}_assets_post
+  operationId: api_v2_cases_(identifier)_assets_post
   summary: Create an asset
   tags:
     - Assets
@@ -71,7 +71,7 @@ post:
     '400':
       $ref: ../responses/GenericError.yaml
 get:
-  operationId: api_v2_cases_{identifier}_assets_get
+  operationId: api_v2_cases_(identifier)_assets_get
   summary: Get a paginated list of assets
   description: Returns a paginated list of assets.
   parameters:

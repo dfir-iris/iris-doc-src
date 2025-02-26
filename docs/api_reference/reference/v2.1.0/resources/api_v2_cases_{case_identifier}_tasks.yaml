@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/case_identifier.yaml
 post:
-  operationId: api_v2_cases_{case_identifier}_tasks_post
+  operationId: api_v2_cases_(case_identifier)_tasks_post
   summary: Create a task
   tags:
     - Tasks
@@ -50,7 +50,7 @@ post:
       $ref: ../responses/GenericError.yaml
   description: 'Add a new task.'
 get:
-  operationId: api_v2_cases_{case_identifier}_tasks_get
+  operationId: api_v2_cases_(case_identifier)_tasks_get
   summary: Get a paginated list of tasks
   description: Returns a paginated list of tasks.
   parameters:

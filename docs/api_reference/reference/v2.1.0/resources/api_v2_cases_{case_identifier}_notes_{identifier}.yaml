@@ -2,7 +2,7 @@ parameters:
   - $ref: ../parameters/path/case_identifier.yaml
   - $ref: ../parameters/path/identifier.yaml
 get:
-  operationId: api_v2_cases_{case_identifier}_notes_{identifier}_get
+  operationId: api_v2_cases_(case_identifier)_notes_(identifier)_get
   tags:
     - Notes
     - Beta

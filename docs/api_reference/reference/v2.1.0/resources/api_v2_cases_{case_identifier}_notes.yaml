@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/case_identifier.yaml
 post:
-  operationId: api_v2_cases_{identifier}_notes_post
+  operationId: api_v2_cases_(identifier)_notes_post
   summary: Add a new note
   tags:
     - Notes
