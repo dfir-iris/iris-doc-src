@@ -33,9 +33,6 @@ v2.1.0/resources/api_v2_cases.yaml:
       #/post/requestBody/content/application~1json/schema/properties/case_soc_id/required
   no-invalid-media-type-examples:
     - '#/post/requestBody/content/application~1json/schema'
-v2.1.0/schemas/Cases.yaml:
-  struct:
-    - '#/properties/next_page/type/1'
 v2.1.0/resources/api_v2_cases_{case_identifier}.yaml:
   operation-operationId-url-safe:
     - '#/get/operationId'
@@ -60,9 +57,6 @@ v2.1.0/resources/api_v2_cases_{case_identifier}_iocs.yaml:
       #/post/requestBody/content/application~1json/schema/properties/ioc_tags/required
   no-invalid-media-type-examples:
     - '#/post/requestBody/content/application~1json/schema'
-v2.1.0/schemas/Iocs.yaml:
-  struct:
-    - '#/properties/next_page/type/1'
 v2.1.0/resources/api_v2_cases_{case_identifier}_iocs_{identifier}.yaml:
   operation-operationId-url-safe:
     - '#/get/operationId'
@@ -81,9 +75,6 @@ v2.1.0/resources/api_v2_cases_{case_identifier}_assets.yaml:
       #/post/requestBody/content/application~1json/schema/properties/asset_name/required
   no-invalid-media-type-examples:
     - '#/post/requestBody/content/application~1json/schema'
-v2.1.0/schemas/Assets.yaml:
-  struct:
-    - '#/properties/next_page/type/1'
 v2.1.0/resources/api_v2_cases_{case_identifier}_assets_{identifier}.yaml:
   operation-operationId-url-safe:
     - '#/get/operationId'
@@ -114,9 +105,6 @@ v2.1.0/resources/api_v2_cases_{case_identifier}_tasks.yaml:
       #/post/requestBody/content/application~1json/schema/properties/task_title/required
   no-invalid-media-type-examples:
     - '#/post/requestBody/content/application~1json/schema'
-v2.1.0/schemas/Tasks.yaml:
-  struct:
-    - '#/properties/next_page/type/1'
 v2.1.0/resources/api_v2_cases_{case_identifier}_tasks_{identifier}.yaml:
   operation-operationId-url-safe:
     - '#/get/operationId'
