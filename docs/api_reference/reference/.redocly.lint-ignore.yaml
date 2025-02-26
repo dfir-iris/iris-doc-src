@@ -25,19 +25,6 @@ v2.1.0/resources/api_v2_cases.yaml:
 v2.1.0/resources/api_v2_cases_{case_identifier}_iocs.yaml:
   operation-4xx-response:
     - '#/get/responses'
-  struct:
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/ioc_value/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/ioc_type_id/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/ioc_tlp_id/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/ioc_description/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/ioc_tags/required
-  no-invalid-media-type-examples:
-    - '#/post/requestBody/content/application~1json/schema'
 v2.1.0/resources/api_v2_cases_{case_identifier}_assets.yaml:
   operation-4xx-response:
     - '#/get/responses'
