@@ -94,7 +94,9 @@ post:
                   closing_note:
                     nullable: true
                   close_date:
-                    nullable: true
+                    type:
+                      - string
+                      - 'null'
                   classification_id:
                     type: integer
                   owner_id:

@@ -40,8 +40,6 @@ v2.1.0/resources/manage_cases_update_{case_id}.yaml:
   struct:
     - >-
       #/post/responses/200/content/application~1json/schema/properties/data/properties/closing_note/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/close_date/nullable
   no-invalid-media-type-examples:
     - '#/post/responses/200/content/application~1json/schema'
 v2.1.0/resources/case_summary_update.yaml:
