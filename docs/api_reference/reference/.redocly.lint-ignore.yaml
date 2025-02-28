@@ -22,127 +22,26 @@ iris.v2.1.0.yaml:
 v2.1.0/resources/api_v2_cases.yaml:
   operation-4xx-response:
     - '#/get/responses'
-  struct:
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/case_name/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/case_description/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/case_customer/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/case_soc_id/required
-  no-invalid-media-type-examples:
-    - '#/post/requestBody/content/application~1json/schema'
-v2.1.0/schemas/Cases.yaml:
-  struct:
-    - '#/properties/next_page/type/1'
-v2.1.0/resources/api_v2_cases_{case_identifier}.yaml:
-  operation-operationId-url-safe:
-    - '#/get/operationId'
-    - '#/put/operationId'
-    - '#/delete/operationId'
 v2.1.0/resources/api_v2_cases_{case_identifier}_iocs.yaml:
-  operation-operationId-url-safe:
-    - '#/get/operationId'
-    - '#/post/operationId'
   operation-4xx-response:
     - '#/get/responses'
-  struct:
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/ioc_value/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/ioc_type_id/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/ioc_tlp_id/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/ioc_description/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/ioc_tags/required
-  no-invalid-media-type-examples:
-    - '#/post/requestBody/content/application~1json/schema'
-v2.1.0/schemas/Iocs.yaml:
-  struct:
-    - '#/properties/next_page/type/1'
-v2.1.0/resources/api_v2_cases_{case_identifier}_iocs_{identifier}.yaml:
-  operation-operationId-url-safe:
-    - '#/get/operationId'
-    - '#/put/operationId'
-    - '#/delete/operationId'
 v2.1.0/resources/api_v2_cases_{case_identifier}_assets.yaml:
-  operation-operationId-url-safe:
-    - '#/get/operationId'
-    - '#/post/operationId'
   operation-4xx-response:
     - '#/get/responses'
-  struct:
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/asset_type_id/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/asset_name/required
-  no-invalid-media-type-examples:
-    - '#/post/requestBody/content/application~1json/schema'
-v2.1.0/schemas/Assets.yaml:
-  struct:
-    - '#/properties/next_page/type/1'
 v2.1.0/resources/api_v2_cases_{case_identifier}_assets_{identifier}.yaml:
-  operation-operationId-url-safe:
-    - '#/get/operationId'
-    - '#/put/operationId'
-    - '#/delete/operationId'
   no-invalid-media-type-examples:
     - >-
       #/put/requestBody/content/application~1json/examples/Example
       1/value/analysis_status_id
-v2.1.0/resources/api_v2_cases_{case_identifier}_notes.yaml:
-  operation-operationId-url-safe:
-    - '#/post/operationId'
-v2.1.0/resources/api_v2_cases_{case_identifier}_notes_{identifier}.yaml:
-  operation-operationId-url-safe:
-    - '#/get/operationId'
 v2.1.0/resources/api_v2_cases_{case_identifier}_tasks.yaml:
-  operation-operationId-url-safe:
-    - '#/get/operationId'
-    - '#/post/operationId'
   operation-4xx-response:
     - '#/get/responses'
-  struct:
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/task_assignees_id/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/task_status_id/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/task_title/required
-  no-invalid-media-type-examples:
-    - '#/post/requestBody/content/application~1json/schema'
-v2.1.0/schemas/Tasks.yaml:
-  struct:
-    - '#/properties/next_page/type/1'
-v2.1.0/resources/api_v2_cases_{case_identifier}_tasks_{identifier}.yaml:
-  operation-operationId-url-safe:
-    - '#/get/operationId'
-    - '#/put/operationId'
-    - '#/delete/operationId'
 v2.1.0/resources/manage_cases_update_{case_id}.yaml:
   struct:
     - >-
       #/post/responses/200/content/application~1json/schema/properties/data/properties/closing_note/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/close_date/nullable
   no-invalid-media-type-examples:
     - '#/post/responses/200/content/application~1json/schema'
-v2.1.0/resources/api_v2_iocs_{identifier}.yaml:
-  operation-operationId-url-safe:
-    - '#/get/operationId'
-    - '#/put/operationId'
-    - '#/delete/operationId'
-v2.1.0/resources/api_v2_tasks_{identifier}.yaml:
-  operation-operationId-url-safe:
-    - '#/get/operationId'
-    - '#/delete/operationId'
-v2.1.0/resources/api_v2_assets_{identifier}.yaml:
-  operation-operationId-url-safe:
-    - '#/get/operationId'
-    - '#/delete/operationId'
 v2.1.0/resources/case_summary_update.yaml:
   no-invalid-media-type-examples:
     - '#/post/requestBody/content/application~1json/examples/example-1/value/cid'
@@ -474,8 +373,6 @@ v2.1.0/resources/alerts_update_{alert_id}.yaml:
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/alerts_batch_update.yaml:
-  operation-operationId-unique:
-    - '#/post/post-case-update-alert'
   no-invalid-media-type-examples:
     - >-
       #/post/requestBody/content/application~1json/examples/example-1/value/updates/alert_source_content/entities/2/id
@@ -811,8 +708,6 @@ v2.1.0/resources/manage_case-classifications_update_{classification_id}.yaml:
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/manage_case-classifications_delete_{classification_id}.yaml:
-  operation-operationId-unique:
-    - '#/post/post-manage-case-classifications-classification_id-update'
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/manage_case-states_list.yaml:
@@ -830,8 +725,6 @@ v2.1.0/resources/manage_case-states_update_{state_id}.yaml:
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/manage_case-states_delete_{state_id}.yaml:
-  operation-operationId-unique:
-    - '#/post/post-manage-case-classifications-classification_id-update'
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/manage_compromise-status_list.yaml:

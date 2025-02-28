@@ -7,7 +7,7 @@ parameters:
     description: ID of the asset to update
 post:
   summary: Update an asset
-  description: This endpoint is deprecated. Use [PUT /api/v2/cases/{case_identifier}/assets/{identifier}](#tag/Assets/operation/api_v2_cases_{case_identifier}_assets_{identifier}_put) instead.
+  description: This endpoint is deprecated. Use [PUT /api/v2/cases/{case_identifier}/assets/{identifier}](#tag/Assets/operation/api_v2_cases_(case_identifier)_assets_(identifier)_put) instead.
   deprecated: true
   operationId: post-case-asset-update
   tags:

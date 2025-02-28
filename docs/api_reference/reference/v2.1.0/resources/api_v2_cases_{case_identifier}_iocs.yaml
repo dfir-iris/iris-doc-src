@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/case_identifier.yaml
 post:
-  operationId: api_v2_cases_{identifier}_iocs_post
+  operationId: api_v2_cases_(identifier)_iocs_post
   summary: Create an IOC
   tags:
     - IOCs
@@ -15,18 +15,14 @@ post:
             ioc_value:
               type: string
               minLength: 1
-              required: true
             ioc_type_id:
               type: number
-              required: true
             ioc_tlp_id:
               type: number
-              required: true
             ioc_description:
               type: string
               minLength: 1
               description: 'A short description of the ioc. This will be the summary of the ioc.'
-              required: true
             ioc_misp:
               type:
                 - string
@@ -35,7 +31,12 @@ post:
             ioc_tags:
               type: string
               description : 'Ioc tags'
-              required: true
+          required:
+            - ioc_value
+            - ioc_type_id
+            - ioc_tlp_id
+            - ioc_description
+            - ioc_tags
         examples:
            Valid request:
              value:
@@ -56,7 +57,7 @@ post:
         $ref: ../responses/GenericError.yaml
   description: 'Creates a new ioc.'
 get:
-  operationId: api_v2_cases_{identifier}_iocs_get
+  operationId: api_v2_cases_(identifier)_iocs_get
   summary: Get a paginated list of IOCs
   description: Returns a paginated list of IOCS. Accepts filters and sort query parameters.
   parameters:

@@ -8,7 +8,7 @@ parameters:
 post:
   summary: Update a case task
   operationId: post-case-tasks-update
-  description: This endpoint is deprecated. Use [PUT /api/v2/cases/{case_identifier}/tasks/{identifier}](#tag/Tasks/operation/api_v2_cases_{case_identifier}_tasks_{identifier}_put) instead.
+  description: This endpoint is deprecated. Use [PUT /api/v2/cases/{case_identifier}/tasks/{identifier}](#tag/Tasks/operation/api_v2_cases_(case_identifier)_tasks_(identifier)_put) instead.
   deprecated: true
   responses:
     '200':

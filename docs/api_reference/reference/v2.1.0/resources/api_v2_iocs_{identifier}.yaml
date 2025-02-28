@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/identifier.yaml
 get:
-  operationId: api_v2_iocs_{identifier}_get
+  operationId: api_v2_iocs_(identifier)_get
   tags:
     - IOCs
     - Beta
@@ -17,7 +17,7 @@ get:
     '404':
       $ref: ../responses/NotFound.yaml
 put:
-  operationId: api_v2_iocs_{identifier}_put
+  operationId: api_v2_iocs_(identifier)_put
   tags:
     - IOCs
     - Beta
@@ -68,7 +68,7 @@ put:
     '400':
       $ref: ../responses/GenericError.yaml
 delete:
-  operationId: api_v2_iocs_{identifier}_delete
+  operationId: api_v2_iocs_(identifier)_delete
   tags:
     - IOCs
     - Beta

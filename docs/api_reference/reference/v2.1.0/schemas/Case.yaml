@@ -53,7 +53,9 @@ properties:
   open_date:
     type: string
   close_date:
-    type: 'null'
+    type:
+      - string
+      - 'null'
   closing_note:
     type: 'null'
   custom_attributes:

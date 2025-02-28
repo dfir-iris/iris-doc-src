@@ -1,6 +1,6 @@
 post:
   summary: Update a batch of alerts
-  operationId: post-case-update-alert
+  operationId: alerts_batch_update_post
   responses:
     '200':
       description: OK

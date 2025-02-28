@@ -70,7 +70,7 @@ get:
                 message: Invalid asset ID for this case
                 status: error
   operationId: get-case-delete-asset
-  description: This endpoint is deprecated. Use [DELETE /api/v2/assets/{identifier}](#tag/Assets/operation/api_v2_assets_{identifier}_delete) instead.
+  description: This endpoint is deprecated. Use [DELETE /api/v2/assets/{identifier}](#tag/Assets/operation/api_v2_assets_(identifier)_delete) instead.
   deprecated: true
   security:
     - Bearer <bearer>: []

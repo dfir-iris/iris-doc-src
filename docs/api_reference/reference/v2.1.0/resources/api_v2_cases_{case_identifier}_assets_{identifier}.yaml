@@ -2,7 +2,7 @@ parameters:
   - $ref: ../parameters/path/case_identifier.yaml
   - $ref: ../parameters/path/identifier.yaml
 get:
-  operationId: api_v2_cases_{case_identifier}_assets_{identifier}_get
+  operationId: api_v2_cases_(case_identifier)_assets_(identifier)_get
   tags:
     - Assets
     - Beta
@@ -18,7 +18,7 @@ get:
     '404':
       $ref: ../responses/NotFound.yaml
 put:
-  operationId: api_v2_cases_{case_identifier}_assets_{identifier}_put
+  operationId: api_v2_cases_(case_identifier)_assets_(identifier)_put
   tags:
     - Assets
     - Beta
@@ -84,7 +84,7 @@ put:
     '400':
       $ref: ../responses/GenericError.yaml
 delete:
-  operationId: api_v2_cases_{case_identifier}_assets_{identifier}_delete
+  operationId: api_v2_cases_(case_identifier)_assets_(identifier)_delete
   tags:
     - Assets
   summary: Delete an asset

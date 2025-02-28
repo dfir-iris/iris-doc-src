@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/case_identifier.yaml
 post:
-  operationId: api_v2_cases_{identifier}_assets_post
+  operationId: api_v2_cases_(identifier)_assets_post
   summary: Create an asset
   tags:
     - Assets
@@ -15,7 +15,6 @@ post:
           properties:
             asset_type_id:
               type: integer
-              required: true 
             case_id:
               type: integer
             asset_description:
@@ -36,7 +35,6 @@ post:
               type: string
             asset_name:
               type: string
-              required: true 
             asset_ip:
               type: string
             asset_tags:
@@ -47,17 +45,18 @@ post:
               type: string
             asset_domain:
               type: string
+          required:
+            - asset_type_id
+            - asset_name
         examples:
           Valid request:
             value:
-              asset_type_id: '9'
+              asset_type_id: 9
               asset_domain: iris.local
               asset_ip: 127.0.0.1
               asset_info: ''
               asset_compromise_status_id: 1
-              analysis_status_id: '3'
-              ioc_links:
-                - '30'
+              analysis_status_id: 3
               asset_name: admin_laptop
               asset_tags: anewtag
               asset_description: A host description
@@ -71,7 +70,7 @@ post:
     '400':
       $ref: ../responses/GenericError.yaml
 get:
-  operationId: api_v2_cases_{identifier}_assets_get
+  operationId: api_v2_cases_(identifier)_assets_get
   summary: Get a paginated list of assets
   description: Returns a paginated list of assets.
   parameters:
