@@ -36,15 +36,6 @@ v2.1.0/resources/api_v2_cases_{case_identifier}_assets_{identifier}.yaml:
 v2.1.0/resources/api_v2_cases_{case_identifier}_tasks.yaml:
   operation-4xx-response:
     - '#/get/responses'
-  struct:
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/task_assignees_id/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/task_status_id/required
-    - >-
-      #/post/requestBody/content/application~1json/schema/properties/task_title/required
-  no-invalid-media-type-examples:
-    - '#/post/requestBody/content/application~1json/schema'
 v2.1.0/resources/manage_cases_update_{case_id}.yaml:
   struct:
     - >-

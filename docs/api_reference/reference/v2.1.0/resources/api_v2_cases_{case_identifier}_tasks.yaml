@@ -14,21 +14,22 @@ post:
           properties:
             task_assignees_id:
               type: array
-              required: true 
               items:
                 type: integer
             task_description:
               type: string
             task_status_id:
               type: integer
-              required: true 
             task_tags:
               type: string
             task_title:
               type: string
-              required: true 
             custom_attributes:
               type: object
+          required:
+            - task_assignees_id
+            - task_status_id
+            - task_title
         examples:
           Valid request:
             value:
