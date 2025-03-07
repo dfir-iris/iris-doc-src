@@ -57,6 +57,10 @@ properties:
     type:
       - string
       - 'null'
+  modification_history:
+    anyOf:
+      - $ref: ../schemas/modification_history.yaml
+      - type: 'null'
 example:
   chain_of_custody: null
   case_id: 1
@@ -80,4 +84,4 @@ example:
     user_email: administrator@iris.local
   file_size: 0
   file_description: 'File description'
-
+  modification_history: null
