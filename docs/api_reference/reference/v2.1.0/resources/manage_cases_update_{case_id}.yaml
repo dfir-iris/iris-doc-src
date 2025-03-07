@@ -92,7 +92,7 @@ post:
                   case_description:
                     type: string
                   closing_note:
-                    nullable: true
+                    type: 'null'
                   close_date:
                     type:
                       - string
