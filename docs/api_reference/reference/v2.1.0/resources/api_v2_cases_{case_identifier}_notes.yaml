@@ -3,10 +3,10 @@ parameters:
 post:
   operationId: api_v2_cases_(identifier)_notes_post
   summary: Add a new note
+  description: Add a new note to an existing group.
   tags:
     - Notes
     - Beta
-  description: Add a new note to an existing group.
   requestBody:
     content:
       application/json:
@@ -38,6 +38,4 @@ post:
       $ref: ../responses/GenericError.yaml
     '404':
       description: Case with identifier case_identifier not found
-
-
 

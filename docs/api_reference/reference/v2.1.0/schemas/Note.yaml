@@ -53,7 +53,8 @@ example:
   note_lastupdate: '2024-03-27T18:14:21.245724'
   note_case_id: 1
   modification_history:
-    user: 'administrator'
-    user_id: 1
-    action: 'created note'
+    '1711563261.268616':
+      user: 'administrator'
+      user_id: 1
+      action: 'created note'
 
