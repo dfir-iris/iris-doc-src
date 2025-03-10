@@ -1,0 +1,20 @@
+parameters:
+  - $ref: ../parameters/path/case_identifier.yaml
+  - $ref: ../parameters/path/identifier.yaml
+get:
+  operationId: api_v2_cases_(case_identifier)_evidences_(identifier)_get
+  tags:
+    - Evidences
+    - Beta
+  summary: Get an evidence
+  description: 'Get an evidence by its identifier'
+  responses:
+    '201':
+      description: evidence successfully found
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Evidence.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+
