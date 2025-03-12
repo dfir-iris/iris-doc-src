@@ -33,7 +33,7 @@ npx @redocly/cli preview-docs iris.v2.1.0.yaml
 
 Lint:
 ```
-npx @redocly/cli lint iris.v2.1.0.yaml
+npm run check:v2.1.0
 ```
 
 Bundle:
