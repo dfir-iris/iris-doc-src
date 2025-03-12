@@ -1,7 +1,7 @@
 post:
   summary: Add an evidence
   operationId: post-case-add-evidence
-  description: This endpoint is deprecated. Use [POST /api/v2/cases/{case_identifier}/evidences](#tag/Evidences/operation/api_v2_cases_(identifier)_evidences_post) instead.
+  description: This endpoint is deprecated. Use [POST /api/v2/cases/{case_identifier}/evidences](#tag/Evidences/operation/api_v2_cases_(case_identifier)_evidences_post) instead.
   deprecated: true
   responses:
     '200':
