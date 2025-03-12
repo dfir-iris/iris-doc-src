@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/case_identifier.yaml
 get:
-  operationId: api_v2_cases_(identifier)_get
+  operationId: api_v2_cases_(case_identifier)_get
   tags:
     - Cases
     - Beta
@@ -17,7 +17,7 @@ get:
     '404':
       $ref: ../responses/NotFound.yaml
 put:
-  operationId: api_v2_cases_(identifier)_put
+  operationId: api_v2_cases_(case_identifier)_put
   tags:
     - Cases
     - Beta
@@ -92,7 +92,7 @@ put:
     '400':
       $ref: ../responses/GenericError.yaml
 delete:
-  operationId: api_v2_cases_(identifier)_delete
+  operationId: api_v2_cases_(case_identifier)_delete
   tags:
     - Cases
     - Beta
