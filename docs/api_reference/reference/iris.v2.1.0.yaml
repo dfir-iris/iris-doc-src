@@ -423,7 +423,9 @@ security:
   - Bearer <bearer>: []
 tags:
   - name: Cases
+    description: Endpoints to interact with cases
   - name: Notes
+    description: Endpoints to interact with notes
   - name: Assets
   - name: IOCs
   - name: Timeline

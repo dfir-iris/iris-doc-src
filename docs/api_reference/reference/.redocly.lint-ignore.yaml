@@ -4,8 +4,6 @@ iris.v2.1.0.yaml:
   info-license-strict:
     - '#/info/license'
   tag-description:
-    - '#/tags/0/description'
-    - '#/tags/1/description'
     - '#/tags/2/description'
     - '#/tags/3/description'
     - '#/tags/4/description'
