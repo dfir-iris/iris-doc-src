@@ -1,6 +1,8 @@
 get:
   summary: Get an evidence
   operationId: get-case-evidence
+  description: This endpoint is deprecated. Use [GET /api/v2/cases/{case_identifier}/evidences/{identifier}](#tag/Evidences/operation/api_v2_cases_(case_identifier)_evidences_(identifier)_get) instead.
+  deprecated: true
   responses:
     '200':
       description: OK
@@ -176,7 +178,6 @@ get:
                 data: []
                 message: Invalid evidence ID for this case
                 status: error
-  description: 'Returns an evidence metadata. '
   security:
     - Bearer <bearer>: []
   parameters:

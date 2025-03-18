@@ -21,7 +21,7 @@ get:
     - Cases
   responses:
     '200':
-      description: OK
+      description: 'OK: returns a full export of the case without the files in the datastore'
       content:
         application/json:
           schema:
@@ -1617,6 +1617,4 @@ get:
                       group_id: 2
                       group_user: 1
                   export_date: '2023-11-29T15:52:18.839881'
-    '':
-      description: A full export of the case without the files in the datastore
 parameters: []

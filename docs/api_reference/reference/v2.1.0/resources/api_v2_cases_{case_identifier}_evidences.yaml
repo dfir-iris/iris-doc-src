@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/case_identifier.yaml
 post:
-  operationId: api_v2_cases_(identifier)_evidences_post
+  operationId: api_v2_cases_(case_identifier)_evidences_post
   summary: Add an evidence
   description: Add a new evidence to the case.
   tags:

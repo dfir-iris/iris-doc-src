@@ -144,7 +144,7 @@ post:
               - message
               - status
           examples: {}
-  description: This endpoint is deprecated. Use [POST /api/v2/cases/{case_identifier}/iocs](#tag/IOCs/operation/api_v2_cases_(identifier)_iocs_post).
+  description: This endpoint is deprecated. Use [POST /api/v2/cases/{case_identifier}/iocs](#tag/IOCs/operation/api_v2_cases_(case_identifier)_iocs_post).
   deprecated: true
   parameters:
     - schema:
