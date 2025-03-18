@@ -189,7 +189,7 @@ This is an example of summary :
 ``` title="Loop over notes"
 This is an example of recursive notes  : 
 
-{% for note in case.notes %}
+{% for note in notes %}
 
     My note named {{ note.note_title }} : 
     {{ note.note_content|markdown }}
