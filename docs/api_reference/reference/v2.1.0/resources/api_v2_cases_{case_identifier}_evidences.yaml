@@ -66,6 +66,12 @@ get:
         application/json:
           schema:
             $ref: ../schemas/Evidences.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      description: Insufficient rights
+    '404':
+      $ref: ../responses/NotFound.yaml
   tags:
     - Evidences
     - Beta
