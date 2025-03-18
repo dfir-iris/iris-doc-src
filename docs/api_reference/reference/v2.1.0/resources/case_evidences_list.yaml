@@ -1,5 +1,8 @@
 get:
   summary: Get case evidences
+  operationId: get-case-evidences-list
+  description: This endpoint is deprecated. Use [GET /api/v2/cases/{case_identifier}/evidences](#tag/Evidences/operation/api_v2_cases_(case_identifier)_evidences_get) instead.
+  deprecated: true
   tags:
     - Evidences
   responses:
@@ -324,8 +327,6 @@ get:
                   state:
                     object_state: 20
                     object_last_update: '2024-01-07T13:40:47.236614'
-  operationId: get-case-evidences-list
-  description: 'Returns a list of all evidences linked to the case. '
   parameters:
     - schema:
         type: integer

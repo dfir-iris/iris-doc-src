@@ -64,6 +64,7 @@ info:
     * Deprecated POST /case/notes/update/{node_id} in favor of PUT /api/v2/cases/{case_identifier}/notes/{identifier}
     * Deprecated POST /case/notes/delete/{node_id} in favor of DELETE /api/v2/cases/{case_identifier}/notes/{identifier}
     * Deprecated POST /case/evidences/add in favor of POST /api/v2/cases/{case_identifier}/evidences
+    * Deprecated GET /case/evidences/list in favor of GET /api/v2/cases/{case_identifier}/evidences
     * Deprecated POST /case/evidences/{evidence_id} in favor of POST /api/v2/cases/{case_identifier}/evidences/{identifier}
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
