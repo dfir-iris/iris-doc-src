@@ -1,6 +1,8 @@
 post:
   summary: Update an evidence
   operationId: post-case-evidences-update
+  description: This endpoint is deprecated. Use [PUT /api/v2/cases/{case_identifier}/evidences/{identifier}](#tag/Evidences/operation/api_v2_cases_(case_identifier)_evidences_(identifier)_put) instead.
+  deprecated: true
   responses:
     '200':
       description: OK
@@ -144,7 +146,6 @@ post:
                   file_size: 0
                   end_date: null
                   file_description: string
-  description: 'Update an evidence. '
   parameters:
     - schema:
         type: integer
