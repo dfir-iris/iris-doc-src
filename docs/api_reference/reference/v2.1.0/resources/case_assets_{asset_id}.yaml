@@ -255,8 +255,9 @@ get:
               data:
                 type: array
                 items:
-                  type: object
-                  nullable: true
+                  type:
+                    - object
+                    - 'null'
               message:
                 type: string
               status:
