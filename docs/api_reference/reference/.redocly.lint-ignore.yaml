@@ -285,8 +285,6 @@ v2.1.0/resources/alerts_add.yaml:
   struct:
     - '#/post/responses/'
     - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/owner/nullable
-    - >-
       #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/user_id/nullable
     - >-
       #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/case_id/nullable
@@ -310,18 +308,6 @@ v2.1.0/resources/alerts_add.yaml:
       #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/custom_attributes/nullable
     - >-
       #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/ioc_type/properties/type_validation_regex/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/ioc_type/properties/type_validation_expect/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/ioc_type/properties/type_taxonomy/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/customer/properties/customer_sla/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/customer/properties/customer_description/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/customer/properties/custom_attributes/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/alert_owner_id/nullable
   operation-4xx-response:
     - '#/post/responses'
   no-invalid-media-type-examples:
