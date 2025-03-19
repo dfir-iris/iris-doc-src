@@ -69,7 +69,7 @@ get:
     '400':
       $ref: ../responses/GenericError.yaml
     '403':
-      description: Insufficient rights
+      $ref: ../responses/Forbidden.yaml
     '404':
       $ref: ../responses/NotFound.yaml
   tags:

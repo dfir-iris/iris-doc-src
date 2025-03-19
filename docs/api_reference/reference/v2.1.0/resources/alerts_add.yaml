@@ -218,7 +218,9 @@ post:
                 type: object
                 properties:
                   owner:
-                    nullable: true
+                    type:
+                      - object
+                      - 'null'
                   alert_note:
                     type: string
                   alert_source:
@@ -348,9 +350,13 @@ post:
                             type_description:
                               type: string
                             type_validation_expect:
-                              nullable: true
+                              type:
+                                - string
+                                - 'null'
                             type_taxonomy:
-                              nullable: true
+                              type:
+                                - string
+                                - 'null'
                         ioc_tags:
                           type: string
                   alert_context:
@@ -376,19 +382,27 @@ post:
                       client_uuid:
                         type: string
                       customer_sla:
-                        nullable: true
+                        type:
+                          - string
+                          - 'null'
                       last_update_date:
                         type: string
                       customer_id:
                         type: integer
                       customer_description:
-                        nullable: true
+                        type:
+                          - string
+                          - 'null'
                       custom_attributes:
-                        nullable: true
+                        type:
+                          - object
+                          - 'null'
                       creation_date:
                         type: string
                   alert_owner_id:
-                    nullable: true
+                    type:
+                      - integer
+                      - 'null'
                   alert_description:
                     type: string
                   alert_creation_time:

@@ -120,10 +120,6 @@ v2.1.0/resources/case_export.yaml:
 v2.1.0/resources/case_assets_list.yaml:
   operation-4xx-response:
     - '#/get/responses'
-v2.1.0/resources/case_assets_delete_{asset_id}.yaml:
-  struct:
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/value/properties/data/items/nullable
 v2.1.0/resources/case_notes_groups_list.yaml:
   operation-4xx-response:
     - '#/get/responses'
@@ -289,8 +285,6 @@ v2.1.0/resources/alerts_add.yaml:
   struct:
     - '#/post/responses/'
     - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/owner/nullable
-    - >-
       #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/user_id/nullable
     - >-
       #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/case_id/nullable
@@ -314,18 +308,6 @@ v2.1.0/resources/alerts_add.yaml:
       #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/custom_attributes/nullable
     - >-
       #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/ioc_type/properties/type_validation_regex/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/ioc_type/properties/type_validation_expect/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/ioc_type/properties/type_taxonomy/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/customer/properties/customer_sla/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/customer/properties/customer_description/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/customer/properties/custom_attributes/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/alert_owner_id/nullable
   operation-4xx-response:
     - '#/post/responses'
   no-invalid-media-type-examples:
