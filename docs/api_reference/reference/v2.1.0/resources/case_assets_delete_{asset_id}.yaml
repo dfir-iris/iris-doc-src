@@ -111,11 +111,12 @@ post:
                 type: object
                 properties:
                   data:
-                    type: array
+                    type:
+                      - array
+                      - 'null'
                     items:
                       type: object
                       additionalProperties: false
-                      nullable: true
                   message:
                     type: string
                   status:

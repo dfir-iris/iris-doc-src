@@ -120,10 +120,6 @@ v2.1.0/resources/case_export.yaml:
 v2.1.0/resources/case_assets_list.yaml:
   operation-4xx-response:
     - '#/get/responses'
-v2.1.0/resources/case_assets_delete_{asset_id}.yaml:
-  struct:
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/value/properties/data/items/nullable
 v2.1.0/resources/case_notes_groups_list.yaml:
   operation-4xx-response:
     - '#/get/responses'
