@@ -5,9 +5,9 @@ properties:
   case_id:
     type: integer
   type_id:
-    type: 
-      - integer
-      - 'null'
+   anyOf:
+      - $ref: ../schemas/evidence_type_id.yaml
+      - type: 'null'
   id:
     type: integer
   file_hash:

@@ -2,7 +2,14 @@ description: Error
 content:
   application/json:
     schema:
-      description: 'Error message'
-      type: string
-      examples:
-        - 'Error processing request - check server logs'
+      type: object
+      properties:
+        message:
+          description: Error message
+          type: string
+          examples:
+            - 'Error processing request - check server logs'
+        data:
+          description: Optional additional error data
+      required:
+        - message

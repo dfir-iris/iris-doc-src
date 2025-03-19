@@ -175,11 +175,11 @@ post:
             filename:
               type: string
             file_size:
-              type: string
+              type: integer
             file_hash:
               type: string
             type_id:
-              type: string
+              $ref: ../schemas/evidence_type_id.yaml
             start_date:
               type: string
             end_date:
@@ -194,9 +194,9 @@ post:
           example-1:
             value:
               filename: dummy file
-              file_size: '77108'
+              file_size: 77108
               file_hash: 88BC9EF6F07F0FAE922AB25EB226906542F8BA0DC1A221F3EA7273CBCB5DB0D4
-              type_id: '2'
+              type_id: 2
               start_date: '2024-04-13T03:02:00.000'
               end_date: '2024-04-04T00:00:00.000'
               custom_attributes: {}
