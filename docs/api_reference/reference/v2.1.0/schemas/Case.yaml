@@ -57,7 +57,9 @@ properties:
       - string
       - 'null'
   closing_note:
-    type: 'null'
+    type:
+      - string
+      - 'null'
   custom_attributes:
     type: object
   modification_history:
