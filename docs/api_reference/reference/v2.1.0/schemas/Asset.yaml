@@ -52,19 +52,31 @@ properties:
     type:
       - string
       - 'null'
-examples:
-  - asset_id: 57
-    asset_uuid: c6598fd0-836a-4fc4-87c1-6f03348eadeb
-    asset_name: FILESERVER1231
-    asset_type: Windows - Server
-    asset_icon_compromised: ioc_windows_server.png
-    asset_icon_not_compromised: windows_server.png
-    asset_description: ''
-    asset_domain: ''
-    asset_compromise_status_id: 0
-    asset_ip: ''
-    asset_type_id: 10
-    analysis_status: Unspecified
-    analysis_status_id: 1
-    asset_tags: ''
-
+  modification_history:
+    anyOf:
+      - $ref: ../schemas/modification_history.yaml
+      - type: 'null'
+example:
+  asset_id: 57
+  asset_uuid: c6598fd0-836a-4fc4-87c1-6f03348eadeb
+  asset_name: FILESERVER1231
+  asset_type: Windows - Server
+  asset_icon_compromised: ioc_windows_server.png
+  asset_icon_not_compromised: windows_server.png
+  asset_description: ''
+  asset_domain: ''
+  asset_compromise_status_id: 0
+  asset_ip: ''
+  asset_type_id: 10
+  analysis_status: Unspecified
+  analysis_status_id: 1
+  asset_tags: ''
+  modification_history:
+    '1742544212.874':
+      'user': 'administrator'
+      'user_id': 1
+      'action': 'created'
+    '1742544212.892766':
+      'user': 'administrator'
+      'user_id': 1
+      'action': 'updated'
