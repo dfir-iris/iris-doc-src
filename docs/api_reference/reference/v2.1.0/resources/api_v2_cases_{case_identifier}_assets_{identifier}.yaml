@@ -87,6 +87,7 @@ delete:
   operationId: api_v2_cases_(case_identifier)_assets_(identifier)_delete
   tags:
     - Assets
+    - Beta
   summary: Delete an asset
   responses:
     '204':
