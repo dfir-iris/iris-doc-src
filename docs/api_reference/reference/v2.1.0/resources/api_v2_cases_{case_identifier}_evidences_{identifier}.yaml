@@ -70,4 +70,19 @@ put:
       $ref: ../responses/NotFound.yaml
     '400':
       $ref: ../responses/GenericError.yaml
+delete:
+  operationId: api_v2_cases_(case_identifier)_evidences_(identifier)_delete
+  tags:
+    - Evidences
+    - Beta
+  summary: Delete an evidence
+  responses:
+    '204':
+      $ref: ../responses/Deleted.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
 

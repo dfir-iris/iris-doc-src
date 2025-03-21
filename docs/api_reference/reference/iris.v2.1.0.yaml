@@ -45,6 +45,7 @@ info:
     * Added GET /api/v2/cases/{case_identifier}/evidences
     * Added GET /api/v2/cases/{case_identifier}/evidences/{identifier}
     * Added PUT /api/v2/cases/{case_identifier}/evidences/{identifier}
+    * Added DELETE /api/v2/cases/{case_identifier}/evidences/{identifier}
     * Deprecated POST /manage/cases/add in favor of POST /api/v2/cases
     * Deprecated POST /manage/cases/update in favor of PUT /api/v2/cases/{case_identifier}
     * Deprecated POST /manage/cases/delete/{case_id} in favor of DELETE /api/v2/cases/{case_identifier}
