@@ -48,12 +48,3 @@ parameters:
     in: path
     required: true
     description: Evidence ID
-get:
-  summary: Delete an evidence
-  operationId: get-case-evidences-delete-evidence_id
-  responses:
-    '200':
-      description: OK
-  tags:
-    - Evidences
-  description: This endpoint is depreacted. Please use the POST equivalent.

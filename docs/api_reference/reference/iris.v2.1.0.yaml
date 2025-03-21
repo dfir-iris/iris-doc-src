@@ -73,6 +73,7 @@ info:
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list
     * Added documentation of missing GET /manage/compromise-status/list
+    * Fixed: removed documentation of unimplemented endpoint GET /case/evidences/delete/{evidence_id}
 
     ### Changes in v2.0.0
     This version introduces access control. Every request now needs to have the `cid=x` parameter in the URI.  
