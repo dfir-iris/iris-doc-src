@@ -2,6 +2,8 @@ parameters: []
 post:
   summary: Add a new event
   operationId: post-case-timeline-add-delete-event_id---copy
+  description: This endpoint is deprecated. Use [POST /api/v2/cases/{case_identifier}/events](#tag/Timeline/operation/api_v2_cases_(case_identifier)_events_post) instead.
+  deprecated: true
   responses:
     '200':
       description: OK
@@ -142,7 +144,6 @@ post:
                   event_raw: My event raw data
                   event_date_wtz: '2023-03-08T03:02:00.000000'
                   event_id: 663
-  description: 'Create a new event in the timeline. '
   requestBody:
     content:
       application/json:

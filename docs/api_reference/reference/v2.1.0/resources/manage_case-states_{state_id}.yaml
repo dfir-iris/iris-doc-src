@@ -43,8 +43,6 @@ get:
                   state_description: Unspecified
                   state_id: 1
                   protected: true
-    '':
-      description: ''
   operationId: get-case-states-detail
   description: 'Get a case state from an ID. '
   tags:

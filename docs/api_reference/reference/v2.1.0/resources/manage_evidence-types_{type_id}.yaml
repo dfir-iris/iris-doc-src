@@ -43,47 +43,6 @@ get:
                   state_description: Unspecified
                   state_id: 1
                   protected: true
-    '':
-      description: ''
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              status:
-                type: string
-              message:
-                type: string
-              data:
-                type: object
-                properties:
-                  name:
-                    type: string
-                  description:
-                    type: string
-                  id:
-                    type: integer
-                  creation_date:
-                    type: string
-            x-examples:
-              Example 1:
-                status: success
-                message: ''
-                data:
-                  name: Unspecified
-                  description: Unspecified
-                  id: 1
-                  creation_date: '2023-11-29T10:28:30.448583'
-          examples:
-            Example 1:
-              value:
-                status: success
-                message: ''
-                data:
-                  name: Unspecified
-                  description: Unspecified
-                  id: 1
-                  creation_date: '2023-11-29T10:28:30.448583'
   operationId: get-evidence-types-detail
   description: 'Get a evidence type from an ID. '
   tags:
