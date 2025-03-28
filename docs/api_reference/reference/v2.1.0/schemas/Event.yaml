@@ -1,0 +1,75 @@
+type: object
+properties:
+  event_tags:
+    type: string
+  case_id:
+    type: integer
+  event_in_summary:
+    type: boolean
+  modification_history:
+    type: object
+  event_date:
+    type: string
+  event_title:
+    type: string
+  custom_attributes:
+    type: object
+  user_id:
+    type: integer
+  event_color:
+    type: string
+  event_added:
+    type: string
+  event_in_graph:
+    type: boolean
+  event_tz:
+    type: string
+  event_content:
+    type: string
+  event_source:
+    type: string
+  event_category_id:
+    type: integer
+  event_uuid:
+    type: string
+  event_is_flagged:
+    type: boolean
+  event_raw:
+    type: string
+  event_date_wtz:
+    type: string
+  event_id:
+    type: integer
+  parent_event_id:
+    type:
+      - integer
+      - 'null'
+example:
+  status: success
+  message: Event added
+  data:
+  event_tags: tag
+  case_id: 1
+  event_in_summary: true
+  modification_history:
+    '1704815112.677327':
+      user: administrator
+      action: created
+      user_id: 1
+  event_date: '2023-03-08T03:02:00.000000'
+  event_title: An event
+  custom_attributes: {}
+  user_id: 1
+  event_color: '#1572E899'
+  event_added: '2024-01-09T15:45:12.677273'
+  event_in_graph: true
+  event_tz: '+00:00'
+  event_content: My description
+  event_source: My source
+  event_category_id: 5
+  event_uuid: f20fee77-4d9f-446d-927d-59765aa9cbe0
+  event_is_flagged: false
+  event_raw: My event raw data
+  event_date_wtz: '2023-03-08T03:02:00.000000'
+  event_id: 663
+  parent_event_id: null
