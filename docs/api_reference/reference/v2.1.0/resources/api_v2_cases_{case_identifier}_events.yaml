@@ -57,25 +57,24 @@ post:
             - event_assets
             - event_iocs
         example:
-          value:
-            event_title: An event
-            event_category_id: 5
-            event_date: '2023-03-08T03:02:00.000'
-            event_tz: '+00:00'
-            event_assets:
-              - 45
-            event_iocs:
-              - 33
-            event_raw: My event raw data
-            event_source: My source
-            event_in_summary: true
-            event_in_graph: true
-            event_color: '#1572E899'
-            event_sync_iocs_assets: true
-            event_tags: tag
-            event_content: My description
-            parent_event_id: 11
-            custom_attributes: {}
+          event_title: An event
+          event_category_id: 5
+          event_date: '2023-03-08T03:02:00.000'
+          event_tz: '+00:00'
+          event_assets:
+            - 45
+          event_iocs:
+            - 33
+          event_raw: My event raw data
+          event_source: My source
+          event_in_summary: true
+          event_in_graph: true
+          event_color: '#1572E899'
+          event_sync_iocs_assets: true
+          event_tags: tag
+          event_content: My description
+          parent_event_id: 11
+          custom_attributes: {}
   responses:
     '201':
       description: Evidence successfully created
