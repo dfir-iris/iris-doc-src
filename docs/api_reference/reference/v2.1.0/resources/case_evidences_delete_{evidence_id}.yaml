@@ -1,5 +1,8 @@
 post:
   summary: Delete a case evidence
+  operationId: post-case-evidences-delete
+  description: This endpoint is deprecated. Use [DELETE /api/v2/cases/{case_identifier}/evidences/{identifier}](#tag/Evidences/operation/api_v2_cases_(case_identifier)_evidences_(identifier)_delete) instead.
+  deprecated: true
   tags:
     - Evidences
   responses:
@@ -30,8 +33,6 @@ post:
                 data: []
                 message: Evidence deleted
                 status: success
-  operationId: post-case-evidences-delete
-  description: 'Remove an evidence from the case. '
   parameters:
     - schema:
         type: integer
@@ -48,12 +49,3 @@ parameters:
     in: path
     required: true
     description: Evidence ID
-get:
-  summary: Delete an evidence
-  operationId: get-case-evidences-delete-evidence_id
-  responses:
-    '200':
-      description: OK
-  tags:
-    - Evidences
-  description: This endpoint is depreacted. Please use the POST equivalent.
