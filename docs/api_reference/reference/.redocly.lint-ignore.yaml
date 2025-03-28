@@ -615,20 +615,14 @@ v2.1.0/resources/manage_tlp_list.yaml:
   operation-4xx-response:
     - '#/get/responses'
 v2.1.0/resources/manage_case-templates_add.yaml:
-  struct:
-    - '#/post/responses/'
   no-invalid-media-type-examples:
     - >-
       #/post/responses/400/content/application~1json/examples/example-1/value/data
 v2.1.0/resources/manage_case-templates_update_{template_id}.yaml:
-  struct:
-    - '#/post/responses/'
   no-invalid-media-type-examples:
     - >-
       #/post/responses/400/content/application~1json/examples/example-1/value/data
 v2.1.0/resources/manage_case-templates_delete_{template_id}.yaml:
-  struct:
-    - '#/post/responses/'
   no-invalid-media-type-examples:
     - >-
       #/post/responses/400/content/application~1json/examples/example-1/value/data

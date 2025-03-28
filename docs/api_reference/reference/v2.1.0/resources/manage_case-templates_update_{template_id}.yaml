@@ -95,33 +95,6 @@ post:
                 data: []
                 message: Invalid ioc type ID 1700
                 status: error
-    '':
-      description: ''
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              status:
-                type: string
-              message:
-                type: string
-              data:
-                type: array
-                items:
-                  type: object
-                  properties: {}
-            x-examples:
-              Example 1:
-                status: success
-                message: Case template updated
-                data: []
-          examples:
-            Example 1:
-              value:
-                status: success
-                message: Case template updated
-                data: []
   description: 'Update a case template. '
   requestBody:
     content:
