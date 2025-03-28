@@ -338,8 +338,6 @@ get:
                   name_expanded: 'Abusive-Content: spam'
                   id: 1
                   name: abusive-content:spam
-    '':
-      description: ''
   operationId: get-case-classifications-detail
   description: 'Get a case classification from an ID. '
   tags:
