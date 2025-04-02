@@ -47,6 +47,7 @@ info:
     * Added PUT /api/v2/cases/{case_identifier}/evidences/{identifier}
     * Added DELETE /api/v2/cases/{case_identifier}/evidences/{identifier}
     * Added POST /api/v2/cases/{case_identifier}/events
+    * Added GET /api/v2/cases/{case_identifier}/events/{identifier}
     * Deprecated POST /manage/cases/add in favor of POST /api/v2/cases
     * Deprecated POST /manage/cases/update in favor of PUT /api/v2/cases/{case_identifier}
     * Deprecated POST /manage/cases/delete/{case_id} in favor of DELETE /api/v2/cases/{case_identifier}
@@ -124,6 +125,8 @@ paths:
     $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_evidences_{identifier}.yaml
   /api/v2/cases/{case_identifier}/events:
     $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_events.yaml
+  /api/v2/cases/{case_identifier}/events/{identifier}:
+    $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_events_{identifier}.yaml
   /manage/cases/update/{case_id}:
     $ref: v2.1.0/resources/manage_cases_update_{case_id}.yaml
   /api/v2/iocs/{identifier}:
