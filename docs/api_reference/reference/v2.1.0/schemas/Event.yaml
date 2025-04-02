@@ -56,8 +56,12 @@ properties:
     type: boolean
   modification_history:
     anyOf:
-      - $ref: ../schemas/modification_history.yaml
+      - $ref: modification_history.yaml
       - type: 'null'
+  children:
+    type: array
+    items:
+      $ref: Event.yaml
   custom_attributes:
     type:
       - object
@@ -87,4 +91,5 @@ example:
       user: administrator
       action: created
       user_id: 1
+  children: []
   custom_attributes: {}
