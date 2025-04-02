@@ -518,11 +518,6 @@ v2.1.0/resources/global_tasks_list.yaml:
   operation-4xx-response:
     - '#/get/responses'
 v2.1.0/resources/global_tasks_add.yaml:
-  struct:
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/task_close_date/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/task_userid_close/nullable
   no-invalid-media-type-examples:
     - >-
       #/post/responses/200/content/application~1json/examples/Success/value/data/task_userid_open
