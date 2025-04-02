@@ -1,5 +1,7 @@
 get:
   summary: Fetch an event
+  description: This endpoint is deprecated. Use [GET /api/v2/cases/{case_identifier}/events/{identifier}](#tag/Timeline/operation/api_v2_cases_(case_identifier)_events_(identifier)_get) instead.
+  deprecated: true
   tags:
     - Timeline
   responses:
@@ -213,7 +215,6 @@ get:
                 message: Invalid event ID for this case
                 status: error
   operationId: get-case-timeline-get-event
-  description: Return information of an event of the timeline
   parameters:
     - schema:
         type: integer
