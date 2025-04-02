@@ -27,7 +27,7 @@ post:
                 type: array
                 items:
                   type: object
-                  nullable: true
+                maxItems: 0
               message:
                 type: string
               status:
