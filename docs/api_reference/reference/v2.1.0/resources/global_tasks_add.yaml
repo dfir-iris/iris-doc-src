@@ -43,8 +43,9 @@ post:
                   task_assignee_id:
                     type: number
                   task_close_date:
-                    type: integer
-                    nullable: true
+                    type:
+                      - integer
+                      - 'null'
                   task_description:
                     type: string
                     minLength: 1
@@ -64,8 +65,9 @@ post:
                     type: string
                     minLength: 1
                   task_userid_close:
-                    type: integer
-                    nullable: true
+                    type:
+                      - integer
+                      - 'null'
                   task_userid_open:
                     type: integer
                   task_userid_update:

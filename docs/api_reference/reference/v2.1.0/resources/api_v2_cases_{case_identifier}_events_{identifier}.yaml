@@ -1,0 +1,24 @@
+parameters:
+  - $ref: ../parameters/path/case_identifier.yaml
+  - $ref: ../parameters/path/identifier.yaml
+get:
+  operationId: api_v2_cases_(case_identifier)_events_(identifier)_get
+  tags:
+    - Timeline
+    - Beta
+  summary: Get an event
+  description: Return information of an event of the timeline
+  responses:
+    '201':
+      description: event successfully found
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Event.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+
