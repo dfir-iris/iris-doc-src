@@ -3,6 +3,7 @@ post:
   summary: Create a new alert
   tags: 
     - Alerts
+    - Beta
   description: Creates a new alert.
   requestBody:
     content:
@@ -18,12 +19,16 @@ post:
               type: integer
             alert_classification_id:
               type: integer
-        examples:
-          example-1:
-              alert_title: title
-              alert_severity_id: 2
-              alert_customer_id: 3
-              alert_classification_id: 1
+          required:
+            - alert_title
+            - alert_severity_id
+            - alert_customer_id
+            - alert_classification_id
+        example:
+          alert_title: title
+          alert_severity_id: 2
+          alert_customer_id: 3
+          alert_classification_id: 1
   responses:
     '201':
       description: Alert successfully created
@@ -33,4 +38,5 @@ post:
             $ref: ../schemas/Alert.yaml
     '400':
       $ref: ../responses/GenericError.yaml
-
+    '403':
+      $ref: ../responses/Forbidden.yaml
