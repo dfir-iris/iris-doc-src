@@ -28,9 +28,9 @@ properties:
       state_name:
         type: string
   classification_id:
-    type:
-      - 'null'
-      - integer
+      oneOf:
+      - $ref: ../../schemas/classification_id.yaml
+      - type: 'null'
   review_status_id:
     type: 'null'
   reviewer_id:

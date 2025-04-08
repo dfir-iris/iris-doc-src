@@ -1,5 +1,4 @@
 in: query
 name: classification_id
-description: Classification of the case and alert
 schema:
-  type: integer
+  $ref: ../../schemas/classification_id.yaml
