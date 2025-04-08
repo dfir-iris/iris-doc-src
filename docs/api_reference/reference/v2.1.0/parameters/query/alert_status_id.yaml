@@ -1,0 +1,6 @@
+in: query
+name: alert_status_id
+description: Alert Status identifier 
+schema:
+  $ref: ../../schemas/alert_status_id.yaml
+
