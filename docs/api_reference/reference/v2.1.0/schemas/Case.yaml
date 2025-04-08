@@ -29,7 +29,7 @@ properties:
         type: string
   classification_id:
       oneOf:
-      - $ref: ../../schemas/classification_id.yaml
+      - $ref: ../schemas/classification_id.yaml
       - type: 'null'
   review_status_id:
     type: 'null'

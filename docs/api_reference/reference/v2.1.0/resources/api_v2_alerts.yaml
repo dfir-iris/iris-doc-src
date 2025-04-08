@@ -18,7 +18,7 @@ post:
             alert_customer_id:
               type: integer
             alert_classification_id:
-              $ref: ../../schemas/classification_id.yaml
+              $ref: ../schemas/classification_id.yaml
             alert_description:
               type: string
             alert_source:

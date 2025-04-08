@@ -62,7 +62,7 @@ properties:
     type: integer
   alert_classification_id:
       oneOf:
-      - $ref: ../../schemas/classification_id.yaml
+      - $ref: ../schemas/classification_id.yaml
       - type: 'null'
   alert_source_content:
     type: object
