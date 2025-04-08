@@ -28,7 +28,7 @@ post:
             alert_source_link:
               type: string
             alert_status_id:
-              type: integer
+              $ref: ../schemas/alert_status_id.yaml
             alert_context:
               type: object
             alert_source_event_time:
