@@ -130,7 +130,7 @@ paths:
   /api/v2/cases/{case_identifier}/events/{identifier}:
     $ref: v2.1.0/resources/api_v2_cases_{case_identifier}_events_{identifier}.yaml
   /api/v2/alerts:
-    $ref: v2.1.0/resources/api_v2_cases_alerts.yaml
+    $ref: v2.1.0/resources/api_v2_alerts.yaml
   /manage/cases/update/{case_id}:
     $ref: v2.1.0/resources/manage_cases_update_{case_id}.yaml
   /api/v2/iocs/{identifier}:
