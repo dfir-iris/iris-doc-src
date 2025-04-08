@@ -14,7 +14,7 @@ post:
             alert_title:
               type: string
             alert_severity_id:
-              type: integer
+              $ref: ../schemas/severity_id.yaml
             alert_customer_id:
               type: integer
             alert_classification_id:

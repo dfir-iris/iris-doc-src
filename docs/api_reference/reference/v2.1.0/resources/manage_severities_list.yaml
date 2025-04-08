@@ -23,7 +23,7 @@ get:
                   type: object
                   properties:
                     severity_id:
-                      $ref: ../schemas/case_severity_id.yaml
+                      $ref: ../schemas/severity_id.yaml
                     severity_name:
                       type: string
                     severity_description:

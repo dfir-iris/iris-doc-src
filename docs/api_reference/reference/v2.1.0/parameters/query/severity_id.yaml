@@ -1,0 +1,6 @@
+in: query
+name: severity_id
+description: Severity identifier of the case and alert
+schema:
+  $ref: ../../schemas/severity_id.yaml
+
