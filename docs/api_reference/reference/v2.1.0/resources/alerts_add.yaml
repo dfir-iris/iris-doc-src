@@ -1,6 +1,8 @@
 post:
   summary: Add an alert
   operationId: post-case-add-alert
+  description: This endpoint is deprecated. Use [POST /api/v2/alerts]
+  deprecated: true
   responses:
     '200':
       description: OK
@@ -1575,7 +1577,6 @@ post:
                       A key: A value
               alert_customer_id: 1
               alert_classification_id: 1
-    description: ''
   tags:
     - Alerts
 parameters: []
