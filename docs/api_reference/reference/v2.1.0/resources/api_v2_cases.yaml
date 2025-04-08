@@ -67,7 +67,7 @@ get:
     - $ref: ../parameters/query/case_customer_id.yaml
     - $ref: ../parameters/query/case_name.yaml
     - $ref: ../parameters/query/case_description.yaml
-    - $ref: ../parameters/query/case_classification_id.yaml
+    - $ref: ../parameters/query/classification_id.yaml
     - $ref: ../parameters/query/case_owner_id.yaml
     - $ref: ../parameters/query/case_opening_user_id.yaml
     - $ref: ../parameters/query/severity_id.yaml

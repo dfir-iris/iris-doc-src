@@ -18,7 +18,63 @@ post:
             alert_customer_id:
               type: integer
             alert_classification_id:
+              $ref: ../schemas/classification_id.yaml
+            alert_description:
+              type: string
+            alert_source:
+              type: string
+            alert_source_ref:
+              type: string
+            alert_source_link:
+              type: string
+            alert_status_id:
               type: integer
+            alert_context:
+              type: object
+            alert_source_event_time:
+              type: string
+            alert_note:
+              type: string
+            alert_tags:
+              type: string
+            alert_iocs:
+              type: array
+              items:
+                type: object
+                properties:
+                  ioc_value:
+                    type: string
+                  ioc_description:
+                    type: string
+                  ioc_tlp_id:
+                    type: integer
+                  ioc_type_id:
+                    type: integer
+                  ioc_tags:
+                    type: string
+                  ioc_enrichment:
+                    type: object
+            alert_assets:
+              type: array
+              items:
+                type: object
+                properties:
+                  asset_name:
+                    type: string
+                  asset_description:
+                    type: string
+                  asset_type_id:
+                    type: integer
+                  asset_ip:
+                    type: string
+                  asset_domain:
+                    type: string
+                  asset_tags:
+                    type: string
+                  asset_enrichment:
+                    type: object
+            alert_source_content:
+              type: object
           required:
             - alert_title
             - alert_severity_id

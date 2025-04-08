@@ -61,7 +61,7 @@ properties:
   alert_customer_id:
     type: integer
   alert_classification_id:
-    type: integer
+    $ref: ../schemas/classification_id.yaml
   alert_source_content:
     type: object
 example:
