@@ -40,7 +40,7 @@ put:
             state_id:
               type: integer
             severity_id:
-              $ref: ../schemas/case_severity_id.yaml
+              $ref: ../schemas/severity_id.yaml
             status_id:
               $ref: ../schemas/case_status_id.yaml
             case_customer:

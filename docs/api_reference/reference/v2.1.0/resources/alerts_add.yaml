@@ -1,6 +1,8 @@
 post:
   summary: Add an alert
   operationId: post-case-add-alert
+  description: This endpoint is deprecated. Use [POST /api/v2/alerts](#tag/Alerts/operation/api_v2_alerts_post) instead.
+  deprecated: true
   responses:
     '200':
       description: OK
@@ -1257,7 +1259,6 @@ post:
                   alert_uuid: b38266dd-3698-480f-ba99-61854acbc652
                   alert_id: 796
                   alert_status_id: 3
-  description: 'Add a new alert. '
   parameters: []
   security:
     - Bearer <bearer>: []
@@ -1575,7 +1576,6 @@ post:
                       A key: A value
               alert_customer_id: 1
               alert_classification_id: 1
-    description: ''
   tags:
     - Alerts
 parameters: []
