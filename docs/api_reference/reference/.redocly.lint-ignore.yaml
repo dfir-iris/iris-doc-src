@@ -429,8 +429,6 @@ v2.1.0/resources/alerts_unmerge_{alert_id}.yaml:
     - >-
       #/post/responses/200/content/application~1json/examples/Example
       1/value/data/case_name
-  struct:
-    - '#/post/responses/'
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/datastore_list_tree.yaml:
