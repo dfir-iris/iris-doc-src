@@ -7,6 +7,8 @@ parameters:
 post:
   summary: Update an event
   operationId: post-case-timeline-update-delete-event_id---copy
+  description: This endpoint is deprecated. Use [PUT /api/v2/cases/{case_identifier}/events/{identifier}](#tag/Timeline/operation/api_v2_cases_(case_identifier)_events_(identifier)_put) instead.
+  deprecated: true
   responses:
     '200':
       description: OK
@@ -215,7 +217,6 @@ post:
                 data: []
                 message: Invalid event ID for this case
                 status: error
-  description: Update an event in the timeline
   requestBody:
     content:
       application/json:
