@@ -455,9 +455,6 @@ v2.1.0/resources/datastore_file_info_{file_id}.yaml:
 v2.1.0/resources/datastore_file_update_{file_id}.yaml:
   operation-4xx-response:
     - '#/post/responses'
-  struct:
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/file_is_ioc/nullable
   no-invalid-media-type-examples:
     - '#/post/responses/200/content/application~1json/schema'
 v2.1.0/resources/datastore_file_delete_{file_id}.yaml:

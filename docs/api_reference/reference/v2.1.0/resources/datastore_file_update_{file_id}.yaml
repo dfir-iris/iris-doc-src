@@ -60,7 +60,7 @@ post:
                   file_is_evidence:
                     type: boolean
                   file_is_ioc:
-                    nullable: true
+                    type: boolean
                   file_local_name:
                     type: string
                   file_original_name:
