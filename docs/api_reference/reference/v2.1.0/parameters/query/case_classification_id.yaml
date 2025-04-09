@@ -1,5 +1,0 @@
-in: query
-name: case_classification_id
-description: Classification of the case
-schema:
-  type: integer
