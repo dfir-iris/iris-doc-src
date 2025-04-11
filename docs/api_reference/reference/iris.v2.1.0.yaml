@@ -78,6 +78,7 @@ info:
     * Deprecated POST /case/timeline/events/add in favor of POST /api/v2/cases/{case_identifier}/events
     * Deprecated GET /case/timeline/events/{event_id} in favor of GET /api/v2/cases/{case_identifier}/events/{identifier}
     * Deprecated POST /case/timeline/events/update/{event_id} in favor of PUT /api/v2/cases/{case_identifier}/events/{identifier}
+    * Deprecated POST /case/timeline/events/delete/{event_id} in favor of DELETE /api/v2/cases/{case_identifier}/events/{identifier}
     * Deprecated POST /alerts/add in favor of POST /api/v2/alerts
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
