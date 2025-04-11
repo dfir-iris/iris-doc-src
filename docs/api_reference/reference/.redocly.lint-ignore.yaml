@@ -344,8 +344,6 @@ v2.1.0/resources/alerts_batch_update.yaml:
   no-invalid-media-type-examples:
     - >-
       #/post/requestBody/content/application~1json/examples/example-1/value/updates/alert_source_content/entities/2/id
-  struct:
-    - '#/post/responses/'
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/alerts_delete_{alert_id}.yaml:
