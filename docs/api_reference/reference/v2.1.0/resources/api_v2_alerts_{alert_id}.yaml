@@ -5,8 +5,8 @@ get:
   tags: 
     - Alerts
     - Beta
-  summary: Get an alert
-  description: Get an alert   
+  summary: Fetch an alert
+  description: Fetch an alert   
   responses:
     '201':
       description: Alert successfully found
