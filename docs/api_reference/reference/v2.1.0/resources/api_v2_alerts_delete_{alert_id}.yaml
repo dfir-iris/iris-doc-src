@@ -8,12 +8,8 @@ delete:
   summary: Delete an alert
   description:  Delete an existing alert.
   responses:
-    '201':
-      description: Alert successfully deleted
-      content:
-        application/json:
-          schema:
-            $ref: ../schemas/Alert.yaml
+    '204':
+      $ref: ../responses/Deleted.yaml
     '400':
       $ref: ../responses/GenericError.yaml
     '403':
