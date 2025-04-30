@@ -77,7 +77,7 @@ post:
           custom_attributes: {}
   responses:
     '201':
-      description: Evidence successfully created
+      description: Event successfully created
       content:
         application/json:
           schema:
