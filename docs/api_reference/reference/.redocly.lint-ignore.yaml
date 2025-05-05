@@ -336,24 +336,18 @@ v2.1.0/resources/alerts_update_{alert_id}.yaml:
       #/post/responses/200/content/application~1json/examples/example-1/value/data/alert_source_content/entities/6
     - >-
       #/post/responses/200/content/application~1json/examples/example-1/value/data/alert_source_content/entities/7
-  struct:
-    - '#/post/responses/'
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/alerts_batch_update.yaml:
   no-invalid-media-type-examples:
     - >-
       #/post/requestBody/content/application~1json/examples/example-1/value/updates/alert_source_content/entities/2/id
-  struct:
-    - '#/post/responses/'
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/alerts_delete_{alert_id}.yaml:
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/alerts_batch_delete.yaml:
-  struct:
-    - '#/post/responses/'
   operation-4xx-response:
     - '#/post/responses'
 v2.1.0/resources/alerts_escalate_{alert_id}.yaml:
