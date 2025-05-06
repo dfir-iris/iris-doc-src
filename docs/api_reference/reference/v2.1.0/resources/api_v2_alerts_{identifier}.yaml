@@ -1,0 +1,22 @@
+parameters:
+  - $ref: ../parameters/path/identifier.yaml
+get:
+  operationId: api_v2_alerts_(identifier)_get
+  tags: 
+    - Alerts
+    - Beta
+  summary: Get an alert
+  description: Get an alert   
+  responses:
+    '201':
+      description: Alert successfully found
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Alert.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
