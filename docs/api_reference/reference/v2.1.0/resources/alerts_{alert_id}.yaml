@@ -7,6 +7,8 @@ parameters:
     description: Alert ID
 get:
   summary: Fetch an alert
+  description: This endpoint is deprecated. Use [GET /api/v2/alerts/{identifier}](#tag/Alerts/operation/api_v2_alerts_(identifier)_get) instead.
+  deprecated: true
   operationId: get-alerts-get
   responses:
     '200':
@@ -1343,6 +1345,5 @@ get:
                         type: array
                         items:
                           type: integer
-  description: Fetch an alert
   tags:
     - Alerts
