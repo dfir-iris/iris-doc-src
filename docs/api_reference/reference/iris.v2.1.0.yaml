@@ -83,6 +83,7 @@ info:
     * Deprecated POST /case/timeline/events/delete/{event_id} in favor of DELETE /api/v2/cases/{case_identifier}/events/{identifier}
     * Deprecated POST /alerts/add in favor of POST /api/v2/alerts
     * Deprecated GET /alerts/{alert_id} in favor of GET /api/v2/alerts/{identifier}
+    * Deprecated POST /manage/groups/add in favor of POST /api/v2/manage/groups
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list
