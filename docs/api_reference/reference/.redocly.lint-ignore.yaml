@@ -306,8 +306,6 @@ v2.1.0/resources/alerts_add.yaml:
       #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/ioc_misp/nullable
     - >-
       #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/custom_attributes/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/ioc_type/properties/type_validation_regex/nullable
   operation-4xx-response:
     - '#/post/responses'
   no-invalid-media-type-examples:

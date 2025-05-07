@@ -346,7 +346,9 @@ post:
                             type_name:
                               type: string
                             type_validation_regex:
-                              nullable: true
+                              type:
+                                - string
+                                - 'null'
                             type_id:
                               type: integer
                             type_description:
