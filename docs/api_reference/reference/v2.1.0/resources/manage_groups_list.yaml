@@ -1,7 +1,7 @@
 get:
   summary: List the groups
   tags:
-    - Groups
+    - Manage Groups
   responses: {}
   operationId: get-manage-groups-list
   description: List the groups

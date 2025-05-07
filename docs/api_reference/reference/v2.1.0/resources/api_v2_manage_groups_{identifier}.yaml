@@ -3,7 +3,7 @@ parameters:
 get:
   operationId: api_v2_manage_groups_(identifier)_get
   tags:
-    - Groups
+    - Manage Groups
     - Beta
   summary: Get a group
   description: Requires administrative rights.

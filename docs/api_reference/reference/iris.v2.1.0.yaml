@@ -468,7 +468,7 @@ tags:
   - name: Alerts
   - name: Customers
   - name: Users
-  - name: Groups
+  - name: Manage Groups
   - name: Modules
   - name: API
   - name: Beta
