@@ -1,5 +1,5 @@
 post:
-  operationId: api_v2_groups_post
+  operationId: api_v2_manage_groups_post
   summary: Add a new group
   description: Requires administrative rights.
   tags:
