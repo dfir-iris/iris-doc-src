@@ -21,7 +21,7 @@ get:
     '404':
       $ref: ../responses/NotFound.yaml
 put:
-  operationId: api_v2_alerts_put
+  operationId: api_v2_alerts_(identifier)_put
   tags:
     - Alerts
     - Beta
