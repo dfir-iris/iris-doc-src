@@ -1,22 +1,19 @@
 type: object
 properties:
-  data:
-     type: object
-     properties:
-       group_name:
-         type: string
-       group_description:
-         type: string
-       group_permissions:
-         type: integer
-       group_auto_follow:
-         type: boolean
-       group_auto_follow_access_level:
-         type: integer
-       group_id:
-         type: integer
-       group_uuid:
-         type: string
+  group_name:
+    type: string
+  group_description:
+    type: string
+  group_permissions:
+    type: integer
+  group_auto_follow:
+    type: boolean
+  group_auto_follow_access_level:
+    type: integer
+  group_id:
+    type: integer
+  group_uuid:
+    type: string
 example:
   group_auto_follow: false
   group_auto_follow_access_level: 0

@@ -339,7 +339,9 @@ post:
                         ioc_enrichment:
                           type: object
                         custom_attributes:
-                          nullable: true
+                          type:
+                            - object
+                            - 'null'
                         ioc_type:
                           type: object
                           properties:
