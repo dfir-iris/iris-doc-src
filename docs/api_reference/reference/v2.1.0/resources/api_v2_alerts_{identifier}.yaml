@@ -170,9 +170,6 @@ put:
                 id: 55017817-27af-49a7-93d6-8af6c5030fdb
                 label: DC3
                 type: device
-              - id: 20940
-                label: Active Directory
-                type: service
               - entityRole: Related
                 id: 95c59b48-98c1-40ff-a444-d9040f1f68f2
                 label: DC4
@@ -189,9 +186,6 @@ put:
                 id: d68772fe-1171-4124-9f73-0f410340bd54
                 label: DC1
                 type: device
-              - type: groupTag
-                id: 5f759b4d106abbe4a504ea5d
-                label: All Users
             idValue: 15795464
             isSystemAlert: false
             resolutionStatusValue: 0
