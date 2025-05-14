@@ -1,7 +1,7 @@
 post:
   summary: Delete cases access of a group
   tags:
-    - Groups
+    - Manage Groups
   responses:
     '200':
       description: OK
