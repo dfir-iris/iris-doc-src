@@ -43,7 +43,7 @@ To build and run IRIS, follow these steps:
 2. Check out the latest **non-beta** tagged version: 
 
     ```bash
-    git checkout v2.4.12
+    git checkout v2.4.20
     ```
 
 3. Copy the environment file 
@@ -51,7 +51,15 @@ To build and run IRIS, follow these steps:
     ```
     cp .env.model .env
     ```
+    Edit your `.env` file and remove/comment out the following lines:
+    ```
+    # NGINX_IMAGE_TAG=latest
+    # DB_IMAGE_TAG=latest
+    # APP_IMAGE_TAG=latest
+    ```
+  Or use:`sed '/latest$/d' .env.model > .env`
 
+ 
     !!! warning "Warning"
         The default configuration is suitable for testing only. To configure IRIS for production, see the [configuration section](operations/configuration.md). 
 
