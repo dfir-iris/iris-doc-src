@@ -53,6 +53,7 @@ info:
     * Added POST /api/v2/alerts
     * Added GET /api/v2/alerts/{identifier}
     * Added PUT /api/v2/alerts/{identifier}
+    * Added DELETE /api/v2/alerts/{identifier}
     * Added POST /api/v2/manage/groups
     * Added GET /api/v2/manage/groups/{identifier}
     * Deprecated POST /manage/cases/add in favor of POST /api/v2/cases
