@@ -164,7 +164,7 @@ get:
                 message: Invalid task ID for this case
                 status: error
   operationId: get-case-tasks-fetch
-  description: This endpoint is deprecated. Use GET /api/v2/tasks/{identifier} instead.
+  description: This endpoint is deprecated. Use [GET /api/v2/tasks/{identifier}](#tag/Tasks/operation/api_v2_tasks_(identifier)_get) instead.
   deprecated: true
   security:
     - Bearer <bearer>: []

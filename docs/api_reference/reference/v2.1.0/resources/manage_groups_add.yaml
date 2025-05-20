@@ -1,5 +1,8 @@
 post:
   summary: Add a new group
+  operationId: post-manage-groups-add
+  description: This endpoint is deprecated. Use [POST /api/v2/manage/groups/add](#tag/Groups/operation/api_v2_manage_groups_post) instead.
+  deprecated: true
   tags:
     - Groups
   responses:
@@ -57,8 +60,6 @@ post:
                   group_uuid: a9bb4b93-c8ac-490d-9387-f97f4722271c
                 message: ''
                 status: success
-  operationId: post-manage-groups-add
-  description: 'Requires administrative rights. '
   parameters:
     - schema:
         type: integer

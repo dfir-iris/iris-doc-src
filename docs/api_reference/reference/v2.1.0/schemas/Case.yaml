@@ -13,7 +13,7 @@ properties:
   case_id:
     type: integer
   severity_id:
-    $ref: ../schemas/case_severity_id.yaml
+    $ref: ../schemas/severity_id.yaml
   status_id:
     $ref: ../schemas/case_status_id.yaml
   state:
@@ -28,9 +28,9 @@ properties:
       state_name:
         type: string
   classification_id:
-    type:
-      - 'null'
-      - integer
+      oneOf:
+      - $ref: ../schemas/classification_id.yaml
+      - type: 'null'
   review_status_id:
     type: 'null'
   reviewer_id:
@@ -53,9 +53,13 @@ properties:
   open_date:
     type: string
   close_date:
-    type: 'null'
+    type:
+      - string
+      - 'null'
   closing_note:
-    type: 'null'
+    type:
+      - string
+      - 'null'
   custom_attributes:
     type: object
   modification_history:

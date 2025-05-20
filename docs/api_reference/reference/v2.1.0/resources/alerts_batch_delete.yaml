@@ -31,32 +31,6 @@ post:
                 message: ''
                 data:
                   alert_id: 436
-    '':
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              status:
-                type: string
-              message:
-                type: string
-              data:
-                type: array
-                items:
-                  type: object
-                  properties: {}
-            x-examples:
-              Example 1:
-                status: success
-                message: Batch delete successful
-                data: []
-          examples:
-            Example 1:
-              value:
-                status: success
-                message: Batch delete successful
-                data: []
   description: Delete a batch of alerts
   parameters: []
   security:

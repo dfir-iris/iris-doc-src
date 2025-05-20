@@ -2,6 +2,8 @@ parameters: []
 post:
   summary: Add a new note
   operationId: post-case-notes-add
+  description: This endpoint is deprecated. Use [POST /api/v2/cases/{case_identifier}/notes](#tag/Notes/operation/api_v2_cases_(case_identifier)_notes_post) instead.
+  deprecated: true
   tags:
     - Notes
   responses:
@@ -164,7 +166,6 @@ post:
                     - Missing data for required field.
                 message: Data error
                 status: error
-  description: 'Add a new note to an existing group. '
   parameters:
     - schema:
         type: integer

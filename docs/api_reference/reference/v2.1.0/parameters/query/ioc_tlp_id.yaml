@@ -1,6 +1,5 @@
 in: query
 name: ioc_tlp_id
-description: Identifier of the IOC TLP (traffic light protocol) color
 schema:
-  type: integer
+  $ref: ../../schemas/ioc_tlp_id.yaml
 

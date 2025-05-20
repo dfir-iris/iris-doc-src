@@ -134,7 +134,7 @@ get:
                 message: Invalid IOC ID for this case
                 status: error
   operationId: get-case-ioc-fetch
-  description: This endpoint is deprecated. Use GET /api/v2/iocs/{identifier} instead.
+  description: This endpoint is deprecated. Use [GET /api/v2/iocs/{identifier}](#tag/IOCs/operation/api_v2_iocs_(identifier)_get) instead.
   deprecated: true
   security:
     - Bearer <bearer>: []

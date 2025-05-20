@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/identifier.yaml
 get:
-  operationId: api_v2_iocs_{identifier}_get
+  operationId: api_v2_iocs_(identifier)_get
   tags:
     - IOCs
     - Beta
@@ -17,7 +17,7 @@ get:
     '404':
       $ref: ../responses/NotFound.yaml
 put:
-  operationId: api_v2_iocs_{identifier}_put
+  operationId: api_v2_iocs_(identifier)_put
   tags:
     - IOCs
     - Beta
@@ -48,14 +48,12 @@ put:
             ioc_tags:
               type: string
               description : 'Ioc tags'
-        examples:
-           Valid request:
-             value:
-               ioc_value: 8.8.8.8
-               ioc_type_id: 1
-               ioc_tlp_id: 2
-               ioc_description: rewrw
-               ioc_tags: ''
+        example:
+          ioc_value: 8.8.8.8
+          ioc_type_id: 1
+          ioc_tlp_id: 2
+          ioc_description: rewrw
+          ioc_tags: ''
   responses:
     '200':
       description: IOC successfully updated
@@ -68,7 +66,7 @@ put:
     '400':
       $ref: ../responses/GenericError.yaml
 delete:
-  operationId: api_v2_iocs_{identifier}_delete
+  operationId: api_v2_iocs_(identifier)_delete
   tags:
     - IOCs
     - Beta

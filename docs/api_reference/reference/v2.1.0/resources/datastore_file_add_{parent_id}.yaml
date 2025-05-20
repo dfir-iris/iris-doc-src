@@ -77,7 +77,6 @@ post:
                   file_is_evidence:
                     type: boolean
                   file_is_ioc:
-                    nullable: true
                     type: boolean
                   file_local_name:
                     type: string
@@ -115,7 +114,7 @@ post:
                   file_description: dsa
                   file_id: 31
                   file_is_evidence: true
-                  file_is_ioc: null
+                  file_is_ioc: false
                   file_local_name: >-
                     /Evidences/case-1/dsf-65fc1aa8-aa58-4c02-a12a-bee485e8c30a.zip
                   file_original_name: Analysis_IrisInitialClient_2023-02-03.md

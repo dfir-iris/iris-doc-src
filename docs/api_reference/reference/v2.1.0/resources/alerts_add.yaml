@@ -1,6 +1,8 @@
 post:
   summary: Add an alert
   operationId: post-case-add-alert
+  description: This endpoint is deprecated. Use [POST /api/v2/alerts](#tag/Alerts/operation/api_v2_alerts_post) instead.
+  deprecated: true
   responses:
     '200':
       description: OK
@@ -218,7 +220,9 @@ post:
                 type: object
                 properties:
                   owner:
-                    nullable: true
+                    type:
+                      - object
+                      - 'null'
                   alert_note:
                     type: string
                   alert_source:
@@ -342,15 +346,21 @@ post:
                             type_name:
                               type: string
                             type_validation_regex:
-                              nullable: true
+                              type:
+                                - string
+                                - 'null'
                             type_id:
                               type: integer
                             type_description:
                               type: string
                             type_validation_expect:
-                              nullable: true
+                              type:
+                                - string
+                                - 'null'
                             type_taxonomy:
-                              nullable: true
+                              type:
+                                - string
+                                - 'null'
                         ioc_tags:
                           type: string
                   alert_context:
@@ -376,19 +386,27 @@ post:
                       client_uuid:
                         type: string
                       customer_sla:
-                        nullable: true
+                        type:
+                          - string
+                          - 'null'
                       last_update_date:
                         type: string
                       customer_id:
                         type: integer
                       customer_description:
-                        nullable: true
+                        type:
+                          - string
+                          - 'null'
                       custom_attributes:
-                        nullable: true
+                        type:
+                          - object
+                          - 'null'
                       creation_date:
                         type: string
                   alert_owner_id:
-                    nullable: true
+                    type:
+                      - integer
+                      - 'null'
                   alert_description:
                     type: string
                   alert_creation_time:
@@ -1243,7 +1261,6 @@ post:
                   alert_uuid: b38266dd-3698-480f-ba99-61854acbc652
                   alert_id: 796
                   alert_status_id: 3
-  description: 'Add a new alert. '
   parameters: []
   security:
     - Bearer <bearer>: []
@@ -1561,7 +1578,6 @@ post:
                       A key: A value
               alert_customer_id: 1
               alert_classification_id: 1
-    description: ''
   tags:
     - Alerts
 parameters: []

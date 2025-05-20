@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/case_identifier.yaml
 post:
-  operationId: api_v2_cases_{identifier}_tasks_post
+  operationId: api_v2_cases_(case_identifier)_tasks_post
   summary: Create a task
   tags:
     - Tasks
@@ -14,21 +14,22 @@ post:
           properties:
             task_assignees_id:
               type: array
-              required: true 
               items:
                 type: integer
             task_description:
               type: string
             task_status_id:
               type: integer
-              required: true 
             task_tags:
               type: string
             task_title:
               type: string
-              required: true 
             custom_attributes:
               type: object
+          required:
+            - task_assignees_id
+            - task_status_id
+            - task_title
         examples:
           Valid request:
             value:
@@ -50,7 +51,7 @@ post:
       $ref: ../responses/GenericError.yaml
   description: 'Add a new task.'
 get:
-  operationId: api_v2_cases_{identifier}_tasks_get
+  operationId: api_v2_cases_(case_identifier)_tasks_get
   summary: Get a paginated list of tasks
   description: Returns a paginated list of tasks.
   parameters:

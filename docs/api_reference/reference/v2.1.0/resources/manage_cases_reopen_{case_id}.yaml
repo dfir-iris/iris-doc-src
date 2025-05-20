@@ -49,8 +49,9 @@ get:
                     type: string
                     minLength: 1
                   close_date:
-                    type: string
-                    nullable: true
+                    type:
+                      - string
+                      - 'null'
                   open_date:
                     type: string
                     minLength: 1
@@ -144,9 +145,7 @@ get:
                 data: []
                 message: Resource not found
                 status: error
-  description: >-
-    This endpoint is deprecated. Use `POST /manage/cases/reopen/{case_id}`
-    instead.
+  description: This endpoint is deprecated. Use [POST /manage/cases/reopen/{case_id}](#tag/Cases/operation/post-manage-cases-reopen-case_id) instead.
   deprecated: true
   security:
     - Bearer <bearer>: []
@@ -214,7 +213,9 @@ post:
                   case_name:
                     type: string
                   closing_note:
-                    nullable: true
+                    type:
+                      - string
+                      - 'null'
                   user_id:
                     type: integer
                   owner_id:
@@ -230,15 +231,21 @@ post:
                   modification_history:
                     type: object
                   custom_attributes:
-                    nullable: true
+                    type:
+                      - object
+                      - 'null'
                   close_date:
-                    nullable: true
+                    type:
+                      - string
+                      - 'null'
                   case_description:
                     type: string
                   state_id:
                     type: integer
                   classification_id:
-                    nullable: true
+                    type:
+                      - integer
+                      - 'null'
   description: >-
     Reopen a case previously closed. A case can be reopened even if it is not
     closed. 

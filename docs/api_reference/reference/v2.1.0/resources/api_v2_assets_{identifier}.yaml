@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/identifier.yaml
 get:
-  operationId: api_v2_assets_{identifier}_get
+  operationId: api_v2_assets_(identifier)_get
   tags:
     - Assets
     - Beta
@@ -17,7 +17,7 @@ get:
     '404':
       $ref: ../responses/NotFound.yaml
 delete:
-  operationId: api_v2_assets_{identifier}_delete
+  operationId: api_v2_assets_(identifier)_delete
   tags:
     - Assets
   summary: Delete an asset

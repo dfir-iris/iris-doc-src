@@ -1,3 +1,0 @@
-type: integer
-description: "The case severity identifier. Possible values are listed by endpoint GET /manage/severities/list"
-

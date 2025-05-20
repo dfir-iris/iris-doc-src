@@ -68,7 +68,7 @@ post:
                 message: Invalid task ID for this case
                 status: error
   operationId: get-case-tasks-delete
-  description: This endpoint is deprecated. Use DELETE /api/v2/tasks/{identifier} instead.
+  description: This endpoint is deprecated. Use [DELETE /api/v2/tasks/{identifier}](#tag/Tasks/operation/api_v2_tasks_(identifier)_delete) instead.
   deprecated: true
   security:
     - Bearer <bearer>: []
@@ -94,7 +94,5 @@ get:
       description: OK
   tags:
     - Tasks
-  description: >-
-    This endpoint is deprecated. Use the DELETE /api/v2/tasks/{identifier}
-    instead.
+  description: This endpoint is deprecated. Use the [DELETE /api/v2/tasks/{identifier}](#tag/Tasks/operation/api_v2_tasks_(identifier)_delete) instead.
   deprecated: true

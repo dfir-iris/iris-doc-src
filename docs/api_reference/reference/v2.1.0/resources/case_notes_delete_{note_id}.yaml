@@ -1,5 +1,7 @@
 post:
   summary: Delete a note
+  description: This endpoint is deprecated. Use [DELETE /api/v2/cases/{case_identifier}/notes/{identifier}](#tag/Notes/operation/api_v2_cases_(case_identifier)_notes_(identifier)_delete) instead.
+  deprecated: true
   tags:
     - Notes
   responses:
@@ -96,7 +98,6 @@ post:
                 message: Invalid note ID for this case
                 status: error
   operationId: post-case-delete-note
-  description: 'Delete a note. '
   security:
     - Bearer <bearer>: []
   parameters:
@@ -121,7 +122,5 @@ get:
   responses:
     '200':
       description: OK
-  description: >-
-    This endpoint is deprecated. Use the POST `/case/notes/delete/{note_id}`
-    instead.
+  description: This endpoint is deprecated. Use the [POST /case/notes/delete/{note_id}](#tag/Notes/operation/post-case-delete-note) instead.
   deprecated: true

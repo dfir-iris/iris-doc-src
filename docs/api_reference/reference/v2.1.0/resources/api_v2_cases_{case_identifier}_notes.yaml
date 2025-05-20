@@ -1,0 +1,41 @@
+parameters:
+  - $ref: ../parameters/path/case_identifier.yaml
+post:
+  operationId: api_v2_cases_(cases_identifier)_notes_post
+  summary: Add a new note
+  description: Add a new note to an existing group.
+  tags:
+    - Notes
+    - Beta
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            note_title:
+              type: string
+            note_content:
+              type: string
+            directory_id:
+              type: integer
+          required:
+            - directory_id
+        examples:
+          example-1:
+            value:
+              note_title: Title of the note
+              note_content: Content of the note
+              directory_id: 36
+  responses:
+    '201':
+      description: Note successfully created
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Note.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '404':
+      description: Case with identifier case_identifier not found
+

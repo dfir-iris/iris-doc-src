@@ -91,9 +91,7 @@ post:
                 data: []
                 message: Group ID 3 not found
                 status: error
-  description: >-
-    This endpoint is deprecated. Use
-    `/case/notes/directories/update/{directory_id}` instead.
+  description: This endpoint is deprecated. Use [POST /case/notes/directories/update/{directory_id}](#tag/Notes/operation/post-case-notes-update-directory) instead.
   deprecated: true
   parameters:
     - schema:

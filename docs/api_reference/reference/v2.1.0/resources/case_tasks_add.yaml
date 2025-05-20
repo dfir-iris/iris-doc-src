@@ -134,9 +134,7 @@ post:
                 data: []
                 message: task_assignee_id is not valid anymore since v1.5.0
                 status: error
-  description: >-
-    This endpoint is deprecated. Use POST /api/v2/cases/{case_identifier}/tasks
-    instead.
+  description: This endpoint is deprecated. Use [POST /api/v2/cases/{case_identifier}/tasks](#tag/Tasks/operation/api_v2_cases_(case_identifier)_tasks_post) instead.
   deprecated: true
   requestBody:
     content:

@@ -70,9 +70,7 @@ post:
                 message: Tried to delete a non-existing case
                 status: error
   operationId: get-manage-cases-delete
-  description: >-
-    This endpoint is deprecated. Use `DELETE /api/v2/cases/{case_identifier}`
-    instead.
+  description: This endpoint is deprecated. Use [DELETE /api/v2/cases/{case_identifier}](#tag/Cases/operation/api_v2_cases_(cases_identifier)_delete) instead.
   deprecated: true
   security:
     - Bearer <bearer>: []
@@ -90,9 +88,7 @@ get:
   responses:
     '200':
       description: OK
-  description: >-
-    This endpoint is deprecated. Use `POST /manage/cases/delete/{case_id}`
-    instead.
+  description: This endpoint is deprecated. Use [DELETE /api/v2/cases/{case_identifier}](#tag/Cases/operation/api_v2_cases_(cases_identifier)_delete) instead.
   deprecated: true
   tags:
     - Cases

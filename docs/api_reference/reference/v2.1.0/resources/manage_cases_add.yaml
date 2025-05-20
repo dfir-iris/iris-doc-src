@@ -1,7 +1,7 @@
 parameters: []
 post:
   summary: Add a new case
-  description: This endpoint is deprecated. Use POST /api/v2/cases instead.
+  description: This endpoint is deprecated. Use [POST /api/v2/cases](#tag/Cases/operation/api_v2_cases_post) instead.
   deprecated: true
   operationId: post-manage-cases-add
   responses:

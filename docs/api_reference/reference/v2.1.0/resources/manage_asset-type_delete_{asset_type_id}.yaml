@@ -1,5 +1,5 @@
 post:
-  summary: Get assets types
+  summary: Delete an asset type
   responses:
     '200':
       description: OK
@@ -87,7 +87,5 @@ get:
       description: OK
   tags:
     - Manage Assets Types
-  description: >-
-    This endpoint is deprecated. Use `POST
-    /manage/asset-type/delete/{asset_type_id}` instead.
+  description: This endpoint is deprecated. Use [POST /manage/asset-type/delete/{asset_type_id}](#tag/Manage-Assets-Types/operation/post-manage-assettype_delete) instead.
   deprecated: true

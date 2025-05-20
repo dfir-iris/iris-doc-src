@@ -1,0 +1,683 @@
+# This file instructs Redocly's linter to ignore the rules contained for specific parts of your API.
+# See https://redocly.com/docs/cli/ for more information.
+iris.v2.1.0.yaml:
+  info-license-strict:
+    - '#/info/license'
+  tag-description:
+    - '#/tags/2/description'
+    - '#/tags/3/description'
+    - '#/tags/4/description'
+    - '#/tags/5/description'
+    - '#/tags/6/description'
+    - '#/tags/7/description'
+    - '#/tags/8/description'
+    - '#/tags/9/description'
+    - '#/tags/10/description'
+    - '#/tags/11/description'
+    - '#/tags/12/description'
+  spec-components-invalid-map-name:
+    - '#/components/securitySchemes/Bearer <bearer>'
+v2.1.0/resources/api_v2_cases.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/api_v2_cases_{case_identifier}_iocs.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/api_v2_cases_{case_identifier}_assets.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/api_v2_cases_{case_identifier}_assets_{identifier}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/put/requestBody/content/application~1json/examples/Example
+      1/value/analysis_status_id
+v2.1.0/resources/api_v2_cases_{case_identifier}_tasks.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_summary_update.yaml:
+  no-invalid-media-type-examples:
+    - '#/post/requestBody/content/application~1json/examples/example-1/value/cid'
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/case_tasklog_add.yaml:
+  no-invalid-media-type-examples:
+    - '#/post/responses/200/content/application~1json/examples/Success/value/data'
+    - >-
+      #/post/responses/200/content/application~1json/examples/Success/value/data/activity_date
+v2.1.0/resources/case_export.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/case
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/case/opened_by
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/case/for_customer
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/evidences/0/custom_attributes
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/timeline/0/custom_attributes
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/timeline/0/assets/0
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/timeline/0/assets/1
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/timeline/1/custom_attributes
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/timeline/1/assets/0
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/timeline/1/assets/1
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/timeline/2/custom_attributes
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/timeline/2/assets/0
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/timeline/2/assets/1
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/notes/0
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/notes/0/custom_attributes
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/notes/0/group_title
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/notes/0/group_id
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/notes/0/group_user
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/notes/1
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/notes/1/custom_attributes
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/notes/1/group_title
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/notes/1/group_id
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/notes/1/group_user
+v2.1.0/resources/case_assets_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_notes_groups_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_notes_directories_filter.yaml:
+  struct:
+    - '#/get/responses/'
+  operation-4xx-response:
+    - '#/get/responses'
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data
+v2.1.0/resources/case_notes_groups_add.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/case_notes_directories_add.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/requestBody/content/application~1json/examples/Add test
+      group/value/parent_id
+  struct:
+    - '#/post/responses/'
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/case_notes_groups_update_{group_id}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/responses/400/content/application~1json/examples/example-1/value/data
+v2.1.0/resources/case_notes_directories_update_{directory_id}.yaml:
+  struct:
+    - '#/post/responses/'
+  no-invalid-media-type-examples:
+    - >-
+      #/post/responses/400/content/application~1json/examples/example-1/value/data
+v2.1.0/resources/case_notes_update_{note_id}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/requestBody/content/application~1json/examples/Example/value/directory_id
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/case_notes_delete_{note_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+  no-invalid-media-type-examples:
+    - '#/post/responses/200/content/application~1xml/examples/Example 1/value'
+v2.1.0/resources/case_notes_search.yaml:
+  struct:
+    - '#/get/responses/'
+  operation-4xx-response:
+    - '#/get/responses'
+    - '#/post/responses'
+v2.1.0/resources/case_ioc_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_ioc_add.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/responses/200/content/application~1json/examples/IOC Already exists
+      in DB/value/data/ioc_type
+v2.1.0/resources/case_ioc_delete_{ioc_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_timeline_events_list_filter_{asset_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_timeline_advanced-filter.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/timeline/0
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/timeline/0/assets/0/compromised
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/timeline/0/assets/1/compromised
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/timeline/1
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/timeline/1/assets/0/compromised
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/timeline/1/assets/1/compromised
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/timeline/1/assets/2/compromised
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/timeline/2
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/timeline/2/assets/0/compromised
+v2.1.0/resources/case_timeline_events_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/Success filtering
+      on asset 900/value/data
+v2.1.0/resources/case_timeline_state.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_timeline_events_add.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/requestBody/content/application~1json/examples/example-1/value/parent_event_id
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/case_timeline_events_{event_id}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data
+v2.1.0/resources/case_timeline_events_update_{event_id}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/requestBody/content/application~1json/examples/Example/value/parent_event_id
+    - '#/post/responses/200/content/application~1json/examples/Example/value/data'
+v2.1.0/resources/case_timeline_events_delete_{event_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_tasks_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_tasks_delete_{task_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_tasks_add.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/responses/200/content/application~1json/examples/example-1/value/data
+v2.1.0/resources/case_evidences_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_evidences_add.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/case_evidences_{evidence_id}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/custom_attributes
+v2.1.0/resources/case_evidences_delete_{evidence_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+    - '#/post/responses'
+v2.1.0/resources/case_evidences_update_{evidence_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/alerts_{alert_id}.yaml:
+  struct:
+    - '#/get/responses/'
+  operation-4xx-response:
+    - '#/get/responses'
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/modification_history
+v2.1.0/resources/alerts_filter.yaml:
+  struct:
+    - '#/get/responses/'
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/alerts_add.yaml:
+  struct:
+    - '#/post/responses/'
+    - >-
+      #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/user_id/nullable
+    - >-
+      #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/case_id/nullable
+    - >-
+      #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/analysis_status_id/nullable
+    - >-
+      #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/date_added/nullable
+    - >-
+      #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/custom_attributes/nullable
+    - >-
+      #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/asset_info/nullable
+    - >-
+      #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/date_update/nullable
+    - >-
+      #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/asset_compromise_status_id/nullable
+    - >-
+      #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/user_id/nullable
+    - >-
+      #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/ioc_misp/nullable
+    - >-
+      #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/custom_attributes/nullable
+  operation-4xx-response:
+    - '#/post/responses'
+  no-invalid-media-type-examples:
+    - '#/post/responses/200/content/application~1json/schema'
+v2.1.0/resources/alerts_update_{alert_id}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/requestBody/content/application~1json/examples/example-1/value/alert_source_content/entities/2/id
+    - >-
+      #/post/responses/200/content/application~1json/examples/example-1/value/data
+    - >-
+      #/post/responses/200/content/application~1json/examples/example-1/value/data/alert_source_content/entities/0
+    - >-
+      #/post/responses/200/content/application~1json/examples/example-1/value/data/alert_source_content/entities/1
+    - >-
+      #/post/responses/200/content/application~1json/examples/example-1/value/data/alert_source_content/entities/2
+    - >-
+      #/post/responses/200/content/application~1json/examples/example-1/value/data/alert_source_content/entities/2/id
+    - >-
+      #/post/responses/200/content/application~1json/examples/example-1/value/data/alert_source_content/entities/3
+    - >-
+      #/post/responses/200/content/application~1json/examples/example-1/value/data/alert_source_content/entities/4
+    - >-
+      #/post/responses/200/content/application~1json/examples/example-1/value/data/alert_source_content/entities/5
+    - >-
+      #/post/responses/200/content/application~1json/examples/example-1/value/data/alert_source_content/entities/6
+    - >-
+      #/post/responses/200/content/application~1json/examples/example-1/value/data/alert_source_content/entities/7
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/alerts_batch_update.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/requestBody/content/application~1json/examples/example-1/value/updates/alert_source_content/entities/2/id
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/alerts_delete_{alert_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/alerts_batch_delete.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/alerts_escalate_{alert_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/alerts_merge_{alert_id}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/requestBody/content/application~1json/examples/Example
+      1/value/target_case_id
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/modification_history
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/custom_attributes
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/alerts_unmerge_{alert_id}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/requestBody/content/application~1json/examples/Example
+      1/value/target_case_id
+    - >-
+      #/post/requestBody/content/application~1json/examples/Example
+      1/value/iocs_import_list
+    - >-
+      #/post/requestBody/content/application~1json/examples/Example
+      1/value/assets_import_list
+    - '#/post/requestBody/content/application~1json/examples/Example 1/value/note'
+    - >-
+      #/post/requestBody/content/application~1json/examples/Example
+      1/value/import_as_event
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/status_id
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/case_description
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/case_id
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/closing_note
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/case_customer
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/custom_attributes
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/classification_id
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/close_date
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/case_uuid
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/user_id
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/open_date
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/owner_id
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/case_soc_id
+    - >-
+      #/post/responses/200/content/application~1json/examples/Example
+      1/value/data/case_name
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/datastore_list_tree.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/data/d-48
+v2.1.0/resources/datastore_file_add_{parent_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/datastore_file_info_{file_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/datastore_file_update_{file_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+  no-invalid-media-type-examples:
+    - '#/post/responses/200/content/application~1json/schema'
+v2.1.0/resources/datastore_file_delete_{file_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/datastore_file_view_{file_id}.yaml:
+  operation-2xx-response:
+    - '#/get/responses'
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/datastore_file_move_{file_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/datastore_folder_add.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/datastore_folder_rename_{folder_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/datastore_folder_move_{folder_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/case_{object_name}_{object_id}_comments_add.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/case_{object_name}_{object_id}_comments_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/case_{object_name}_{object_id}_comments_{comment_id}_delete.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/case_{object_name}_{object_id}_comments_{comment_id}_edit.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/dim_tasks_list_{rows_count}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/dim_tasks_limited-list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/dim_hooks_options_{object_type}_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/dim_hooks_call.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/requestBody/content/application~1json/examples/example-1/value/targets/0
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/global_tasks_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/global_tasks_add.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/responses/200/content/application~1json/examples/Success/value/data/task_userid_open
+v2.1.0/resources/manage_cases_add.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/responses/400/content/application~1json/examples/example-1/value/data/case_soc_id
+v2.1.0/resources/manage_cases_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_cases_close_{case_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+  no-invalid-media-type-examples:
+    - '#/post/responses/200/content/application~1json/schema'
+v2.1.0/resources/manage_cases_reopen_{case_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_cases_delete_{case_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_customers_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_customers_{customer_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_customers_delete_{customer_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_customers_{customer_id}_contacts_add.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_customers_{customer_id}_contacts_{contact_id}_update.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_users_delete_{user_id}.yaml:
+  operation-summary:
+    - '#/get/summary'
+  operation-4xx-response:
+    - '#/get/responses'
+  operation-2xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_users_{user_id}_cases-access_delete.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/requestBody/content/application~1json/examples/Example
+      1/value/cases
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_users_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_groups_add.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_groups_list.yaml:
+  operation-2xx-response:
+    - '#/get/responses'
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_asset-type_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_asset-type_delete_{asset_type_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_task-status_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_analysis-status_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_ioc-types_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/0
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data/0/0
+v2.1.0/resources/manage_ioc-types_delete_{ioc_type_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_ioc-types_update_{ioc_type_id}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/responses/400/content/application~1json/examples/example-1/value/data
+v2.1.0/resources/manage_tlp_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_case-templates_add.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/responses/400/content/application~1json/examples/example-1/value/data
+v2.1.0/resources/manage_case-templates_update_{template_id}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/responses/400/content/application~1json/examples/example-1/value/data
+v2.1.0/resources/manage_case-templates_delete_{template_id}.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/post/responses/400/content/application~1json/examples/example-1/value/data
+v2.1.0/resources/manage_case-classifications_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_case-classifications_{classification_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data
+v2.1.0/resources/manage_case-classifications_add.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_case-classifications_update_{classification_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_case-classifications_delete_{classification_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_case-states_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_case-states_{state_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_case-states_add.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_case-states_update_{state_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_case-states_delete_{state_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_compromise-status_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_severities_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_evidence-types_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_evidence-types_{type_id}.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/manage_evidence-types_add.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_evidence-types_update_{type_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_evidence-types_delete_{state_id}.yaml:
+  operation-4xx-response:
+    - '#/post/responses'
+v2.1.0/resources/manage_event-categories_list.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/api_versions.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+v2.1.0/resources/api_ping.yaml:
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/example-1/value/data
+v2.1.0/resources/manage_cases_filter.yaml:
+  operation-4xx-response:
+    - '#/get/responses'
+  no-invalid-media-type-examples:
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/message/cases/3/modification_history
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/message/cases/4/modification_history
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/message/cases/5/modification_history
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/message/cases/5/close_date
+    - >-
+      #/get/responses/200/content/application~1json/examples/Example
+      1/value/message/cases/6/modification_history

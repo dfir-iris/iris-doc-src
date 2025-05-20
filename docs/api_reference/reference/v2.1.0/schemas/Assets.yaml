@@ -13,5 +13,5 @@ properties:
   next_page:
     type:
       - integer
-      - null
+      - 'null'
 
