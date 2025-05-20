@@ -65,7 +65,7 @@ site_author: "DFIR-IRIS Team"
 repo_name: DFIR-IRIS Web
 edit_uri: ""
 
-copyright: Copyright &copy; 2021-2024 - DFIR-IRIS Team
+copyright: Copyright &copy; 2021-2025 - DFIR-IRIS Team
 
 plugins:
   - git-revision-date
