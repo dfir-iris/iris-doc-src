@@ -2,6 +2,15 @@
 
 For upgrades instructions, please see the [Upgrades page](/operations/upgrades). 
 
+## [v2.4.21](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.21) <small>_ May 21, 2025 _</small>
+### What's changed
+
+- Fixes the by-default `latest` tag pulling in .env.model 
+- Fixes duplicated import of assets from alerts 
+
+
+**Full Changelog**: https://github.com/dfir-iris/iris-web/compare/v2.4.20...v2.4.21
+
 ## [v2.4.20](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.20) <small>_ January 15, 2025 _</small>
 ### What's changed
 
