@@ -7,6 +7,9 @@ For upgrades instructions, please see the [Upgrades page](/operations/upgrades).
 
 * Fixes an issue with alerts correlation that increases creation delay as more and more alerts are added to the system.
 
+!!!  warning "Warning"
+    An issue has been identified when pulling the last version of IRIS. Even after checkout to `v2.4.20`, the version `v2.5.0-beta` would be downloaded. This is due to an automatic tagging of Github Registry and an environment variable set by default to `latest` in the `.env`. See [our annoucement](https://discord.com/channels/922879298786975774/972048132504432660/1370407855596765296)
+
 ## [v2.4.19](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.19) <small>_ December 21, 2024 _</small>
 ### What's changed
 
