@@ -1,5 +1,7 @@
 post:
   summary: Update an alert
+  description: This endpoint is deprecated. Use [PUT /api/v2/alerts/{identifier}](#tag/Alerts/operation/api_v2_alerts_(identifier)_put) instead.
+  deprecated: true
   operationId: post-case-update-alert
   responses:
     '200':
@@ -799,9 +801,6 @@ post:
                   alert_customer_id: 1
                   alert_classification_id: 1
                   alert_resolution_status_id: 1
-  description: >-
-    Update an existing alert. To update only specific fields one can send only
-    those fields. 
   parameters: []
   security:
     - Bearer <bearer>: []

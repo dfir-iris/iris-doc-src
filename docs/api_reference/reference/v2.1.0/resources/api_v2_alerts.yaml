@@ -30,7 +30,7 @@ post:
             alert_status_id:
               $ref: ../schemas/alert_status_id.yaml
             alert_context:
-              type: object
+              $ref: ../schemas/alert_context.yaml
             alert_source_event_time:
               type: string
             alert_note:
