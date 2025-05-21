@@ -1,5 +1,7 @@
 post:
   summary: Delete an alert
+  description: This endpoint is deprecated. Use [DELETE /api/v2/alerts/{identifier}](#tag/Alerts/operation/api_v2_alerts_(identifier)_delete) instead.
+  deprecated: true
   operationId: post-case-delete-alert
   responses:
     '200':
@@ -31,7 +33,6 @@ post:
                 message: ''
                 data:
                   alert_id: 436
-  description: Delete an alert
   parameters: []
   security:
     - Bearer <bearer>: []
