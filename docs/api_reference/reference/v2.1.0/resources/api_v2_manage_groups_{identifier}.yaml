@@ -20,4 +20,51 @@ get:
       $ref: ../responses/Forbidden.yaml
     '404':
       $ref: ../responses/NotFound.yaml
+put:
+  operationId: api_v2_manage_groups_(identifier)_put
+  tags:
+    - Groups
+    - Beta
+  summary: Update group
+  description:  Update an existing group. Requires administrative rights.
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            group_name:
+              type: string
+            group_description:
+              type: string
+            group_permissions:
+              type: integer
+            group_auto_follow:
+              type: boolean
+            group_auto_follow_access_level:
+              type: integer
+            group_id:
+              type: integer
+            group_uuid:
+              type: string
+          required:
+            - group_name
+            - group_description
+        example:
+          group_name: New group
+          group_description: New description
+          group_permissions: 1
+  responses:
+    '201':
+      description: Group successfully updated
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Group.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
 
