@@ -67,7 +67,7 @@ put:
     '404':
       $ref: ../responses/NotFound.yaml
 delete:
-  operationId: api_v2_groups_(identifier)_delete
+  operationId: api_v2_manage_groups_(identifier)_delete
   tags:
     - Groups
     - Beta
