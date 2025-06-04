@@ -23,7 +23,7 @@ get:
 put:
   operationId: api_v2_manage_groups_(identifier)_put
   tags:
-    - Groups
+    - Manage Groups
     - Beta
   summary: Update group
   description:  Update an existing group. Requires administrative rights.
