@@ -94,6 +94,7 @@ info:
     * Deprecated POST /manage/groups/add in favor of POST /api/v2/manage/groups
     * Deprecated POST /manage/groups/update/{group_id} in favor of PUT /api/v2/manage/groups/{identifier}
     * Deprecated POST /manage/groups/delete/{group_id} in favor of DELETE /api/v2/manage/groups/{identifier}
+    * Deprecated POST /manage/user/add in favor of POST /api/v2/manage/users
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list

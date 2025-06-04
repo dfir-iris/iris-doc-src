@@ -113,7 +113,8 @@ post:
                     - Password must contain 1 capital letter and 1 number
                 message: Data error
                 status: error
-  description: Administrator role required.
+  description: This endpoint is deprecated. Use [POST /api/v2/manage/users](#tag/Manage-Users/operation/api_v2_manage_users_(identifier)_post) instead.
+  deprecated: true
   requestBody:
     content:
       application/json:
