@@ -1,6 +1,6 @@
 post:
   summary: Update a group
-  description: This endpoint is deprecated. Use [PUT /api/v2/manage/groups/{identifier}](#tag/Groups/operation/api_v2_manage_groups_(identifier)_put) instead.
+  description: This endpoint is deprecated. Use [PUT /api/v2/manage/groups/{identifier}](#tag/Manage-Groups/operation/api_v2_manage_groups_(identifier)_put) instead.
   deprecated: true
   tags:
     - Manage Groups

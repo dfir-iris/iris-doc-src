@@ -1,6 +1,6 @@
 post:
   summary: Delete a Group
-  description: This endpoint is deprecated. Use [DELETE /api/v2/manage/groups/{identifier}](#tag/Groups/operation/api_v2_manage_groups_(identifier)_delete) instead.
+  description: This endpoint is deprecated. Use [DELETE /api/v2/manage/groups/{identifier}](#tag/Manage-Groups/operation/api_v2_manage_groups_(identifier)_delete) instead.
   deprecated: true
   tags:
     - Manage Groups
