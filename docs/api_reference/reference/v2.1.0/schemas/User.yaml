@@ -6,45 +6,46 @@ properties:
     type: string
   data:
     type: object
-  properties:
-    user_is_service_account:
-      type: boolean
-    user_name:
-      type: string
-    has_deletion_confirmation:
-      type: boolean
-    uuid:
-      type: string
-    active:
-      type: boolean
-    user_login:
-      type: string
-    user_email:
-      type: string
-    id:
-      type: integer
-    in_dark_mode:
-      type: 'null'
-    external_id:
-      type: 'null'
-    has_mini_sidebar:
-      type: boolean
-    user_api_key:
-      type: string
+    properties:
+      user_is_service_account:
+        type: boolean
+      user_name:
+        type: string
+      has_deletion_confirmation:
+        type: boolean
+      uuid:
+        type: string
+      active:
+        type: boolean
+      user_login:
+        type: string
+      user_email:
+        type: string
+      id:
+        type: integer
+      in_dark_mode:
+        type: 'null'
+      external_id:
+        type: 'null'
+      has_mini_sidebar:
+        type: boolean
+      user_api_key:
+        type: string
   example:
-    status: success
-    message: user created
-    data:
-      user_is_service_account: true
-      user_name: strsinsg
-      has_deletion_confirmation: false
-      uuid: bb807755-62fa-412b-b242-fd930a24be13
-      active: true
-      user_login: strsing
-      user_email: stringa
-      id: 4
-      in_dark_mode: null
-      external_id: null
-      has_mini_sidebar: false
-      user_api_key: >-
-        ViYIIkN_LL062yNOcq2kJA3ZMscOAoHmLy8GEh_JYKBWwspLB_E65jhYLg9CsR0J-kP8DmmM3RO31_xixrG8rw    
+    value:
+      status: success
+      message: user created
+      data:
+        user_is_service_account: true
+        user_name: strsinsg
+        has_deletion_confirmation: false
+        uuid: bb807755-62fa-412b-b242-fd930a24be13
+        active: true
+        user_login: strsing
+        user_email: stringa
+        id: 4
+        in_dark_mode: null
+        external_id: null
+        has_mini_sidebar: false
+        user_api_key: >-
+          ViYIIkN_LL062yNOcq2kJA3ZMscOAoHmLy8GEh_JYKBWwspLB_E65jhYLg9CsR0J-kP8DmmM3RO31_xixrG8rw    
