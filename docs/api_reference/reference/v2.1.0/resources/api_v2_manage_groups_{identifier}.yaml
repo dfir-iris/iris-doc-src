@@ -49,7 +49,6 @@ put:
               type: string
           required:
             - group_name
-            - group_description
         example:
           group_name: New group
           group_description: New description
