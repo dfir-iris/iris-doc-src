@@ -1,23 +1,16 @@
 post:
-  operationId: api_v2_users_post
+  operationId: api_v2_manage_users_post
   summary: Create a new user
-  tags: 
+  description: Administrator role required.
+  tags:
     - Users
     - Beta
-  description: Administrator role required.
   requestBody:
     content:
       application/json:
         schema:
           type: object
           properties:
-            status:
-              type: string
-            message:
-              type: string
-            data:
-              type: object
-            properties:
               user_is_service_account:
                 type: boolean
               user_name:
@@ -42,16 +35,16 @@ post:
                 type: boolean
               user_api_key:
                 type: string
-            required:
-              - user_name
-              - user_login
-              - user_email
-          example:
-            user_name: New group
-            user_login: New description
-            user_email: 1
-            user_password: Password
-            user_is_service_account: true
+          required:
+            - user_name
+            - user_login
+            - user_email
+        example:
+          user_name: New usergroup
+          user_login: New description
+          user_email: 1
+          user_password: Password
+          user_is_service_account: true
   responses:
     '201':
       description: User successfully created

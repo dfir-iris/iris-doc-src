@@ -165,6 +165,8 @@ paths:
     $ref: v2.1.0/resources/api_v2_tasks_{identifier}.yaml
   /api/v2/assets/{identifier}:
     $ref: v2.1.0/resources/api_v2_assets_{identifier}.yaml
+  /api/v2/users:
+    $ref: v2.1.0/resources/api_v2_manage_users.yaml    
   /case/summary/update:
     $ref: v2.1.0/resources/case_summary_update.yaml
   /case/tasklog/add:
