@@ -43,7 +43,6 @@ post:
           user_name: New usergroup
           user_login: New description
           user_email: user@test.com
-          user_password: string
           user_is_service_account: true
   responses:
     '201':
