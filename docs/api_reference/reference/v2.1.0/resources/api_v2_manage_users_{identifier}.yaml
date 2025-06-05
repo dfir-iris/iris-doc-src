@@ -6,7 +6,7 @@ get:
     - Users
     - Beta
   summary: Get a user
-  description: Requires administrative rights.
+  description: Requires administrative rights. Returns information of a specific user.
   responses:
     '201':
       description: user successfully found
