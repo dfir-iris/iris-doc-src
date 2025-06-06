@@ -58,6 +58,7 @@ info:
     * Added GET /api/v2/manage/groups/{identifier}
     * Added PUT /api/v2/manage/groups/{identifier}
     * Added DELETE /api/v2/manage/groups/{identifier}
+    * Added POST /api/v2/manage/users
     * Deprecated POST /manage/cases/add in favor of POST /api/v2/cases
     * Deprecated POST /manage/cases/update in favor of PUT /api/v2/cases/{case_identifier}
     * Deprecated POST /manage/cases/delete/{case_id} in favor of DELETE /api/v2/cases/{case_identifier}
@@ -93,6 +94,7 @@ info:
     * Deprecated POST /manage/groups/add in favor of POST /api/v2/manage/groups
     * Deprecated POST /manage/groups/update/{group_id} in favor of PUT /api/v2/manage/groups/{identifier}
     * Deprecated POST /manage/groups/delete/{group_id} in favor of DELETE /api/v2/manage/groups/{identifier}
+    * Deprecated POST /manage/users/add in favor of POST /api/v2/manage/users
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list
@@ -163,6 +165,8 @@ paths:
     $ref: v2.1.0/resources/api_v2_tasks_{identifier}.yaml
   /api/v2/assets/{identifier}:
     $ref: v2.1.0/resources/api_v2_assets_{identifier}.yaml
+  /api/v2/users:
+    $ref: v2.1.0/resources/api_v2_manage_users.yaml    
   /case/summary/update:
     $ref: v2.1.0/resources/case_summary_update.yaml
   /case/tasklog/add:
