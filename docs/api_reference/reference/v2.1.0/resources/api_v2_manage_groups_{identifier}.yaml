@@ -66,4 +66,20 @@ put:
       $ref: ../responses/Forbidden.yaml
     '404':
       $ref: ../responses/NotFound.yaml
+delete:
+  operationId: api_v2_manage_groups_(identifier)_delete
+  tags:
+    - Manage Groups
+    - Beta
+  summary: Delete group
+  description: Delete group. Requires administrative rights.
+  responses:
+    '204':
+      $ref: ../responses/Deleted.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
 
