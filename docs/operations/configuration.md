@@ -10,15 +10,24 @@ The default configuration is provided through a `.env.model` file at the root of
 ### Secrets 
 #### Required changes
 The following secrets in the `.env` need to be changed for production.  
-We recommend using OpenSSL to generate different values from each secret:   
-`openssl rand -base64 64`
+We recommend generating different values for each secret using one of the following commands:
+
+```bash
+pwgen -snc1 60
+# or
+cat /dev/urandom | tr -dc '[:alnum:]' | head -c 60
+# or
+openssl rand -base64 100 | tr -dc '[:alnum:]' | head -c 60
+# or
+openssl rand -hex 30
+```
 
 - `POSTGRES_PASSWORD`: Password of the postgres user
 - `POSTGRES_ADMIN_PASSWORD`: Password of the db admin user 
 - `IRIS_SECRET_KEY`: Key used by Flask to secure the session cookies
 - `IRIS_SECURITY_PASSWORD_SALT`: A salt used for password encryption in the DB 
 
-Make sure the DB password does not contain symbols that could be interpreted as an DB url (i.e `#` and `@`). 
+Make sure the DB password does not contain any special characters the can be interpreted as part of URLs (e.g., `+`, `/`, `#`, `@`).
 
 !!! danger "Critical configuration"
     These settings are critical and need to be set properly otherwise authentication bypass may occur. 
