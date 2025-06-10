@@ -98,7 +98,8 @@ post:
                       contain uppercase char. Password must contain digit. 
                 message: Data error
                 status: error
-  description: Requires administrator role.
+  description: This endpoint is deprecated. Use [PUT /api/v2/manage/users/{identifier}](#tag/Users/operation/api_v2_manage_users_(identifier)_put) instead.
+  deprecated: true
   requestBody:
     content:
       application/json:
