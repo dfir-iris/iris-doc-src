@@ -15,18 +15,7 @@ properties:
   directory_id:
     type: integer
   directory:
-    type: object
-    properties:
-      id:
-        type: integer
-      name:
-        type: string
-      parent_id:
-        type: 
-          - integer
-          - 'null'
-      case_id:
-        type: integer
+    $ref: ../schemas/NoteDirectory.yaml
   note_user:
     type: integer
   note_creationdate:
