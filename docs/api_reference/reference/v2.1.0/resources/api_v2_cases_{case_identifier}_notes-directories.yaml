@@ -1,7 +1,7 @@
 parameters:
   - $ref: ../parameters/path/case_identifier.yaml
 post:
-  operationId: api_v2_cases_(cases_identifier)_notes-directories_post
+  operationId: api_v2_cases_(case_identifier)_notes-directories_post
   summary: Add a new notes directory
   description: Create a new empty directory.
   tags:

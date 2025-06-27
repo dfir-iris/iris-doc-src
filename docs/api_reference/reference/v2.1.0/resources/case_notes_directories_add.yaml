@@ -1,9 +1,11 @@
 parameters: []
 post:
   summary: Add a new notes directory
+  operationId: post-case-notes-add-directory
+  description: This endpoint is deprecated. Use [POST /api/v2/cases/{case_identifier}/notes-directories](#tag/Notes/operation/api_v2_cases_(case_identifier)_notes-directories_post) instead.
+  deprecated: true
   tags:
     - Notes
-  operationId: post-case-notes-add-directory
   responses:
     '200':
       description: Upon success, returns the new added group information
@@ -45,7 +47,6 @@ post:
               - status
               - message
               - data
-  description: 'Create a new empty directory. '
   parameters:
     - schema:
         type: string
