@@ -34,6 +34,8 @@ post:
             $ref: ../schemas/Note.yaml
     '400':
       $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
     '404':
-      description: Case with identifier case_identifier not found
+      description: Case with identifier `case_identifier` not found
 
