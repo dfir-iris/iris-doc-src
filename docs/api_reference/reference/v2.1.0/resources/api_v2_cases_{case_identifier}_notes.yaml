@@ -21,12 +21,10 @@ post:
               type: integer
           required:
             - directory_id
-        examples:
-          example-1:
-            value:
-              note_title: Title of the note
-              note_content: Content of the note
-              directory_id: 36
+        example:
+          note_title: Title of the note
+          note_content: Content of the note
+          directory_id: 36
   responses:
     '201':
       description: Note successfully created
