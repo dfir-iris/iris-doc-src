@@ -300,10 +300,6 @@ v2.1.0/resources/alerts_add.yaml:
       #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/date_update/nullable
     - >-
       #/post/responses/200/content/application~1json/schema/properties/data/properties/assets/items/properties/asset_compromise_status_id/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/user_id/nullable
-    - >-
-      #/post/responses/200/content/application~1json/schema/properties/data/properties/iocs/items/properties/ioc_misp/nullable
   operation-4xx-response:
     - '#/post/responses'
   no-invalid-media-type-examples:

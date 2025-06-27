@@ -4,21 +4,36 @@ properties:
     type: string
     minLength: 1
   ioc_id:
-    type: number
-  ioc_misp: {}
+    type: integer
+  ioc_misp:
+    type:
+      - string
+      - 'null'
   ioc_tags:
     type: string
   ioc_tlp_id:
-    type: number
-  ioc_type:
-    type: number
+    type: integer
   ioc_type_id:
-    type: number
+    type: integer
+  ioc_type:
+    $ref: ../schemas/IocType.yaml
   ioc_value:
     type: string
     minLength: 1
   user_id:
-    type: number
+    type:
+      - integer
+      - 'null'
+  ioc_uuid:
+    type: string
+  ioc_enrichment:
+    type:
+      - object
+      - 'null'
+  custom_attributes:
+    type:
+      - object
+      - 'null'
   link:
     type: array
     items:
