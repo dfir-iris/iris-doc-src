@@ -1,6 +1,6 @@
 # Reports
 
-IRIS has the ability to generate reports based on the data of an investigation.    
+IRIS has the ability to generate reports based on the data of an investigation.
 The reports templates can be managed in ``Advanced`` > ``Templates``.
 
 !!! info
@@ -9,7 +9,7 @@ The reports templates can be managed in ``Advanced`` > ``Templates``.
 There is two types of reports : 
 
 - **Investigation**; these contains the investigation data and can produces a custom-ready document
-- **Activities**; these contains activities done on the case and can be used as a follow-up  
+- **Activities**; these contains activities done on the case and can be used as a follow-up
 
 ## Supported formats 
 The following report formats are supported: 
@@ -19,7 +19,7 @@ The following report formats are supported:
 - html 
 
 ## Structure of templates
-Reports templates are made of tags, which are then processed and filed by the template engine of IRIS.   
+Reports templates are made of tags, which are then processed and filed by the template engine of IRIS.
 The templates can have any forms as soon as they respect the tags. We are providing two example of reports. 
 
 - Example of investigation template : [Download](example_reports/iris_report_template.docx) 
@@ -32,7 +32,7 @@ The templates can have any forms as soon as they respect the tags. We are provid
     ![docx](../_static/docx_templating_lines.png)
 
 ## Available tags
-The following tags are available. None are mandatory. If a tag is mistyped, the generation step will produce an error message.    
+The following tags are available. None are mandatory. If a tag is mistyped, the generation step will produce an error message.
 
 !!! hint 
     To get the list of available tags for a specific IRIS version, head to `/case/export?cid=1`. 
@@ -54,8 +54,11 @@ The following tags are available. None are mandatory. If a tag is mistyped, the 
 - ``case.open_date``: Case open date 
 - ``case.close_date``: Case close date 
 - ``case.opened_by``: User that initially opened the case 
-- ``case.for_customer``: Customer linked to the case 
 - ``case.soc_id``: SOC ID number linked to the case 
+- ``case.client``: Customer linked to the case
+    - ``case.client.customer_name``: Name of the customer
+    - ``case.client.customer_description``: Description of the customer
+    - ``case.client.customer_sla``: Description of the Service Level Agreement with the customer
 - ``evidences``: List of evidence objects (see below - given ``evidence`` as loop variable)
     - ``evidence.filename``: File name of the evidence 
     - ``evidence.date_added``: Date of registration 
@@ -111,7 +114,7 @@ We are providing two example of full reports.
 
 
 ### Snippets 
-The following snippets aimed to be placed directly in the DOCX documents.   
+The following snippets aimed to be placed directly in the DOCX documents.
 
 #### Loops and tables 
 ##### Standard loops
@@ -170,7 +173,7 @@ Loops can be nested. Don't forget to close each loop.
 ```
 
 #### List is not empty
-To check if a list of objects is not empty, use the processor tag `count`.  
+To check if a list of objects is not empty, use the processor tag `count`.
 
 ``` title="Check if case has assets"
 {% if assets|count %} 
@@ -179,7 +182,7 @@ To check if a list of objects is not empty, use the processor tag `count`.
 ```
 
 #### Markdown handling
-The case summary and notes are in markdown. A processor tag should thus be added `|markdown`.  
+The case summary and notes are in markdown. A processor tag should thus be added `|markdown`.
 ``` title="Summary as markdown"
 This is an example of summary : 
 
@@ -198,5 +201,5 @@ This is an example of recursive notes  :
 ```
 
 ## Troubleshoot 
-Most of the time an error of generation is due to misspelled tag or a missing closing tag (`{% endfor %}`, `{% endif %}`, etc).  
+Most of the time an error of generation is due to misspelled tag or a missing closing tag (`{% endfor %}`, `{% endif %}`, etc).
 In case you cannot figure out what is going wrong, don't hesitate to reach us on Discord.
