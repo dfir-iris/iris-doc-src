@@ -52,6 +52,8 @@ post:
         application/json:
           schema:
             $ref: ../schemas/Case.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
     '400':
       $ref: ../responses/GenericError.yaml
 get:

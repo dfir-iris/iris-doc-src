@@ -318,53 +318,7 @@ post:
                   iocs:
                     type: array
                     items:
-                      type: object
-                      properties:
-                        ioc_tlp_id:
-                          type: integer
-                        ioc_type_id:
-                          type: integer
-                        user_id:
-                          nullable: true
-                        ioc_id:
-                          type: integer
-                        ioc_misp:
-                          nullable: true
-                        ioc_value:
-                          type: string
-                        ioc_uuid:
-                          type: string
-                        ioc_description:
-                          type: string
-                        ioc_enrichment:
-                          type: object
-                        custom_attributes:
-                          type:
-                            - object
-                            - 'null'
-                        ioc_type:
-                          type: object
-                          properties:
-                            type_name:
-                              type: string
-                            type_validation_regex:
-                              type:
-                                - string
-                                - 'null'
-                            type_id:
-                              type: integer
-                            type_description:
-                              type: string
-                            type_validation_expect:
-                              type:
-                                - string
-                                - 'null'
-                            type_taxonomy:
-                              type:
-                                - string
-                                - 'null'
-                        ioc_tags:
-                          type: string
+                      $ref: ../schemas/Ioc.yaml
                   alert_context:
                     type: object
                     properties:

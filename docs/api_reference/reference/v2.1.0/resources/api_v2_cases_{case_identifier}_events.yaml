@@ -87,5 +87,5 @@ post:
     '403':
       $ref: ../responses/Forbidden.yaml
     '404':
-      description: Case with identifier case_identifier not found
+      description: Case with identifier `case_identifier` not found
 

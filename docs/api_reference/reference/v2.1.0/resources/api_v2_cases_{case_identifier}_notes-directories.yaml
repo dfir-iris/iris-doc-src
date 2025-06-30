@@ -1,0 +1,41 @@
+parameters:
+  - $ref: ../parameters/path/case_identifier.yaml
+post:
+  operationId: api_v2_cases_(case_identifier)_notes-directories_post
+  summary: Add a new notes directory
+  description: Create a new empty directory.
+  tags:
+    - Notes
+    - Beta
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            name:
+              type: string
+              minLength: 1
+            parent_id:
+              type: number
+              description: An existing parent directory identifier. To add at the root, do not set the field.
+          required:
+            - name
+        examples:
+          Add test group:
+            value:
+              name: Test
+  responses:
+    '201':
+      description: Note directory successfully created
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/NoteDirectory.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      description: Case with identifier `case_identifier` not found
+
