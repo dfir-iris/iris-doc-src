@@ -15,18 +15,16 @@ properties:
         type: boolean
       uuid:
         type: string
-      active:
+      user_active:
         type: boolean
       user_login:
         type: string
       user_email:
         type: string
-      id:
+      user_id:
         type: integer
       in_dark_mode:
-        type: 'null'
-      external_id:
-        type: 'null'
+        type: boolean
       has_mini_sidebar:
         type: boolean
       user_api_key:
