@@ -36,7 +36,7 @@ example:
   message: user created
   data:
     user_is_service_account: true
-    user_name: strsinsg
+    user_name: string
     has_deletion_confirmation: false
     uuid: bb807755-62fa-412b-b242-fd930a24be13
     active: true
