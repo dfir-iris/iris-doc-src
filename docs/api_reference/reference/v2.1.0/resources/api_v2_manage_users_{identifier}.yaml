@@ -39,13 +39,11 @@ put:
                   active:
                     type: boolean
                   external_id:
-                    type: 'null'
+                    type: string
                   has_deletion_confirmation:
                     type: boolean
-                  id:
-                    type: integer
                   in_dark_mode:
-                    type: 'null'
+                    type: boolean
                   user_email:
                     type: string
                   user_id:
