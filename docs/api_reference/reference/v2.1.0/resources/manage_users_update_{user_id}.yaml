@@ -99,7 +99,6 @@ post:
                 message: Data error
                 status: error
   description: Requires administrator role.
-  deprecated: true
   requestBody:
     content:
       application/json:
