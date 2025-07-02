@@ -44,12 +44,8 @@ post:
                 message: Cannot delete active user
                 status: error
   operationId: post-manage-users-delete-user_id
-  description: >-
-    Only users that never done any activities can be deleted. This is to prevent
-    any internal logic errors and keep tracks of every past activities.   
-
-
-    Requires administrator role.
+  description: This endpoint is deprecated. Use [DELETE /api/v2/manage/users/{identifier}](#tag/Users/operation/api_v2_manage_users_(identifier)_delete) instead.
+  deprecated: true
   parameters:
     - schema:
         type: integer
