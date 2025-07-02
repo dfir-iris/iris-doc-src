@@ -85,7 +85,7 @@ get:
   operationId: get-manage-users-list
   description: Return a list of available users.
   tags:
-    - Users
+    - Manage Users
   parameters:
     - schema:
         type: integer

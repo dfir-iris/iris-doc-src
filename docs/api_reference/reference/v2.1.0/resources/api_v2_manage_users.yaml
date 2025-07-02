@@ -3,7 +3,7 @@ post:
   summary: Create a new user
   description: Administrator role required.
   tags:
-    - Users
+    - Manage Users
     - Beta
   requestBody:
     content:

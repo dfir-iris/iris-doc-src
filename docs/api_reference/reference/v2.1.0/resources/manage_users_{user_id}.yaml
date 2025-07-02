@@ -8,7 +8,7 @@ parameters:
 get:
   summary: Fetch a user
   tags:
-    - Users
+    - Manage Users
   responses:
     '200':
       description: OK

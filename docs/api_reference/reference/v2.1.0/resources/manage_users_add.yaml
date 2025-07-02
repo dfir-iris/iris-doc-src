@@ -155,4 +155,4 @@ post:
     - Bearer <bearer>: []
   parameters: []
   tags:
-    - Users
+    - Manage Users
