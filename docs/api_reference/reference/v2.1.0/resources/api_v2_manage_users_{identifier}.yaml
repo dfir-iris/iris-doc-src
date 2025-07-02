@@ -73,3 +73,19 @@ put:
       $ref: ../responses/Forbidden.yaml
     '404':
       $ref: ../responses/NotFound.yaml
+delete:
+  operationId: api_v2_manage_users_(identifier)_delete
+  tags:
+    - Users
+    - Beta
+  summary: Delete user
+  description: Delete user. Requires administrative rights.
+  responses:
+    '204':
+      $ref: ../responses/Deleted.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
