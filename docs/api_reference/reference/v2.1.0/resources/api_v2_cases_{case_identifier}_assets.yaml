@@ -69,6 +69,8 @@ post:
             $ref: ../schemas/Asset.yaml
     '400':
       $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
 get:
   operationId: api_v2_cases_(case_identifier)_assets_get
   summary: Get a paginated list of assets
@@ -85,6 +87,8 @@ get:
         application/json:
           schema:
             $ref: ../schemas/Assets.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
   tags:
     - Assets
     - Beta
