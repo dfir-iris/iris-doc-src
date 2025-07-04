@@ -15,6 +15,8 @@ get:
         application/json:
           schema:
             $ref: ../schemas/Asset.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
     '404':
       $ref: ../responses/NotFound.yaml
 put:
@@ -79,10 +81,12 @@ put:
         application/json:
           schema:
             $ref: ../schemas/Asset.yaml
-    '404':
-      $ref: ../responses/NotFound.yaml
     '400':
       $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
 delete:
   operationId: api_v2_cases_(case_identifier)_assets_(identifier)_delete
   tags:
