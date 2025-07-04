@@ -78,7 +78,10 @@ delete:
   responses:
     '204':
       $ref: ../responses/Deleted.yaml
-    '404':
-      $ref: ../responses/NotFound.yaml
     '400':
       $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+
