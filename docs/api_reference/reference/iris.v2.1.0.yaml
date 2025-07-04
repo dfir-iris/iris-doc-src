@@ -117,6 +117,7 @@ info:
     url: 'https://docs.dfir-iris.org/contact/'
   license:
     name: LGPLv3
+    url: https://www.gnu.org/licenses/lgpl-3.0.txt
 servers:
   - url: 'https://v200.beta.dfir-iris.org'
     description: Demo instance

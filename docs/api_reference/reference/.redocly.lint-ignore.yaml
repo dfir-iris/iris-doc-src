@@ -1,8 +1,6 @@
 # This file instructs Redocly's linter to ignore the rules contained for specific parts of your API.
 # See https://redocly.com/docs/cli/ for more information.
 iris.v2.1.0.yaml:
-  info-license-strict:
-    - '#/info/license'
   tag-description:
     - '#/tags/2/description'
     - '#/tags/3/description'
