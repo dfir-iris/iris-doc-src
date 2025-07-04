@@ -7,6 +7,8 @@ parameters:
 post:
   summary: Update a notes directory
   operationId: post-case-notes-update-directory
+  description: This endpoint is deprecated. Use [PUT /api/v2/cases/{case_identifier}/notes-directories/{identifier}](#tag/Notes/operation/api_v2_cases_(case_identifier)_notes-directories_(identifier)_put) instead.
+  deprecated: true
   tags:
     - Notes
   responses:
@@ -97,8 +99,6 @@ post:
                 status: error
     '':
       description: ''
-  description: This endpoint is deprecated.
-  deprecated: true
   parameters:
     - schema:
         type: string
