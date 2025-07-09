@@ -44,6 +44,7 @@ info:
     * Added POST /api/v2/cases/{case_identifier}/notes-directories
     * Added GET /api/v2/cases/{case_identifier}/notes-directories/{identifier}
     * Added PUT /api/v2/cases/{case_identifier}/notes-directories/{identifier}
+    * Added DELETE /api/v2/cases/{case_identifier}/notes-directories/{identifier}
     * Added POST /api/v2/cases/{case_identifier}/evidences
     * Added GET /api/v2/cases/{case_identifier}/evidences
     * Added GET /api/v2/cases/{case_identifier}/evidences/{identifier}
