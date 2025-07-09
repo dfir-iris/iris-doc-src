@@ -485,15 +485,26 @@ tags:
   - name: Notes
     description: Endpoints to interact with notes
   - name: Assets
+    description: Endpoints to interact with assets
   - name: IOCs
+    description: Endpoints to interact with IoCs
   - name: Timeline
+    description: Endpoints to interact with events
   - name: Tasks
+    description: Endpoints to interact with tasks
   - name: Evidences
+    description: Endpoints to interact with evidences
   - name: Alerts
+    description: Endpoints to interact with alerts
   - name: Customers
+    description: Endpoints to interact with customers
   - name: Users
+    description: Endpoints to interact with users
   - name: Manage Groups
+    description: Endpoints to interact with groups
   - name: Modules
+    description: Endpoints to interact with modules
   - name: API
+    description: General API endpoints
   - name: Beta
     description: These are all the endpoints which are still in beta. Their signature may evolve. Any feedback is welcome!

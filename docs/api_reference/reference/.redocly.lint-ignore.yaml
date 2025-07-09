@@ -1,18 +1,6 @@
 # This file instructs Redocly's linter to ignore the rules contained for specific parts of your API.
 # See https://redocly.com/docs/cli/ for more information.
 iris.v2.1.0.yaml:
-  tag-description:
-    - '#/tags/2/description'
-    - '#/tags/3/description'
-    - '#/tags/4/description'
-    - '#/tags/5/description'
-    - '#/tags/6/description'
-    - '#/tags/7/description'
-    - '#/tags/8/description'
-    - '#/tags/9/description'
-    - '#/tags/10/description'
-    - '#/tags/11/description'
-    - '#/tags/12/description'
   spec-components-invalid-map-name:
     - '#/components/securitySchemes/Bearer <bearer>'
 v2.1.0/resources/api_v2_cases.yaml:
