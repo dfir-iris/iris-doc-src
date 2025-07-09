@@ -49,7 +49,7 @@ put:
       $ref: ../responses/NotFound.yaml
 
 delete:
-  operationId: api_v2_cases_(case_identifier)_note-directories_(identifier)_delete
+  operationId: api_v2_cases_(case_identifier)_notes-directories_(identifier)_delete
   tags:
     - Notes
     - Beta

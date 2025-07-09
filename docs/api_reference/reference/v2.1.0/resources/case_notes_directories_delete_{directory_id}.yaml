@@ -7,6 +7,8 @@ parameters:
 post:
   summary: Delete notes group
   operationId: delete-case-notes-directories-delete
+  description: This endpoint is deprecated. Use [DELETE /api/v2/cases/{case_identifier}/notes-directories/{identifier}](#tag/Notes/operation/api_v2_cases_(case_identifier)_notes-directories_(identifier)_delete) instead.
+  deprecated: true
   tags:
     - Notes
   responses:
@@ -64,8 +66,6 @@ post:
                 data: []
                 message: Invalid directory ID
                 status: error
-  description: This endpoint is deprecated.
-  deprecated: true
   parameters:
     - schema:
         type: integer
