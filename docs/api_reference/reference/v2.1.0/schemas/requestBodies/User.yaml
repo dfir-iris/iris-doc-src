@@ -1,0 +1,27 @@
+type: object
+properties:
+  active:
+    type: boolean
+  external_id:
+    type: string
+  has_deletion_confirmation:
+    type: boolean
+  in_dark_mode:
+    type: boolean
+  user_email:
+    type: string
+  user_id:
+    type: integer
+  user_login:
+    type: string
+  user_name:
+    type: string
+  user_password:
+    type: string
+  uuid:
+    type: string
+example:
+  user_name: new_user
+  user_login: new_user_login
+  user_email: new_user_email
+
