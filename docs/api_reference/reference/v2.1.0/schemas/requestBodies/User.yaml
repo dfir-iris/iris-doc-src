@@ -1,21 +1,17 @@
 type: object
 properties:
-  active:
-    type: boolean
-  external_id:
-    type: string
-  has_deletion_confirmation:
-    type: boolean
-  in_dark_mode:
-    type: boolean
-  user_email:
-    type: string
-  user_id:
-    type: integer
   user_login:
     type: string
   user_name:
     type: string
+  user_email:
+    type: string
+  user_active:
+    type: boolean
+  has_deletion_confirmation:
+    type: boolean
+  in_dark_mode:
+    type: boolean
   user_password:
     type: string
   uuid:
