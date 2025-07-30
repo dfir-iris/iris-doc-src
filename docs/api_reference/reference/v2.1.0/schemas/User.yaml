@@ -8,12 +8,12 @@ properties:
     type: string
   user_id:
     type: integer
+  uuid:
+    type: string
   user_is_service_account:
     type: boolean
   has_deletion_confirmation:
     type: boolean
-  uuid:
-    type: string
   user_active:
     type: boolean
   in_dark_mode:
