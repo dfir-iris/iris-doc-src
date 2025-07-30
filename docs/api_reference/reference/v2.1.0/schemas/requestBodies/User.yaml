@@ -6,14 +6,12 @@ properties:
     type: string
   user_email:
     type: string
-  user_password:
-    type: string
-  user_active:
-    type: boolean
   has_deletion_confirmation:
     type: boolean
   in_dark_mode:
     type: boolean
+  user_password:
+    type: string
 example:
   user_name: new_user
   user_login: new_user_login

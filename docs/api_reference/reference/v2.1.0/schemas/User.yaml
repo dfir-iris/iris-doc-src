@@ -6,22 +6,22 @@ properties:
     type: string
   user_email:
     type: string
+  has_deletion_confirmation:
+    type: boolean
+  in_dark_mode:
+    type: boolean
+  user_active:
+    type: boolean
+  user_is_service_account:
+    type: boolean
+  user_api_key:
+    type: string
   user_id:
     type: integer
   uuid:
     type: string
-  user_is_service_account:
-    type: boolean
-  has_deletion_confirmation:
-    type: boolean
-  user_active:
-    type: boolean
-  in_dark_mode:
-    type: boolean
   has_mini_sidebar:
     type: boolean
-  user_api_key:
-    type: string
 example:
   user_login: strsing
   user_name: string
