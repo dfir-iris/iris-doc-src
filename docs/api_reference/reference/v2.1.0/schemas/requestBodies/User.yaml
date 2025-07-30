@@ -10,6 +10,8 @@ properties:
     type: boolean
   in_dark_mode:
     type: boolean
+  ctx_case:
+    type: integer
   user_password:
     type: string
 example:
