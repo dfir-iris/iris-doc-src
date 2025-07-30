@@ -8,6 +8,8 @@ properties:
     type: string
   has_deletion_confirmation:
     type: boolean
+  has_mini_sidebar:
+    type: boolean
   in_dark_mode:
     type: boolean
   ctx_case:
@@ -22,8 +24,6 @@ properties:
     type: integer
   uuid:
     type: string
-  has_mini_sidebar:
-    type: boolean
 example:
   user_login: strsing
   user_name: string
