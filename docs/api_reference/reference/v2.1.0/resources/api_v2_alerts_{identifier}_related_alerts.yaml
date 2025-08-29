@@ -10,10 +10,6 @@ get:
   responses:
     '201':
       description: Related alerts successfully found
-      content:
-        application/json:
-          schema:
-            $ref: ../schemas/Alert.yaml
     '400':
       $ref: ../responses/GenericError.yaml
     '403':
