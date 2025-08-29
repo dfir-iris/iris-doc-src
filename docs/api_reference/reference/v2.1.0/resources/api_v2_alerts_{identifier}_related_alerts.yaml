@@ -6,10 +6,14 @@ get:
     - Alerts
     - Beta
   summary: Get related alerts
-  description: Get related alerts  
+  description: Get related alerts 
   responses:
     '201':
       description: Related alerts successfully found
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Related_alert.yaml 
     '400':
       $ref: ../responses/GenericError.yaml
     '403':
