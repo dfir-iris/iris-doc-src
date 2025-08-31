@@ -49,6 +49,8 @@ post:
             $ref: ../schemas/Task.yaml
     '400':
       $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
   description: 'Add a new task.'
 get:
   operationId: api_v2_cases_(case_identifier)_tasks_get
@@ -66,6 +68,8 @@ get:
         application/json:
           schema:
             $ref: ../schemas/Tasks.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
   tags:
     - Tasks
     - Beta

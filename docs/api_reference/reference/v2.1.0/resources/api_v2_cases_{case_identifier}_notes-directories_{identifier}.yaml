@@ -1,0 +1,29 @@
+parameters:
+  - $ref: ../parameters/path/case_identifier.yaml
+  - $ref: ../parameters/path/identifier.yaml
+put:
+  operationId: api_v2_cases_(case_identifier)_notes-directories_(identifier)_put
+  tags:
+    - Notes
+    - Beta
+  summary: Update a notes directory
+  description: Update a notes directory
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../schemas/requestBodies/NoteDirectory.yaml
+  responses:
+    '200':
+      description: Notes directory successfully updated
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/NoteDirectory.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+

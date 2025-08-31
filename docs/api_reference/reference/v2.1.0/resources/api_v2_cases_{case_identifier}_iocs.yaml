@@ -55,6 +55,8 @@ post:
             $ref: ../schemas/Ioc.yaml
     '400':
         $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
   description: 'Creates a new ioc.'
 get:
   operationId: api_v2_cases_(case_identifier)_iocs_get
@@ -78,6 +80,8 @@ get:
         application/json:
           schema:
             $ref: ../schemas/Iocs.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
   tags:
     - IOCs
     - Beta

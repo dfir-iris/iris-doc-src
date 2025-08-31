@@ -288,7 +288,9 @@ post:
                         asset_tags:
                           type: string
                         asset_compromise_status_id:
-                          nullable: true
+                          anyOf:
+                            - $ref: ../schemas/asset_compromise_status_id.yaml
+                            - type: 'null'
                   classification:
                     type: object
                     properties:
