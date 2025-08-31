@@ -11,28 +11,28 @@ post:
         schema:
           type: object
           properties:
-              user_is_service_account:
-                type: boolean
+              user_login:
+                type: string
               user_name:
                 type: string
+              user_email:
+                type: string
               has_deletion_confirmation:
+                type: boolean
+              has_mini_sidebar:
+                type: boolean
+              in_dark_mode:
+                type: boolean
+              user_is_service_account:
                 type: boolean
               uuid:
                 type: string
               active:
                 type: boolean
-              user_login:
-                type: string
-              user_email:
-                type: string
               id:
                 type: integer
-              in_dark_mode:
-                type: 'null'
               external_id:
                 type: 'null'
-              has_mini_sidebar:
-                type: boolean
               user_api_key:
                 type: string
           required:
