@@ -1,0 +1,22 @@
+parameters:
+  - $ref: ../parameters/path/identifier.yaml
+get:
+  operationId: api_v2_manage_users_(identifier)_get
+  tags:
+    - Users
+    - Beta
+  summary: Get a user
+  description: Requires administrative rights. Returns information of a specific user.
+  responses:
+    '201':
+      description: user successfully found
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/User.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
