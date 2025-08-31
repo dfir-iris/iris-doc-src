@@ -58,6 +58,7 @@ info:
     * Added GET /api/v2/alerts/{identifier}
     * Added PUT /api/v2/alerts/{identifier}
     * Added DELETE /api/v2/alerts/{identifier}
+    * Added GET /api/v2/alerts/{identifier}/related-alerts
     * Added POST /api/v2/manage/groups
     * Added GET /api/v2/manage/groups/{identifier}
     * Added PUT /api/v2/manage/groups/{identifier}
@@ -110,6 +111,7 @@ info:
     * Deprecated GET /manage/users/{user_id} in favor of GET /api/v2/manage/users/{identifier}
     * Deprecated POST /manage/users/update/{user_id} in favor of  PUT /api/v2/manage/users/{identifier}
     * Deprecated POST /manage/users/delete/{user_id} in favor of  DELETE /api/v2/manage/users/{identifier}
+    * Deprecated GET /alerts/similarities/{alert_id}
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list
@@ -172,7 +174,9 @@ paths:
   /api/v2/alerts:
     $ref: v2.1.0/resources/api_v2_alerts.yaml
   /api/v2/alerts/{identifier}:
-    $ref: v2.1.0/resources/api_v2_alerts_{identifier}.yaml    
+    $ref: v2.1.0/resources/api_v2_alerts_{identifier}.yaml
+  /api/v2/alerts/{identifier}/related-alerts:
+    $ref: v2.1.0/resources/api_v2_alerts_{identifier}_related_alerts.yaml    
   /api/v2/manage/groups:
     $ref: v2.1.0/resources/api_v2_manage_groups.yaml
   /api/v2/manage/groups/{identifier}:
