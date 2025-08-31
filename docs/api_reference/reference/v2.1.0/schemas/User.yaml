@@ -15,18 +15,16 @@ properties:
         type: boolean
       uuid:
         type: string
-      active:
+      user_active:
         type: boolean
       user_login:
         type: string
       user_email:
         type: string
-      id:
+      user_id:
         type: integer
       in_dark_mode:
-        type: 'null'
-      external_id:
-        type: 'null'
+        type: boolean
       has_mini_sidebar:
         type: boolean
       user_api_key:
@@ -36,7 +34,7 @@ example:
   message: user created
   data:
     user_is_service_account: true
-    user_name: strsinsg
+    user_name: string
     has_deletion_confirmation: false
     uuid: bb807755-62fa-412b-b242-fd930a24be13
     active: true

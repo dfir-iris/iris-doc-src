@@ -8,7 +8,7 @@ parameters:
 get:
   summary: Fetch a user
   tags:
-    - Users
+    - Manage Users
   responses:
     '200':
       description: OK
@@ -192,7 +192,8 @@ get:
                 message: Invalid user ID
                 status: error
   operationId: get-manage-users-get-user_id
-  description: 'Returns information of a specific user. '
+  description: This endpoint is deprecated. Use [GET /api/v2/manage/users/{identifier}](#tag/Users/operation/api_v2_manage_users_(identifier)_get) instead.
+  deprecated: true
   parameters: []
   security:
     - Bearer <bearer>: []
