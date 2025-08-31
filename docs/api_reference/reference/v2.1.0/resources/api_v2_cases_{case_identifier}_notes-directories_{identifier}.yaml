@@ -48,3 +48,18 @@ put:
     '404':
       $ref: ../responses/NotFound.yaml
 
+delete:
+  operationId: api_v2_cases_(case_identifier)_notes-directories_(identifier)_delete
+  tags:
+    - Notes
+    - Beta
+  summary: Delete a note directory
+  description: Delete a note directory
+  responses:
+    '204':
+      $ref: ../responses/Deleted.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+

@@ -44,6 +44,7 @@ info:
     * Added POST /api/v2/cases/{case_identifier}/notes-directories
     * Added GET /api/v2/cases/{case_identifier}/notes-directories/{identifier}
     * Added PUT /api/v2/cases/{case_identifier}/notes-directories/{identifier}
+    * Added DELETE /api/v2/cases/{case_identifier}/notes-directories/{identifier}
     * Added POST /api/v2/cases/{case_identifier}/evidences
     * Added GET /api/v2/cases/{case_identifier}/evidences
     * Added GET /api/v2/cases/{case_identifier}/evidences/{identifier}
@@ -103,6 +104,7 @@ info:
     * Deprecated POST /manage/groups/delete/{group_id} in favor of DELETE /api/v2/manage/groups/{identifier}
     * Deprecated POST /manage/users/add in favor of POST /api/v2/manage/users
     * Deprecated POST /case/notes/directories/update/{directory_id}
+    * Deprecated POST /case/notes/directories/delete/{directory_id}
     * Deprecated GET /manage/users/{user_id} in favor of GET /api/v2/manage/users/{identifier}
     * Deprecated POST /manage/users/update/{user_id} in favor of  PUT /api/v2/manage/users/{identifier}
     * Deprecated POST /manage/users/delete/{user_id} in favor of  DELETE /api/v2/manage/users/{identifier}
@@ -491,15 +493,26 @@ tags:
   - name: Notes
     description: Endpoints to interact with notes
   - name: Assets
+    description: Endpoints to interact with assets
   - name: IOCs
+    description: Endpoints to interact with IoCs
   - name: Timeline
+    description: Endpoints to interact with events
   - name: Tasks
+    description: Endpoints to interact with tasks
   - name: Evidences
+    description: Endpoints to interact with evidences
   - name: Alerts
+    description: Endpoints to interact with alerts
   - name: Customers
-  - name: Manage Users
+    description: Endpoints to interact with customers
+  - name: Users
+    description: Endpoints to interact with users
   - name: Manage Groups
+    description: Endpoints to interact with groups
   - name: Modules
+    description: Endpoints to interact with modules
   - name: API
+    description: General API endpoints
   - name: Beta
     description: These are all the endpoints which are still in beta. Their signature may evolve. Any feedback is welcome!
