@@ -42,4 +42,29 @@ get:
       $ref: ../responses/Forbidden.yaml
     '404':
       $ref: ../responses/NotFound.yaml
+post:
+  operationId: api_v2_(objects)_(object_identifier)_comments_post
+  summary: Add a new comment to a case object
+  description: Add a new comment to a case object
+  tags:
+    - Comments
+    - Beta
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../schemas/requestBodies/Comment.yaml
+  responses:
+    '201':
+      description: Comment successfully created
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Comment.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      description: Object with identifier `object_identifier` not found
 
