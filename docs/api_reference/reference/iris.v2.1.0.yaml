@@ -115,6 +115,7 @@ info:
     * Deprecated POST /manage/users/delete/{user_id} in favor of  DELETE /api/v2/manage/users/{identifier}
     * Deprecated GET /alerts/similarities/{alert_id}
     * Deprecated GET /case/{object_name}/{object_id}/comments/list
+    * Deprecated POST /case/{object_name}/{object_id}/comments/add
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list
