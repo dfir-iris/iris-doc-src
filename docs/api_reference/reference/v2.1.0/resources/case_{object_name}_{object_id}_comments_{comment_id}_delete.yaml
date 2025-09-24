@@ -57,4 +57,6 @@ post:
                 message: Comment deleted
                 status: success
   operationId: post-case-object_name-object_id-comments-comment_id-delete
-  description: ''
+  description: This endpoint is deprecated. Use [DELETE /api/v2/{objects}/{object_identifier}](#tag/Comments/operation/api_v2_(objects)_(object_identifier)_comments_(identifier)_delete) instead.
+  deprecated: true
+
