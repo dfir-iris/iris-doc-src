@@ -523,7 +523,7 @@ tags:
     description: Endpoints to interact with alerts
   - name: Customers
     description: Endpoints to interact with customers
-  - name: Users
+  - name: Manage Users
     description: Endpoints to interact with users
   - name: Manage Groups
     description: Endpoints to interact with groups
