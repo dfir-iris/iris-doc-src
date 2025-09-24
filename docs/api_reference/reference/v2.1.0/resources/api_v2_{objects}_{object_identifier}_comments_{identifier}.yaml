@@ -45,4 +45,20 @@ get:
       $ref: ../responses/Forbidden.yaml
     '404':
       $ref: ../responses/NotFound.yaml
+delete:
+  operationId: api_v2_(objects)_(object_identifier)_comments_(identifier)_delete
+  summary: Delete a comment
+  description: Delete a comment
+  tags:
+    - Comments
+    - Beta
+  responses:
+    '204':
+      $ref: ../responses/Deleted.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
 
