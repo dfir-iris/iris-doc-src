@@ -72,6 +72,7 @@ info:
     * Added GET /api/v2/{objects}/{object_identifier}/comments
     * Added POST /api/v2/{objects}/{object_identifier}/comments
     * Added GET /api/v2/{objects}/{object_identifier}/comments/{identifier}
+    * Added DELETE /api/v2/{objects}/{object_identifier}/comments/{identifier}
     * Deprecated POST /manage/cases/add in favor of POST /api/v2/cases
     * Deprecated POST /manage/cases/update in favor of PUT /api/v2/cases/{case_identifier}
     * Deprecated POST /manage/cases/delete/{case_id} in favor of DELETE /api/v2/cases/{case_identifier}
@@ -117,6 +118,7 @@ info:
     * Deprecated GET /alerts/similarities/{alert_id}
     * Deprecated GET /case/{object_name}/{object_id}/comments/list
     * Deprecated POST /case/{object_name}/{object_id}/comments/add
+    * Deprecated POST /case/{object_name}/{object_id}/comments/{comment_id}/delete
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list
@@ -523,7 +525,9 @@ tags:
     description: Endpoints to interact with alerts
   - name: Customers
     description: Endpoints to interact with customers
-  - name: Users
+  - name: Comments
+    description: Endpoints to interact with comments
+  - name: Manage Users
     description: Endpoints to interact with users
   - name: Manage Groups
     description: Endpoints to interact with groups
