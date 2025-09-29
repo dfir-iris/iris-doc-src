@@ -79,7 +79,8 @@ post:
                 message: ''
                 status: success
   operationId: post-case-object_name-object_id-comments-add
-  description: Add a new comment to a case object
+  description: This endpoint is deprecated. Use [POST /api/v2/{objects}/{object_identifier}](#tag/Comments/operation/api_v2_(objects)_(object_identifier)_comments_post) instead.
+  deprecated: true
   requestBody:
     content:
       application/json:
