@@ -79,4 +79,5 @@ get:
                 message: ''
                 status: success
   operationId: get-case-object_name-object_id-comments-list
-  description: List the comments a case object
+  description: This endpoint is deprecated. Use [GET /api/v2/{objects}/{object_identifier}](#tag/Comments/operation/api_v2_(objects)_(object_identifier)_comments_get) instead.
+  deprecated: true
