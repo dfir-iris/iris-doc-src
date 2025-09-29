@@ -68,7 +68,7 @@ put:
               asset_ip: 127.0.0.1
               asset_info: ''
               asset_compromise_status_id: 1
-              analysis_status_id: '3'
+              analysis_status_id: 3
               ioc_links:
                 - '30'
               asset_tags: anewtag

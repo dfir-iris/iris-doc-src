@@ -52,10 +52,10 @@ post:
         application/json:
           schema:
             $ref: ../schemas/Case.yaml
-    '403':
-      $ref: ../responses/Forbidden.yaml
     '400':
       $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
 get:
   operationId: api_v2_cases_get
   summary: Get a paginated list of cases
@@ -85,6 +85,8 @@ get:
         application/json:
           schema:
             $ref: ../schemas/Cases.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
   tags:
     - Cases
     - Beta

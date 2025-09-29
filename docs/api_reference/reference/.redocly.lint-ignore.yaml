@@ -3,23 +3,6 @@
 iris.v2.1.0.yaml:
   spec-components-invalid-map-name:
     - '#/components/securitySchemes/Bearer <bearer>'
-v2.1.0/resources/api_v2_cases.yaml:
-  operation-4xx-response:
-    - '#/get/responses'
-v2.1.0/resources/api_v2_cases_{case_identifier}_iocs.yaml:
-  operation-4xx-response:
-    - '#/get/responses'
-v2.1.0/resources/api_v2_cases_{case_identifier}_assets.yaml:
-  operation-4xx-response:
-    - '#/get/responses'
-v2.1.0/resources/api_v2_cases_{case_identifier}_assets_{identifier}.yaml:
-  no-invalid-media-type-examples:
-    - >-
-      #/put/requestBody/content/application~1json/examples/Example
-      1/value/analysis_status_id
-v2.1.0/resources/api_v2_cases_{case_identifier}_tasks.yaml:
-  operation-4xx-response:
-    - '#/get/responses'
 v2.1.0/resources/case_summary_update.yaml:
   no-invalid-media-type-examples:
     - '#/post/requestBody/content/application~1json/examples/example-1/value/cid'
