@@ -506,7 +506,8 @@ get:
                         subdirectories: []
                     notes: []
   operationId: get-case-notes-directories
-  description: 'List the directories and notes associated to it. '
+  description: List the directories and notes associated to it.  Use [GET /api/v2/cases/{case_identifier}/notes-directories](#tag/Notes/operation/api_v2_cases_(case_identifier)_notes-directories_get) instead. 
+  deprecated: true
   security:
     - Bearer <bearer>: []
   parameters:

@@ -43,7 +43,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../schemas/NoteDirectory.yaml
+            $ref: ../schemas/SearchNoteDirectory.yaml
     '400':
       $ref: ../responses/GenericError.yaml
     '403':
