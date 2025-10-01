@@ -76,7 +76,8 @@ post:
                 message: Comment edited
                 status: success
   operationId: post-case-object_name-object_id-comments-comment_id-edit
-  description: Edit a comment
+  description: This endpoint is deprecated. Use [PUT /api/v2/{objects}/{object_identifier}](#tag/Comments/operation/api_v2_(objects)_(object_identifier)_comments_(identifier)_put) instead.
+  deprecated: true
   requestBody:
     content:
       application/json:

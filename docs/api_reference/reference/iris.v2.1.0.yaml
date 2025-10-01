@@ -119,6 +119,7 @@ info:
     * Deprecated GET /alerts/similarities/{alert_id}
     * Deprecated GET /case/{object_name}/{object_id}/comments/list
     * Deprecated POST /case/{object_name}/{object_id}/comments/add
+    * Deprecated POST /case/{object_name}/{object_id}/comments/{comment_id}/edit
     * Deprecated POST /case/{object_name}/{object_id}/comments/{comment_id}/delete
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
