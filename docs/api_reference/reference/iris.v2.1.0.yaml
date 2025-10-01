@@ -73,6 +73,7 @@ info:
     * Added GET /api/v2/{objects}/{object_identifier}/comments
     * Added POST /api/v2/{objects}/{object_identifier}/comments
     * Added GET /api/v2/{objects}/{object_identifier}/comments/{identifier}
+    * Added PUT /api/v2/{objects}/{object_identifier}/comments/{identifier}
     * Added DELETE /api/v2/{objects}/{object_identifier}/comments/{identifier}
     * Deprecated POST /manage/cases/add in favor of POST /api/v2/cases
     * Deprecated POST /manage/cases/update in favor of PUT /api/v2/cases/{case_identifier}
