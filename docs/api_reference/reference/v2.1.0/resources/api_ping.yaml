@@ -21,7 +21,7 @@ get:
                 status: success
             properties:
               data:
-                type: string
+                type: array
               message:
                 type: string
               status:
@@ -31,12 +31,10 @@ get:
               - data
               - message
               - status
-          examples:
-            example-1:
-              value:
-                data: []
-                message: pong
-                status: success
+          example:
+            data: []
+            message: pong
+            status: success
     '401':
       description: Unauthorized
       content:
@@ -44,11 +42,6 @@ get:
           schema:
             description: ''
             type: object
-            x-examples:
-              example-1:
-                data: []
-                message: Authentication required
-                status: error
             properties:
               data:
                 type: array
@@ -63,16 +56,10 @@ get:
               - data
               - message
               - status
-          examples:
-            example-1:
-              value:
-                data: []
-                message: Authentication required
-                status: error
-        application/xml:
-          schema:
-            type: object
-            properties: {}
+          example:
+            data: []
+            message: Authentication required
+            status: error
   operationId: get-api-ping
   description: 'Used to test authentication. Respond "pong" if authentication is successfull. '
 parameters: []
