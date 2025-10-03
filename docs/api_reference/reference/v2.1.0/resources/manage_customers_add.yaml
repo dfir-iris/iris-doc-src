@@ -1,6 +1,8 @@
 post:
   summary: Add a customer
   operationId: post-customer-add
+  description: This endpoint is deprecated. Use [POST /api/v2/manage/customers](#tag/Customers/operation/api_v2_manage_customers_post) instead.
+  deprecated: true
   responses:
     '200':
       description: OK
@@ -109,7 +111,6 @@ post:
                     - Shorter than minimum length 2.
                 message: Data error
                 status: error
-  description: Add a new customer that will be available at case creation.
   requestBody:
     content:
       application/json:
