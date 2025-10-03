@@ -7,7 +7,7 @@ properties:
   note_count:
     type: 
       - integer
-      - 0
+      - null
   subdirectories:
     type: array
   notes:
