@@ -45,6 +45,31 @@ get:
       $ref: ../responses/Forbidden.yaml
     '404':
       $ref: ../responses/NotFound.yaml
+put:
+  operationId: api_v2_(objects)_(object_identifier)_comments_(identifier)_put
+  summary: Update a comment
+  description: Update a comment
+  tags:
+    - Comments
+    - Beta
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../schemas/requestBodies/Comment.yaml
+  responses:
+    '200':
+      description: Comment successfully updated
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Comment.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
 delete:
   operationId: api_v2_(objects)_(object_identifier)_comments_(identifier)_delete
   summary: Delete a comment
