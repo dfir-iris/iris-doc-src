@@ -1,0 +1,49 @@
+type: object
+properties:
+  user:
+    type: integer
+  filter_id:
+    type: integer
+  created_by:
+    type: integer
+  filter_is_private: 
+    type: boolean
+  filter_type:
+    type: string
+  filter_name:
+    type: string
+  filter_description:
+    type: string
+  filter_data: 
+    alert_tilte: 
+      type: string
+    alert_description:
+      type: string
+    alert_source: 
+      type: string
+    alert_tags:
+      type: string
+    alert_severity_id:
+      type: string
+    alert_start_date:
+      type: string
+    source_start_date:
+      type: string
+    source_end_date:
+      type: string
+    creation_end_date:
+      type: string
+    creation_start_date:
+      type: string
+    alert_assets:
+      type: string
+    alert_iocs:
+      type: string
+    alert_ids:
+      type: string
+    source_reference:
+      type: string
+    case_id:
+      type: string
+    custom_conditions:
+      type: string
