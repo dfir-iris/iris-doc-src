@@ -19,7 +19,7 @@ properties:
     items:
       type: object
       properties:
-    	alert_tilte: 
+        alert_title: 
       	  type: string
         alert_description:
           type: string
