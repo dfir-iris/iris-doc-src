@@ -20,7 +20,7 @@ properties:
       type: object
       properties:
         alert_title: 
-      	  type: string
+          type: string
         alert_description:
           type: string
         alert_source: 

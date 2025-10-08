@@ -35,7 +35,7 @@ post:
           }
   responses:
     '201':
-      description: Alert Filter successfully created
+      description: Ioc successfully created
       content:
         application/json:
           schema:
