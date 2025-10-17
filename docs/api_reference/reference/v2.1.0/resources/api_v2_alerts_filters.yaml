@@ -20,17 +20,17 @@ post:
             alert_description: '',
             alert_source: '',
             alert_tags: '',
-            alert_severity_id: '',
+            alert_severity_id: 2,
             alert_start_date: '',
             source_start_date: '',
             source_end_date: '',
             creation_end_date: '',
             creation_start_date: '',
-            alert_assets: '',
-            alert_iocs: '',
-            alert_ids: '',
+            alert_assets: [],
+            alert_iocs: [],
+            alert_ids: [],
             source_reference: '',
-            case_id: '',
+            case_id: 1,
             custom_conditions: ''
           }
   responses:
