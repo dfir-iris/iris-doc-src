@@ -1,5 +1,5 @@
 post:
-  operationId: api_v2_alerts_filters_get
+  operationId: api_v2_alerts_filters_(identifier)_get
   summary: Get alert filters
   tags: 
     - Alerts
