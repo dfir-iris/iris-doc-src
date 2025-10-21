@@ -27,7 +27,7 @@ properties:
       - 'null'
   asset_compromise_status_id:
     anyOf:
-      - $ref: ../asset_compromise_status_id.yaml
+      - $ref: ../schemas/asset_compromise_status_id.yaml
       - type: 'null'
   asset_ip:
     type:
@@ -46,7 +46,7 @@ properties:
         type: string
   analysis_status_id:
     anyOf:
-      - $ref: ../analysis_status_id.yaml
+      - $ref: ../schemas/analysis_status_id.yaml
       - type: 'null'
   asset_tags:
     type:
@@ -54,7 +54,7 @@ properties:
       - 'null'
   modification_history:
     anyOf:
-      - $ref: ../modification_history.yaml
+      - $ref: ../schemas/modification_history.yaml
       - type: 'null'
 example:
   asset_id: 57
