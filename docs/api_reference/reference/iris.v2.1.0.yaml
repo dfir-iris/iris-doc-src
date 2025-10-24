@@ -130,6 +130,7 @@ info:
     * Deprecated POST /case/{object_name}/{object_id}/comments/{comment_id}/edit
     * Deprecated POST /case/{object_name}/{object_id}/comments/{comment_id}/delete
     * Deprecated POST /manage/customers/add
+    * Deprecated POST /manage/customers/{customer_id}
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list
