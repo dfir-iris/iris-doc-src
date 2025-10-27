@@ -35,8 +35,8 @@ get:
   tags:
     - Notes
     - Beta
-  summary: Get notes directories filter
-  description: Return information of notes directories filter
+  summary: Get filtered collection of note directories
+  description: Return collection of note directories
   responses:
     '201':
       description: notes directories filter successfully found
