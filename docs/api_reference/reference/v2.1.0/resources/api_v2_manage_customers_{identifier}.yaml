@@ -20,4 +20,28 @@ get:
       $ref: ../responses/Forbidden.yaml
     '404':
       $ref: ../responses/NotFound.yaml
-
+put:
+  operationId: api_v2_manage_customers_(identifier)_put
+  summary: Update a customer
+  description: Update an existing customer. The new customer name should be one which is not already taken. 
+  tags:
+    - Customers
+    - Beta
+  requestBody:
+    content:
+      application/json:
+        schema:
+            $ref: ../schemas/requestBodies/Customer.yaml
+  responses:
+    '201':
+      description: Group successfully updated
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Customer.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
