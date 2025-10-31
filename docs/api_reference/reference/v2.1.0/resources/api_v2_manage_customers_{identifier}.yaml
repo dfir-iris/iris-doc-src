@@ -45,3 +45,20 @@ put:
       $ref: ../responses/Forbidden.yaml
     '404':
       $ref: ../responses/NotFound.yaml
+delete:
+  operationId: api_v2_manage_customerss_(identifier)_delete
+  tags:
+    - Customers
+    - Beta
+  summary: Delete a customer
+  description: A customer can be deleted only if it is not referenced in a case. To delete a referenced, every referencing cases musth be deleted before. 
+  responses:
+    '204':
+      $ref: ../responses/Deleted.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+

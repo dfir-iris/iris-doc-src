@@ -78,6 +78,7 @@ info:
     * Added POST /api/v2/manage/customers
     * Added GET /api/v2/manage/customers/{identifier}
     * Added PUT /api/v2/manage/customers/{identifier}
+    * Added DELETE /api/v2/manage/customers/{identifier}
     * Added POST /api/v2/alerts-filters
     * Added GET /api/v2/alerts-filters/{identifier}
     * Added PUT /api/v2/alerts-filters/{identifier}
