@@ -134,6 +134,7 @@ info:
     * Deprecated POST /manage/customers/add
     * Deprecated GET /manage/customers/{customer_id}
     * Deprecated POST /manage/customers/update/{customer_id}
+    * Deprecated POST /manage/customers/delete/{customer_id}
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list

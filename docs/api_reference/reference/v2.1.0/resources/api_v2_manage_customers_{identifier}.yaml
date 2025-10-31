@@ -46,7 +46,7 @@ put:
     '404':
       $ref: ../responses/NotFound.yaml
 delete:
-  operationId: api_v2_manage_customerss_(identifier)_delete
+  operationId: api_v2_manage_customers_(identifier)_delete
   tags:
     - Customers
     - Beta
