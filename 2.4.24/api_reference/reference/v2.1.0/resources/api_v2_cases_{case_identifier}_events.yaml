@@ -1,0 +1,91 @@
+parameters:
+  - $ref: ../parameters/path/case_identifier.yaml
+post:
+  operationId: api_v2_cases_(case_identifier)_events_post
+  summary: Add a new event
+  description: Create a new event in the timeline.
+  tags:
+    - Timeline
+    - Beta
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            event_title:
+              type: string
+            event_category_id:
+              type: integer
+            event_date:
+              type: string
+            event_tz:
+              type: string
+            event_assets:
+              type: array
+              items:
+                type: integer
+            event_iocs:
+              type: array
+              items:
+                type: integer
+            event_raw:
+              type: string
+            event_source:
+              type: string
+            event_in_summary:
+              type: boolean
+            event_in_graph:
+              type: boolean
+            event_color:
+              type: string
+            event_sync_iocs_assets:
+              type: boolean
+            event_tags:
+              type: string
+            event_content:
+              type: string
+            custom_attributes:
+              type: object
+            parent_event_id:
+              type: integer
+          required:
+            - event_title
+            - event_category_id
+            - event_date
+            - event_tz
+            - event_assets
+            - event_iocs
+        example:
+          event_title: An event
+          event_category_id: 5
+          event_date: '2023-03-08T03:02:00.000'
+          event_tz: '+00:00'
+          event_assets:
+            - 45
+          event_iocs:
+            - 33
+          event_raw: My event raw data
+          event_source: My source
+          event_in_summary: true
+          event_in_graph: true
+          event_color: '#1572E899'
+          event_sync_iocs_assets: true
+          event_tags: tag
+          event_content: My description
+          parent_event_id: 11
+          custom_attributes: {}
+  responses:
+    '201':
+      description: Event successfully created
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Event.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+    '404':
+      description: Case with identifier `case_identifier` not found
+
