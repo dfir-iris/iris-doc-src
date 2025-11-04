@@ -76,6 +76,7 @@ info:
     * Added PUT /api/v2/{objects}/{object_identifier}/comments/{identifier}
     * Added DELETE /api/v2/{objects}/{object_identifier}/comments/{identifier}
     * Added POST /api/v2/manage/customers
+    * Added GET /api/v2/manage/customers/{identifier}
     * Added POST /api/v2/alerts-filters
     * Added GET /api/v2/alerts-filters/{identifier}
     * Added PUT /api/v2/alerts-filters/{identifier}
@@ -129,6 +130,7 @@ info:
     * Deprecated POST /case/{object_name}/{object_id}/comments/{comment_id}/edit
     * Deprecated POST /case/{object_name}/{object_id}/comments/{comment_id}/delete
     * Deprecated POST /manage/customers/add
+    * Deprecated GET /manage/customers/{customer_id}
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list
@@ -212,6 +214,8 @@ paths:
     $ref: v2.1.0/resources/api_v2_manage_users_{identifier}.yaml
   /api/v2/manage/customers:
     $ref: v2.1.0/resources/api_v2_manage_customers.yaml
+  /api/v2/manage/customers/{identifier}:
+    $ref: v2.1.0/resources/api_v2_manage_customers_{identifier}.yaml
   /api/v2/iocs/{identifier}:
     $ref: v2.1.0/resources/api_v2_iocs_{identifier}.yaml
   /api/v2/tasks/{identifier}:

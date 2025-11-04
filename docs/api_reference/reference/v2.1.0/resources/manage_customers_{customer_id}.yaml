@@ -116,7 +116,8 @@ get:
                 message: ''
                 status: success
   operationId: get-manage-customers-get
-  description: Get a customer
+  description: This endpoint is deprecated. Use [GET /api/v2/manage/customers/{identifier}](#tag/Customers/operation/api_v2_manage_customers_(identifier)_get) instead.
+  deprecated: true
   parameters:
     - schema:
         type: integer
