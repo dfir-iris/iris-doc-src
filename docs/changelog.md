@@ -2,6 +2,30 @@
 
 For upgrades instructions, please see the [Upgrades page](/operations/upgrades). 
 
+## [v2.4.24](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.24) <small>_ November 4, 2025 _</small>
+### What's changed
+
+- Fixes permissions check ordering allowing to have restricted groups with alerts access only
+- Fixes GHSA-qhqj-8qw6-wp8v
+
+**Full Changelog**: https://github.com/dfir-iris/iris-web/compare/v2.4.23...v2.4.24
+
+## [v2.4.23](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.23) <small>_ November 4, 2025 _</small>
+### What's changed
+
+- Fixes hooks in comment 
+- Adds not_like operator in alerts filtering 
+- Updates webhooks module to v1.0.9 
+
+**Full Changelog**: https://github.com/dfir-iris/iris-web/compare/v2.4.22...v2.4.23
+
+## [v2.4.22](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.22) <small>_ June 3, 2025 _</small>
+### What's changed
+
+- Fixes issues with notes not being created
+
+**Full Changelog**: https://github.com/dfir-iris/iris-web/compare/v2.4.21...v2.4.22
+
 ## [v2.4.21](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.21) <small>_ May 21, 2025 _</small>
 ### What's changed
 
