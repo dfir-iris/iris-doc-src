@@ -45,6 +45,7 @@ info:
     * Added GET /api/v2/cases/{case_identifier}/notes-directories/{identifier}
     * Added PUT /api/v2/cases/{case_identifier}/notes-directories/{identifier}
     * Added DELETE /api/v2/cases/{case_identifier}/notes-directories/{identifier}
+    * Added GET /api/v2/cases/{case_identifier}/notes-directories
     * Added POST /api/v2/cases/{case_identifier}/evidences
     * Added GET /api/v2/cases/{case_identifier}/evidences
     * Added GET /api/v2/cases/{case_identifier}/evidences/{identifier}
@@ -94,6 +95,7 @@ info:
     * Deprecated POST /case/notes/update/{node_id} in favor of PUT /api/v2/cases/{case_identifier}/notes/{identifier}
     * Deprecated POST /case/notes/delete/{node_id} in favor of DELETE /api/v2/cases/{case_identifier}/notes/{identifier}
     * Deprecated POST /case/notes/directories/add in favor of POST /api/v2/cases/{case_identifier}/notes-directories
+    * Deprecated GET /case/notes/directories/filter in favor of GET /api/v2/cases/{case_identifier}/notes-directories
     * Deprecated POST /case/evidences/add in favor of POST /api/v2/cases/{case_identifier}/evidences
     * Deprecated GET /case/evidences/list in favor of GET /api/v2/cases/{case_identifier}/evidences
     * Deprecated GET /case/evidences/{evidence_id} in favor of GET /api/v2/cases/{case_identifier}/evidences/{identifier}
