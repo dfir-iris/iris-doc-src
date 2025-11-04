@@ -1,5 +1,7 @@
 post:
   summary: Update a customer
+  description: This endpoint is deprecated. Use [PUT /api/v2/manage/customers/{identifier}](#tag/Customers/operation/api_v2_manage_customers_(identifier)_put) instead.
+  deprecated: true
   operationId: post-customer-update
   responses:
     '200':
@@ -109,9 +111,6 @@ post:
                     - Shorter than minimum length 2.
                 message: Data error
                 status: error
-  description: >-
-    Update an existing customer. The new customer name should be one which is
-    not already taken. 
   requestBody:
     content:
       application/json:
