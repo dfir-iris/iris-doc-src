@@ -42,3 +42,17 @@ put:
       $ref: ../responses/GenericError.yaml
     '404':
       $ref: ../responses/NotFound.yaml
+delete:
+  operationId: api_v2_alerts_filters_(identifier)_delete
+  tags:
+    - Alerts
+    - Beta
+  summary: Delete alert filter
+  description: Delete alert filter
+  responses:
+    '204':
+      $ref: ../responses/Deleted.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
