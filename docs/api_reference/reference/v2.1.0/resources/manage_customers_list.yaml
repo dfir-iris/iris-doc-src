@@ -1,5 +1,7 @@
 get:
   summary: List customers
+  description: This endpoint is deprecated. Use [GET /api/v2/manage/customers](#tag/Customers/operation/api_v2_manage_customers_get) instead.
+  deprecated: true
   tags:
     - Customers
   responses:
@@ -65,7 +67,6 @@ get:
                 message: ''
                 status: success
   operationId: get-manage-customers-list
-  description: List customers
   parameters:
     - schema:
         type: integer
