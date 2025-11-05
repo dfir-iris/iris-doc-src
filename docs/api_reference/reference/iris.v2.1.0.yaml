@@ -75,6 +75,7 @@ info:
     * Added GET /api/v2/{objects}/{object_identifier}/comments/{identifier}
     * Added PUT /api/v2/{objects}/{object_identifier}/comments/{identifier}
     * Added DELETE /api/v2/{objects}/{object_identifier}/comments/{identifier}
+    * Added GET /api/v2/manage/customers
     * Added POST /api/v2/manage/customers
     * Added GET /api/v2/manage/customers/{identifier}
     * Added PUT /api/v2/manage/customers/{identifier}
