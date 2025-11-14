@@ -141,6 +141,7 @@ info:
     * Deprecated POST /manage/customers/update/{customer_id}
     * Deprecated POST /manage/customers/delete/{customer_id}
     * Deprecated POST /global/tasks/add
+    * Deprecated POST /global/tasks/delete/{task_id}
     * Added documentation of missing GET /manage/severities/list
     * Added documentation of missing GET /manage/tlp/list
     * Added documentation of missing GET /manage/event-categories/list

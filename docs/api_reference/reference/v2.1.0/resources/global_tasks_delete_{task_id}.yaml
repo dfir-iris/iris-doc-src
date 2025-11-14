@@ -1,5 +1,7 @@
 get:
   summary: Delete a global task
+  description: This endpoint is deprecated. Use [DELETE /api/v2/global-tasks/{identifier}](#tag/Global-tasks/operation/api_v2_global-tasks_(identifier)_delete) instead.
+  deprecated: true
   tags:
     - Global tasks
   responses:
@@ -69,7 +71,6 @@ get:
                 message: Invalid global task ID
                 status: error
   operationId: get-global-tasks-delete
-  description: ''
   security:
     - Bearer <bearer>: []
 parameters:
