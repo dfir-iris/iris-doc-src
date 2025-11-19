@@ -7,6 +7,8 @@ parameters:
     description: Global task ID to update
 post:
   summary: Update a global task
+  description: This endpoint is deprecated. Use [PUT /api/v2/global-tasks/{identifier}](#tag/Global-tasks/operation/api_v2_global-tasks_(identifier)_put) instead.
+  deprecated: true
   operationId: post-global-tasks-update-task_id
   responses:
     '200':
@@ -128,7 +130,6 @@ post:
                 status: error
   tags:
     - Global tasks
-  description: ''
   requestBody:
     content:
       application/json:
