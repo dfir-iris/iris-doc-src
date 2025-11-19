@@ -86,6 +86,7 @@ info:
     * Added DELETE /api/v2/alerts-filters/{identifier}
     * Added POST /api/v2/global-tasks
     * Added GET /api/v2/global-tasks/{identifier}
+    * Added PUT /api/v2/global-tasks/{identifier}
     * Added DELETE /api/v2/global-tasks/{identifier}
     * Deprecated POST /manage/cases/add in favor of POST /api/v2/cases
     * Deprecated POST /manage/cases/update in favor of PUT /api/v2/cases/{case_identifier}
