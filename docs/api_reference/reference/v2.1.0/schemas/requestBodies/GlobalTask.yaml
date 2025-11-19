@@ -13,6 +13,18 @@ properties:
     description: A user ID for whom the task will be assigned
   task_tags:
     type: string
+  task_open_date:
+    $ref: ../../schemas/iso_date.yaml
+  task_userid_open:
+    type: integer
+  task_last_update:
+    $ref: ../../schemas/iso_date.yaml
+  task_userid_update:
+    type: integer
+  task_close_date:
+    $ref: ../../schemas/iso_date.yaml
+  task_userid_close:
+    type: integer
 required:
   - task_title
   - task_status_id
