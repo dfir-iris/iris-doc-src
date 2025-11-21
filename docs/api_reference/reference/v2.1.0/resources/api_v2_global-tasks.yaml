@@ -1,3 +1,19 @@
+get:
+  operationId: api_v2_global-tasks_get
+  summary: List global tasks
+  description: Returns a list of all global tasks
+  tags:
+    - Global tasks
+    - Beta
+  responses:
+    '200':
+      description: Paginated list of global tasks
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/GlobalTasks.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
 post:
   operationId: api_v2_global-tasks_post
   summary: Add a global task

@@ -84,6 +84,7 @@ info:
     * Added GET /api/v2/alerts-filters/{identifier}
     * Added PUT /api/v2/alerts-filters/{identifier}
     * Added DELETE /api/v2/alerts-filters/{identifier}
+    * Added GET /api/v2/global-tasks
     * Added POST /api/v2/global-tasks
     * Added GET /api/v2/global-tasks/{identifier}
     * Added PUT /api/v2/global-tasks/{identifier}
