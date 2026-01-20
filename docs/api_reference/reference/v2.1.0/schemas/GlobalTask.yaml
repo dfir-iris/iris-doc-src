@@ -32,9 +32,9 @@ properties:
       - integer
       - 'null'
   task_close_date:
-    type:
-      - integer
-      - 'null'
+    anyOf:
+      - $ref: ../schemas/iso_date.yaml
+      - type: 'null'
 example:
   task_id: 9
   task_title: Task title
