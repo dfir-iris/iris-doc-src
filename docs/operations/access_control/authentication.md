@@ -173,7 +173,7 @@ OIDC_MAPPING_USERNAME = {optional ,  fallback='preferred_username'}
 OIDC_MAPPING_EMAIL = {optional , fallback='email'}
 ```
 
-On the OIDC provider, the URI to set is `/oidc_authorize`.   
+On the OIDC provider, the URI to set is `/oidc-authorize`.
 
 ## Advanced 
 
