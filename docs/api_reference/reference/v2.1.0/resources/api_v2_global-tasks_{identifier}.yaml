@@ -1,0 +1,20 @@
+parameters:
+  - $ref: ../parameters/path/identifier.yaml
+get:
+  operationId: api_v2_global-tasks_(identifier)_get
+  tags:
+    - Global tasks
+    - Beta
+  summary: Get a global task
+  description: Get a global task
+  responses:
+    '200':
+      description: global task successfully found
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/GlobalTask.yaml
+    '404':
+      $ref: ../responses/NotFound.yaml
+
+

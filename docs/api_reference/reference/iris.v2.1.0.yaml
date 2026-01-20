@@ -85,6 +85,7 @@ info:
     * Added PUT /api/v2/alerts-filters/{identifier}
     * Added DELETE /api/v2/alerts-filters/{identifier}
     * Added POST /api/v2/global-tasks
+    * Added GET /api/v2/global-tasks/{identifier}
     * Deprecated POST /manage/cases/add in favor of POST /api/v2/cases
     * Deprecated POST /manage/cases/update in favor of PUT /api/v2/cases/{case_identifier}
     * Deprecated POST /manage/cases/delete/{case_id} in favor of DELETE /api/v2/cases/{case_identifier}
@@ -234,6 +235,8 @@ paths:
     $ref: v2.1.0/resources/api_v2_me.yaml
   /api/v2/global-tasks:
     $ref: v2.1.0/resources/api_v2_global-tasks.yaml
+  /api/v2/global-tasks/{identifier}:
+    $ref: v2.1.0/resources/api_v2_global-tasks_{identifier}.yaml
   /manage/cases/update/{case_id}:
     $ref: v2.1.0/resources/manage_cases_update_{case_id}.yaml
   /case/summary/update:
