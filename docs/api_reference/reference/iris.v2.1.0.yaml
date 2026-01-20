@@ -75,6 +75,7 @@ info:
     * Added GET /api/v2/{objects}/{object_identifier}/comments/{identifier}
     * Added PUT /api/v2/{objects}/{object_identifier}/comments/{identifier}
     * Added DELETE /api/v2/{objects}/{object_identifier}/comments/{identifier}
+    * Added GET /api/v2/manage/customers
     * Added POST /api/v2/manage/customers
     * Added GET /api/v2/manage/customers/{identifier}
     * Added PUT /api/v2/manage/customers/{identifier}
@@ -131,6 +132,7 @@ info:
     * Deprecated POST /case/{object_name}/{object_id}/comments/add
     * Deprecated POST /case/{object_name}/{object_id}/comments/{comment_id}/edit
     * Deprecated POST /case/{object_name}/{object_id}/comments/{comment_id}/delete
+    * Deprecated GET /manage/customers/list
     * Deprecated POST /manage/customers/add
     * Deprecated GET /manage/customers/{customer_id}
     * Deprecated POST /manage/customers/update/{customer_id}
