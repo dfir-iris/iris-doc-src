@@ -1,5 +1,7 @@
 get:
   summary: List global tasks
+  description: This endpoint is deprecated. Use [GET /api/v2/global-tasks](#tag/Global-tasks/operation/api_v2_global-tasks_get) instead.
+  deprecated: true
   tags:
     - Global tasks
   responses:
@@ -231,4 +233,3 @@ get:
   operationId: get-global-tasks-list
   security:
     - Bearer <bearer>: []
-  description: Returns a list of all global tasks

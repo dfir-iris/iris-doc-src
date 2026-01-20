@@ -84,6 +84,7 @@ info:
     * Added GET /api/v2/alerts-filters/{identifier}
     * Added PUT /api/v2/alerts-filters/{identifier}
     * Added DELETE /api/v2/alerts-filters/{identifier}
+    * Added GET /api/v2/global-tasks
     * Added POST /api/v2/global-tasks
     * Added GET /api/v2/global-tasks/{identifier}
     * Added PUT /api/v2/global-tasks/{identifier}
@@ -142,6 +143,7 @@ info:
     * Deprecated POST /manage/customers/update/{customer_id}
     * Deprecated POST /manage/customers/delete/{customer_id}
     * Deprecated POST /global/tasks/add
+    * Deprecated GET /global/tasks/list
     * Deprecated POST /global/tasks/update/{task_id}
     * Deprecated POST /global/tasks/delete/{task_id}
     * Added documentation of missing GET /manage/severities/list

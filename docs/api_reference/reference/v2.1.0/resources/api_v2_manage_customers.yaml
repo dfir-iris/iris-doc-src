@@ -1,3 +1,19 @@
+get:
+  operationId: api_v2_manage_customers_get
+  summary: List customers
+  description: List customers
+  tags:
+    - Customers
+    - Beta
+  responses:
+    '200':
+      description: Paginated list of customers
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Customers.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
 post:
   operationId: api_v2_manage_customers_post
   summary: Add a customer
@@ -21,20 +37,3 @@ post:
       $ref: ../responses/GenericError.yaml
     '403':
       $ref: ../responses/Forbidden.yaml
-get:
-  operationId: api_v2_manage_customers_get
-  summary: List customers
-  description: List customers
-  tags:
-    - Customers
-    - Beta
-  responses:
-    '200':
-      description: Paginated list of customers
-      content:
-        application/json:
-          schema:
-            $ref: ../schemas/Customers.yaml
-    '403':
-      $ref: ../responses/Forbidden.yaml
-
