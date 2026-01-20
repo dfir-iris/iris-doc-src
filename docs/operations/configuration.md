@@ -33,7 +33,7 @@ Make sure the DB password does not contain any special characters the can be int
     These settings are critical and need to be set properly otherwise authentication bypass may occur. 
 
 
-#### Optionnal changes 
+#### Optional changes 
 To automate the provisionning of IRIS, one might need to set the default administrator API token and password. This can be achieve with the following environment variables.   
 If those variables are not set, random ones are generated during the very first boot of the application.   
 
