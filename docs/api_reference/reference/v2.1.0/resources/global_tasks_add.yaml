@@ -1,5 +1,7 @@
 post:
   summary: Add a global task
+  description: This endpoint is deprecated. Use [POST /api/v2/global-tasks](#tag/Global-tasks/operation/api_v2_global-tasks_post) instead.
+  deprecated: true
   operationId: post-global-tasks-add
   responses:
     '200':
@@ -135,7 +137,6 @@ post:
                     - Invalid user id for assignee
                 message: Data error
                 status: error
-  description: 'Add a global task and assign it to a user. '
   security:
     - Bearer <bearer>: []
   requestBody:
