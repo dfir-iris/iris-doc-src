@@ -41,6 +41,7 @@ Use the references below to check which API version applies to your IRIS version
 | v2.2.x|	[API v2.0.1](../_static/iris_api_reference_v2.0.1.html) |
 | v2.3.x|	[API v2.0.2](../_static/iris_api_reference_v2.0.2.html) |
 | v2.4.x|	[API v2.0.4](../_static/iris_api_reference_v2.0.4.html) |
+| :octicons-file-code-24: develop|	[API v2.1.0](../_static/iris_api_reference_v2.1.0.html) |
 
 
 ## How to use 
