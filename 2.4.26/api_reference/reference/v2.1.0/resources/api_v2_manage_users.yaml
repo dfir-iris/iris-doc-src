@@ -1,0 +1,57 @@
+post:
+  operationId: api_v2_manage_users_post
+  summary: Create a new user
+  description: Administrator role required.
+  tags:
+    - Manage Users
+    - Beta
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+              user_login:
+                type: string
+              user_name:
+                type: string
+              user_email:
+                type: string
+              has_deletion_confirmation:
+                type: boolean
+              has_mini_sidebar:
+                type: boolean
+              in_dark_mode:
+                type: boolean
+              user_is_service_account:
+                type: boolean
+              uuid:
+                type: string
+              active:
+                type: boolean
+              id:
+                type: integer
+              external_id:
+                type: 'null'
+              user_api_key:
+                type: string
+          required:
+            - user_name
+            - user_login
+            - user_email
+        example:
+          user_name: New usergroup
+          user_login: New description
+          user_email: user@test.com
+          user_is_service_account: true
+  responses:
+    '201':
+      description: User successfully created
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/User.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml

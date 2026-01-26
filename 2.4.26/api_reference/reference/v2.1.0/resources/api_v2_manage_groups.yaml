@@ -1,0 +1,38 @@
+post:
+  operationId: api_v2_manage_groups_post
+  summary: Add a new group
+  description: Requires administrative rights.
+  tags:
+    - Manage Groups
+    - Beta
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            group_name:
+              type: string
+            group_description:
+              type: string
+            group_permissions:
+              type: integer
+          required:
+            - group_name
+            - group_description
+        example:
+          group_name: New group
+          group_description: New description
+          group_permissions: 1
+  responses:
+    '201':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ../schemas/Group.yaml
+    '400':
+      $ref: ../responses/GenericError.yaml
+    '403':
+      $ref: ../responses/Forbidden.yaml
+
