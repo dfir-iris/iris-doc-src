@@ -6,7 +6,7 @@ Dive into the most straightforward and recommended way to use IRIS with Docker, 
 
 ### Hardware 💻
 
-IRIS is designed to be lightweight yet scalable, running smoothly on small laptops or powering large organizations. For a typical instance of 10 users, daily usage of ~200 alerts, and a few ongoing cases: 
+IRIS is designed to be lightweight yet scalable, running smoothly on small laptops or powering large organizations. For a typical instance of 20 users, daily usage of ~200 alerts, and a dozen ongoing cases: 
 
 - CPU : 8 cores
 - RAM : 32 GB
@@ -37,7 +37,7 @@ To run IRIS, follow these steps:
 2. Check out the latest **non-beta** tagged version: 
 
     ```bash
-    git checkout v2.4.24
+    git checkout v2.4.26
     ```
 
 3. Copy the environment file 
