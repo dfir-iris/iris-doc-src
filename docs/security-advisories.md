@@ -4,6 +4,20 @@ We take security seriously at DFIR-IRIS. We are committed to providing a secure 
 
 This page lists all security advisories that have been published for the code released by DFIR-IRIS.
 
+## [CVE-2026-22783](https://github.com/dfir-iris/iris-web/security/advisories/GHSA-qhqj-8qw6-wp8v) <small>_ Oct 22, 2025 _</small>
+
+| CVE ID | Github ID | Severity | Impacted product |  
+|--------|-----------|-----------|-------|
+| [CVE-2026-22783](https://nvd.nist.gov/vuln/detail/CVE-2026-22783) | [GHSA-qhqj-8qw6-wp8v](https://github.com/dfir-iris/iris-web/security/advisories/GHSA-qhqj-8qw6-wp8v) | High - CVSS3 8.1/10 | iris-web |
+
+### Description
+Prior to 2.4.24, the DFIR-IRIS datastore file management system has a vulnerability where mass assignment of the file_local_name field combined with path trust in the delete operation enables authenticated users to delete arbitrary filesystem paths. The vulnerability manifests through a three-step attack chain: authenticated users upload a file to the datastore, update the file's file_local_name field to point to an arbitrary filesystem path through mass assignment, then trigger the delete operation which removes the target file without path validation. 
+
+### Affected versions
+- `iris-web` < `2.4.24`
+
+### Fixed versions
+- `iris-web` >= `2.4.24`
 
 ## [CVE-2024-34060](https://github.com/dfir-iris/iris-web/security/advisories/GHSA-9rw6-5q9j-82fm) <small>_ Feb 18, 2024 _</small>
 
