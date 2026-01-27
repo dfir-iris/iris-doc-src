@@ -2,6 +2,13 @@
 
 For upgrades instructions, please see the [Upgrades page](/operations/upgrades). 
 
+## [v2.4.27](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.27) <small>_ Janv 27, 2026 _</small>
+### What's changed
+
+- Fixed issues with `nginx` caching
+
+**Full Changelog**: https://github.com/dfir-iris/iris-web/compare/v2.4.26...v2.4.27
+
 
 ## [v2.4.26](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.26) <small>_ November 18, 2025 _</small>
 ### What's changed
