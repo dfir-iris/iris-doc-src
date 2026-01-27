@@ -2,6 +2,22 @@
 
 For upgrades instructions, please see the [Upgrades page](/operations/upgrades). 
 
+
+## [v2.4.26](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.26) <small>_ November 18, 2025 _</small>
+### What's changed
+
+- Improved dashboard build with UI builder
+
+**Full Changelog**: https://github.com/dfir-iris/iris-web/compare/v2.4.25...v2.4.26
+
+
+## [v2.4.25](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.25) <small>_ November 12, 2025 _</small>
+### What's changed
+
+- Added possibility to create custom dashboards
+
+**Full Changelog**: https://github.com/dfir-iris/iris-web/compare/v2.4.24...v2.4.25
+
 ## [v2.4.24](https://github.com/dfir-iris/iris-web/releases/tag/v2.4.24) <small>_ November 4, 2025 _</small>
 ### What's changed
 
