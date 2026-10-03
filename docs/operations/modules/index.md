@@ -21,4 +21,12 @@ By default IRIS is shipped with multiple modules.
 - [IrisMispModule](natives/IrisMISP.md)  : Processor module offering MISP insights (installed and registered)
 - [IrisWebHooksModule](natives/IrisWebHooks.md)  : Processor module offering webhooks support (manual installation)
 - IrisCheckModule : A basic processor module logging every hooks. Used to check the good functionning. (installed and registered) 
-- IrisEVTXModule : A pipeline module offers EVTX import into Splunk through IRIS (installed but not registered) 
+- IrisEVTXModule : A pipeline module offers EVTX import into Splunk through IRIS (installed but not registered)
+
+## Community modules
+
+These optional modules are maintained outside the IRIS repositories and require
+manual installation. Consult their compatibility and validation notes before use.
+
+- [IsMalicious](community/IsMalicious.md): Manually enrich an IOC with a reputation
+  summary and raw evidence report, without changing analyst tags or severity.
